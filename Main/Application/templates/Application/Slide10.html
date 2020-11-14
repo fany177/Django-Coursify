@@ -1,45 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-</head>
-<body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo">
-        <a class="navbar-brand" href="#"><img src="images/favicon.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Live classes <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Video Library</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Course</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Book</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Board</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
+{% extends 'Application/base.html' %}
+{% load static %}
+   
+{% block content %}
     <section id="landing-section" class="container-fluid">
         <div class="land">
-            <img class="land__ellipses" src="images/ellipses.png" alt="">
+            <img class="land__ellipses" src="{% static 'images/ellipses.png' %}" alt="">
             <div class="land__content">
                 
                 <h1 class="land__content--heading">Conquer your School Exams with Us!</h1>
@@ -47,14 +12,14 @@
                 <button class="land__content--btn">start preparing now</button>
             </div>
             <div class="land__img">
-                <img class="land__img--vector" src="images/maths.png" alt="">
-                <img class="land__img--ellipse" src="images/ellipse.png" alt="">
+                <img class="land__img--vector" src="{% static 'images/maths.png' %}" alt="">
+                <img class="land__img--ellipse" src="{% static 'images/ellipse.png' %}" alt="">
             </div>
         </div>
     </section>
 
     <section id="state-section" class="container-fluid" >
-        <img class="ellipses1" src="images/ellipses.png" alt="">
+        <img class="ellipses1" src="{% static 'images/ellipses.png' %}" alt="">
         <h1 class="state-heading">State Boards</h1>
         <h3 class="state-subheading">Choose your board and start learning now</h3>
         <div class="state">
@@ -81,19 +46,19 @@
                             <h3 class="class__12--item-title">Maths</h3>
                             <div class="chips">
                                 <div class="chips__box chips__green">
-                                    <img class="chips__box--img" src="images/pradeep.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/pradeep.png' %}" alt="">
                                     <h3 class="chips__box--title">Pradeep's</h3>
                                 </div>
                                 <div class="chips__box chips__pink">
-                                    <img class="chips__box--img" src="images/arora.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/arora.png' %}" alt="">
                                     <h3 class="chips__box--title">NCERT</h3>
                                 </div>
                                 <div class="chips__box chips__orange">
-                                    <img class="chips__box--img" src="images/sinha.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/sinha.png' %}" alt="">
                                     <h3 class="chips__box--title">KC Sinha</h3>
                                 </div>
                                 <div class="chips__box chips__blue">
-                                    <img class="chips__box--img" src="images/ncert.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/ncert.png' %}" alt="">
                                     <h3 class="chips__box--title">SL Arora</h3>
                                 </div>
                                 <button class="chips__btn"><span>View All</span></button>
@@ -105,19 +70,19 @@
                             <h3 class="class__12--item-title">Physics</h3>
                             <div class="chips">
                                 <div class="chips__box chips__green">
-                                    <img class="chips__box--img" src="images/pradeep.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/pradeep.png' %}" alt="">
                                     <h3 class="chips__box--title">Pradeep's</h3>
                                 </div>
                                 <div class="chips__box chips__pink">
-                                    <img class="chips__box--img" src="images/arora.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/arora.png' %}" alt="">
                                     <h3 class="chips__box--title">NCERT</h3>
                                 </div>
                                 <div class="chips__box chips__orange">
-                                    <img class="chips__box--img" src="images/sinha.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/sinha.png' %}" alt="">
                                     <h3 class="chips__box--title">KC Sinha</h3>
                                 </div>
                                 <div class="chips__box chips__blue">
-                                    <img class="chips__box--img" src="images/ncert.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/ncert.png' %}" alt="">
                                     <h3 class="chips__box--title">SL Arora</h3>
                                 </div>
                                 <button class="chips__btn"><span>View All</span></button>
@@ -128,19 +93,19 @@
                             <h3 class="class__12--item-title">Biology</h3>
                             <div class="chips">
                                 <div class="chips__box chips__green">
-                                    <img class="chips__box--img" src="images/pradeep.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/pradeep.png' %}" alt="">
                                     <h3 class="chips__box--title">Pradeep's</h3>
                                 </div>
                                 <div class="chips__box chips__pink">
-                                    <img class="chips__box--img" src="images/arora.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/arora.png' %}" alt="">
                                     <h3 class="chips__box--title">NCERT</h3>
                                 </div>
                                 <div class="chips__box chips__orange">
-                                    <img class="chips__box--img" src="images/sinha.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/sinha.png' %}" alt="">
                                     <h3 class="chips__box--title">KC Sinha</h3>
                                 </div>
                                 <div class="chips__box chips__blue">
-                                    <img class="chips__box--img" src="images/ncert.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/ncert.png' %}" alt="">
                                     <h3 class="chips__box--title">SL Arora</h3>
                                 </div>
                                 <button class="chips__btn"><span>View All</span></button>
@@ -151,19 +116,19 @@
                             <h3 class="class__12--item-title">Chemistry</h3>
                             <div class="chips">
                                 <div class="chips__box chips__green">
-                                    <img class="chips__box--img" src="images/pradeep.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/pradeep.png' %}" alt="">
                                     <h3 class="chips__box--title">Pradeep's</h3>
                                 </div>
                                 <div class="chips__box chips__pink">
-                                    <img class="chips__box--img" src="images/arora.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/arora.png' %}" alt="">
                                     <h3 class="chips__box--title">NCERT</h3>
                                 </div>
                                 <div class="chips__box chips__orange">
-                                    <img class="chips__box--img" src="images/sinha.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/sinha.png' %}" alt="">
                                     <h3 class="chips__box--title">KC Sinha</h3>
                                 </div>
                                 <div class="chips__box chips__blue">
-                                    <img class="chips__box--img" src="images/ncert.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/ncert.png' %}" alt="">
                                     <h3 class="chips__box--title">SL Arora</h3>
                                 </div>
                                 <button class="chips__btn"><span>View All</span></button>
@@ -177,19 +142,19 @@
                             <h3 class="class__11--item-title">Maths</h3>
                             <div class="chips">
                                 <div class="chips__box chips__green">
-                                    <img class="chips__box--img" src="images/pradeep.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/pradeep.png' %}" alt="">
                                     <h3 class="chips__box--title">Pradeep's</h3>
                                 </div>
                                 <div class="chips__box chips__pink">
-                                    <img class="chips__box--img" src="images/arora.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/arora.png' %}" alt="">
                                     <h3 class="chips__box--title">NCERT</h3>
                                 </div>
                                 <div class="chips__box chips__orange">
-                                    <img class="chips__box--img" src="images/sinha.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/sinha.png' %}" alt="">
                                     <h3 class="chips__box--title">KC Sinha</h3>
                                 </div>
                                 <div class="chips__box chips__blue">
-                                    <img class="chips__box--img" src="images/ncert.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/ncert.png' %}" alt="">
                                     <h3 class="chips__box--title">SL Arora</h3>
                                 </div>
                                 <button class="chips__btn"><span>View All</span></button>
@@ -200,19 +165,19 @@
                             <h3 class="class__11--item-title">Physics</h3>
                             <div class="chips">
                                 <div class="chips__box chips__green">
-                                    <img class="chips__box--img" src="images/pradeep.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/pradeep.png' %}" alt="">
                                     <h3 class="chips__box--title">Pradeep's</h3>
                                 </div>
                                 <div class="chips__box chips__pink">
-                                    <img class="chips__box--img" src="images/arora.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/arora.png' %}" alt="">
                                     <h3 class="chips__box--title">NCERT</h3>
                                 </div>
                                 <div class="chips__box chips__orange">
-                                    <img class="chips__box--img" src="images/sinha.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/sinha.png' %}" alt="">
                                     <h3 class="chips__box--title">KC Sinha</h3>
                                 </div>
                                 <div class="chips__box chips__blue">
-                                    <img class="chips__box--img" src="images/ncert.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/ncert.png' %}" alt="">
                                     <h3 class="chips__box--title">SL Arora</h3>
                                 </div>
                                 <button class="chips__btn"><span>View All</span></button>
@@ -223,19 +188,19 @@
                             <h3 class="class__11--item-title">Biology</h3>
                             <div class="chips">
                                 <div class="chips__box chips__green">
-                                    <img class="chips__box--img" src="images/pradeep.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/pradeep.png' %}" alt="">
                                     <h3 class="chips__box--title">Pradeep's</h3>
                                 </div>
                                 <div class="chips__box chips__pink">
-                                    <img class="chips__box--img" src="images/arora.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/arora.png' %}" alt="">
                                     <h3 class="chips__box--title">NCERT</h3>
                                 </div>
                                 <div class="chips__box chips__orange">
-                                    <img class="chips__box--img" src="images/sinha.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/sinha.png' %}" alt="">
                                     <h3 class="chips__box--title">KC Sinha</h3>
                                 </div>
                                 <div class="chips__box chips__blue">
-                                    <img class="chips__box--img" src="images/ncert.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/ncert.png' %}" alt="">
                                     <h3 class="chips__box--title">SL Arora</h3>
                                 </div>
                                 <button class="chips__btn"><span>View All</span></button>
@@ -246,19 +211,19 @@
                             <h3 class="class__11--item-title">Chemistry</h3>
                             <div class="chips">
                                 <div class="chips__box chips__green">
-                                    <img class="chips__box--img" src="images/pradeep.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/pradeep.png' %}" alt="">
                                     <h3 class="chips__box--title">Pradeep's</h3>
                                 </div>
                                 <div class="chips__box chips__pink">
-                                    <img class="chips__box--img" src="images/arora.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/arora.png' %}" alt="">
                                     <h3 class="chips__box--title">NCERT</h3>
                                 </div>
                                 <div class="chips__box chips__orange">
-                                    <img class="chips__box--img" src="images/sinha.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/sinha.png' %}" alt="">
                                     <h3 class="chips__box--title">KC Sinha</h3>
                                 </div>
                                 <div class="chips__box chips__blue">
-                                    <img class="chips__box--img" src="images/ncert.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/ncert.png' %}" alt="">
                                     <h3 class="chips__box--title">SL Arora</h3>
                                 </div>
                                 <button class="chips__btn"><span>View All</span></button>
@@ -272,11 +237,11 @@
                                 <h3 class="lclass__heading">Class 10</h3>
                                 <div class="lclass__img">
                                     <div class="lclass__img--box">
-                                        <img class="lclass__img--box-image1" src="images/abacus.png" alt="">
+                                        <img class="lclass__img--box-image1" src="{% static 'images/abacus.png' %}" alt="">
                                         <h3 class="lclass__img--box-title">Maths</h3>
                                     </div>
                                     <div class="lclass__img--box">
-                                        <img class="lclass__img--box-image2" src="images/science.png" alt="">
+                                        <img class="lclass__img--box-image2" src="{% static 'images/science.png' %}" alt="">
                                         <h3 class="lclass__img--box-title">Science</h3>
                                     </div>
                                 </div>
@@ -285,11 +250,11 @@
                                 <h3 class="lclass__heading">Class 9</h3>
                                 <div class="lclass__img">
                                     <div class="lclass__img--box">
-                                        <img class="lclass__img--box-image1" src="images/abacus.png" alt="">
+                                        <img class="lclass__img--box-image1" src="{% static 'images/abacus.png' %}" alt="">
                                         <h3 class="lclass__img--box-title">Maths</h3>
                                     </div>
                                     <div class="lclass__img--box">
-                                        <img class="lclass__img--box-image2" src="images/science.png" alt="">
+                                        <img class="lclass__img--box-image2" src="{% static 'images/science.png' %}" alt="">
                                         <h3 class="lclass__img--box-title">Science</h3>
                                     </div>
                                 </div>
@@ -298,11 +263,11 @@
                                 <h3 class="lclass__heading">Class 8</h3>
                                 <div class="lclass__img">
                                     <div class="lclass__img--box">
-                                        <img class="lclass__img--box-image1" src="images/abacus.png" alt="">
+                                        <img class="lclass__img--box-image1" src="{% static 'images/abacus.png' %}" alt="">
                                         <h3 class="lclass__img--box-title">Maths</h3>
                                     </div>
                                     <div class="lclass__img--box">
-                                        <img class="lclass__img--box-image2" src="images/science.png" alt="">
+                                        <img class="lclass__img--box-image2" src="{% static 'images/science.png' %}" alt="">
                                         <h3 class="lclass__img--box-title">Science</h3>
                                     </div>
                                 </div>
@@ -311,26 +276,24 @@
                                 <h3 class="lclass__heading">Class 7</h3>
                                 <div class="lclass__img">
                                     <div class="lclass__img--box">
-                                        <img class="lclass__img--box-image1" src="images/abacus.png" alt="">
+                                        <img class="lclass__img--box-image1" src="{% static 'images/abacus.png' %}" alt="">
                                         <h3 class="lclass__img--box-title">Maths</h3>
                                     </div>
                                     <div class="lclass__img--box">
-                                        <img class="lclass__img--box-image2" src="images/science.png" alt="">
+                                        <img class="lclass__img--box-image2" src="{% static 'images/science.png' %}" alt="">
                                         <h3 class="lclass__img--box-title">Science</h3>
                                     </div>
-                                    
-                                    
                                 </div>
                             </div>
                             <div class="lclass">
                                 <h3 class="lclass__heading">Class 6</h3>
                                 <div class="lclass__img">
                                     <div class="lclass__img--box">
-                                        <img class="lclass__img--box-image1" src="images/abacus.png" alt="">
+                                        <img class="lclass__img--box-image1" src="{% static 'images/abacus.png' %}" alt="">
                                         <h3 class="lclass__img--box-title">Maths</h3>
                                     </div>
                                     <div class="lclass__img--box">
-                                        <img class="lclass__img--box-image2" src="images/science.png" alt="">
+                                        <img class="lclass__img--box-image2" src="{% static 'images/science.png' %}" alt="">
                                         <h3 class="lclass__img--box-title">Science</h3>
                                     </div>
                                 </div>
@@ -357,11 +320,11 @@
                     <h3 class="standard__12--box--heading">Maths</h3>
                     <div class="standard__12--box--content">
                         <div class="spradeep scard">
-                            <img class="scard__img" src="images/pradeep.png" alt="">
+                            <img class="scard__img" src="{% static 'images/pradeep.png' %}" alt="">
                             <h3 class="scard__title">Pradeep's</h3>
                         </div>
                         <div class="sncert scard">
-                            <img class="scard__img" src="images/arora.png" alt="">
+                            <img class="scard__img" src="{% static 'images/arora.png' %}" alt="">
                             <h3 class="scard__title">NCERT</h3>
                         </div>
                         <button class="standard__12--box--content-btn"><span>View All</span></button>
@@ -371,11 +334,11 @@
                     <h3 class="standard__12--box--heading">Physics</h3>
                     <div class="standard__12--box--content">
                         <div class="spradeep scard">
-                            <img class="scard__img" src="images/pradeep.png" alt="">
+                            <img class="scard__img" src="{% static 'images/pradeep.png' %}" alt="">
                             <h3 class="scard__title">Pradeep's</h3>
                         </div>
                         <div class="sncert scard">
-                            <img class="scard__img" src="images/arora.png" alt="">
+                            <img class="scard__img" src="{% static 'images/arora.png' %}" alt="">
                             <h3 class="scard__title">NCERT</h3>
                         </div>
                         <button class="standard__12--box--content-btn"><span>View All</span></button>
@@ -385,11 +348,11 @@
                     <h3 class="standard__12--box--heading">Biology</h3>
                     <div class="standard__12--box--content">
                         <div class="spradeep scard">
-                            <img class="scard__img" src="images/pradeep.png" alt="">
+                            <img class="scard__img" src="{% static 'images/pradeep.png' %}" alt="">
                             <h3 class="scard__title">Pradeep's</h3>
                         </div>
                         <div class="sncert scard">
-                            <img class="scard__img" src="images/arora.png" alt="">
+                            <img class="scard__img" src="{% static 'images/arora.png' %}" alt="">
                             <h3 class="scard__title">NCERT</h3>
                         </div>
                         <button class="standard__12--box--content-btn"><span>View All</span></button>
@@ -399,11 +362,11 @@
                     <h3 class="standard__12--box--heading">Chemistry</h3>
                     <div class="standard__12--box--content">
                         <div class="spradeep scard">
-                            <img class="scard__img" src="images/pradeep.png" alt="">
+                            <img class="scard__img" src="{% static 'images/pradeep.png' %}" alt="">
                             <h3 class="scard__title">Pradeep's</h3>
                         </div>
                         <div class="sncert scard">
-                            <img class="scard__img" src="images/arora.png" alt="">
+                            <img class="scard__img" src="{% static 'images/arora.png' %}" alt="">
                             <h3 class="scard__title">NCERT</h3>
                         </div>
                         <button class="standard__12--box--content-btn"><span>View All</span></button>
@@ -417,11 +380,11 @@
                     <h3 class="standard__11--box--heading">Maths</h3>
                     <div class="standard__11--box--content">
                         <div class="spradeep scard">
-                            <img class="scard__img" src="images/pradeep.png" alt="">
+                            <img class="scard__img" src="{% static 'images/pradeep.png' %}" alt="">
                             <h3 class="scard__title">Pradeep's</h3>
                         </div>
                         <div class="sncert scard">
-                            <img class="scard__img" src="images/arora.png" alt="">
+                            <img class="scard__img" src="{% static 'images/arora.png' %}" alt="">
                             <h3 class="scard__title">NCERT</h3>
                         </div>
                         <button class="standard__11--box--content-btn"><span>View All</span></button>
@@ -431,11 +394,11 @@
                     <h3 class="standard__11--box--heading">Physics</h3>
                     <div class="standard__11--box--content">
                         <div class="spradeep scard">
-                            <img class="scard__img" src="images/pradeep.png" alt="">
+                            <img class="scard__img" src="{% static 'images/pradeep.png' %}" alt="">
                             <h3 class="scard__title">Pradeep's</h3>
                         </div>
                         <div class="sncert scard">
-                            <img class="scard__img" src="images/arora.png" alt="">
+                            <img class="scard__img" src="{% static 'images/arora.png' %}" alt="">
                             <h3 class="scard__title">NCERT</h3>
                         </div>
                         <button class="standard__11--box--content-btn"><span>View All</span></button>
@@ -445,11 +408,11 @@
                     <h3 class="standard__11--box--heading">Biology</h3>
                     <div class="standard__11--box--content">
                         <div class="spradeep scard">
-                            <img class="scard__img" src="images/pradeep.png" alt="">
+                            <img class="scard__img" src="{% static 'images/pradeep.png' %}" alt="">
                             <h3 class="scard__title">Pradeep's</h3>
                         </div>
                         <div class="sncert scard">
-                            <img class="scard__img" src="images/arora.png" alt="">
+                            <img class="scard__img" src="{% static 'images/arora.png' %}" alt="">
                             <h3 class="scard__title">NCERT</h3>
                         </div>
                         <button class="standard__11--box--content-btn"><span>View All</span></button>
@@ -459,11 +422,11 @@
                     <h3 class="standard__11--box--heading">Chemistry</h3>
                     <div class="standard__11--box--content">
                         <div class="spradeep scard">
-                            <img class="scard__img" src="images/pradeep.png" alt="">
+                            <img class="scard__img" src="{% static 'images/pradeep.png' %}" alt="">
                             <h3 class="scard__title">Pradeep's</h3>
                         </div>
                         <div class="sncert scard">
-                            <img class="scard__img" src="images/arora.png" alt="">
+                            <img class="scard__img" src="{% static 'images/arora.png' %}" alt="">
                             <h3 class="scard__title">NCERT</h3>
                         </div>
                         <button class="standard__11--box--content-btn"><span>View All</span></button>
@@ -476,11 +439,11 @@
                     <h1 class="lstandard__heading">Class 10</h1>
                     <div class="lstandard__box">
                         <div class="lstandard__box--img">
-                            <img class="lstandard__box--img-image1" src="images/abacus.png" alt="">
+                            <img class="lstandard__box--img-image1" src="{% static 'images/abacus.png' %}" alt="">
                             <h3 class="lstandard__box--img-title">Maths</h3>
                         </div>
                         <div class="lstandard__box--img">
-                            <img class="lstandard__box--img-image2" src="images/science.png" alt="">
+                            <img class="lstandard__box--img-image2" src="{% static 'images/science.png' %}" alt="">
                             <h3 class="lstandard__box--img-title">Science</h3>
                         </div>
                     </div>
@@ -489,11 +452,11 @@
                     <h1 class="lstandard__heading">Class 9</h1>
                     <div class="lstandard__box">
                         <div class="lstandard__box--img">
-                            <img class="lstandard__box--img-image1" src="images/abacus.png" alt="">
+                            <img class="lstandard__box--img-image1" src="{% static 'images/abacus.png' %}" alt="">
                             <h3 class="lstandard__box--img-title">Maths</h3>
                         </div>
                         <div class="lstandard__box--img">
-                            <img class="lstandard__box--img-image2" src="images/science.png" alt="">
+                            <img class="lstandard__box--img-image2" src="{% static 'images/science.png' %}" alt="">
                             <h3 class="lstandard__box--img-title">Science</h3>
                         </div>
                     </div>
@@ -502,11 +465,11 @@
                     <h1 class="lstandard__heading">Class 8</h1>
                     <div class="lstandard__box">
                         <div class="lstandard__box--img">
-                            <img class="lstandard__box--img-image1" src="images/abacus.png" alt="">
+                            <img class="lstandard__box--img-image1" src="{% static 'images/abacus.png' %}" alt="">
                             <h3 class="lstandard__box--img-title">Maths</h3>
                         </div>
                         <div class="lstandard__box--img">
-                            <img class="lstandard__box--img-image2" src="images/science.png" alt="">
+                            <img class="lstandard__box--img-image2" src="{% static 'images/science.png' %}" alt="">
                             <h3 class="lstandard__box--img-title">Science</h3>
                         </div>
                     </div>
@@ -515,11 +478,11 @@
                     <h1 class="lstandard__heading">Class 7</h1>
                     <div class="lstandard__box">
                         <div class="lstandard__box--img">
-                            <img class="lstandard__box--img-image1" src="images/abacus.png" alt="">
+                            <img class="lstandard__box--img-image1" src="{% static 'images/abacus.png' %}" alt="">
                             <h3 class="lstandard__box--img-title">Maths</h3>
                         </div>
                         <div class="lstandard__box--img">
-                            <img class="lstandard__box--img-image2" src="images/science.png" alt="">
+                            <img class="lstandard__box--img-image2" src="{% static 'images/science.png' %}" alt="">
                             <h3 class="lstandard__box--img-title">Science</h3>
                         </div>
                     </div>
@@ -528,42 +491,42 @@
                     <h1 class="lstandard__heading">Class 6</h1>
                     <div class="lstandard__box">
                         <div class="lstandard__box--img">
-                            <img class="lstandard__box--img-image1" src="images/abacus.png" alt="">
+                            <img class="lstandard__box--img-image1" src="{% static 'images/abacus.png' %}" alt="">
                             <h3 class="lstandard__box--img-title">Maths</h3>
                         </div>
                         <div class="lstandard__box--img">
-                            <img class="lstandard__box--img-image2" src="images/science.png" alt="">
+                            <img class="lstandard__box--img-image2" src="{% static 'images/science.png' %}" alt="">
                             <h3 class="lstandard__box--img-title">Science</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <img class="ellipses3" src="images/ellipses.png" alt="">
+        <img class="ellipses3" src="{% static 'images/ellipses.png' %}" alt="">
     </section>
 
     <section id="section-live" class="container-fluid">
         <h1 class="live-heading">LIVE classes</h1>
         <div class="live">
-            <img class="live__img" src="images/live.png" alt="">
+            <img class="live__img" src="{% static 'images/live.png' %}" alt="">
             <div class="live__box">
                 <div class="live__box--content">
-                    <img class="live__box--content-img" src="images/global-network.png" alt="">
+                    <img class="live__box--content-img" src="{% static 'images/global-network.png' %}" alt="">
                     <h3 class="live__box--content-heading">Accessible everywhere</h3>
                     <h5 class="live__box--content-para">Access to quality education anytime, anywhere</h5>
                 </div>
                 <div class="live__box--content">
-                    <img class="live__box--content-img" src="images/coaching.png" alt="">
+                    <img class="live__box--content-img" src="{% static 'images/coaching.png' %}" alt="">
                     <h3 class="live__box--content-heading">Expert Teachers</h3>
                     <h5 class="live__box--content-para">Unlimited access to video solutions</h5>
                 </div>
                 <div class="live__box--content">
-                    <img class="live__box--content-img" src="images/presentation.png" alt="">
+                    <img class="live__box--content-img" src="{% static 'images/presentation.png'  %}" alt="">
                     <h3 class="live__box--content-heading">Interactive Sessions</h3>
                     <h5 class="live__box--content-para">Small groups for maximum student - teacher interaction</h5>
                 </div>
             </div>
-            <img class="ellipses4" src="images/ellipses.png" alt="">
+            <img class="ellipses4" src="{% static 'images/ellipses.png' %}" alt="">
         </div>
         
         <h2 class="live-free">FIRST CLASS FREE!</h2>
@@ -575,19 +538,19 @@
         <div class="video">
             <div class="video__box">
                 <div class="video__box--content">
-                    <img class="video__box--content-img" src="images/chronometer.png" alt="">
+                    <img class="video__box--content-img" src="{% static 'images/chronometer.png' %}" alt="">
                     <h3 class="video__box--content-heading">Save hours of scrolling pages</h3>
                 </div>
                 <div class="video__box--content">
-                    <img class="video__box--content-img" src="images/bulb.png" alt="">
+                    <img class="video__box--content-img" src="{% static 'images/bulb.png' %}" alt="">
                     <h3 class="video__box--content-heading">Clarify your concepts instantly</h3>
                     <p class="video__box--content-para">Find multilingual video explainations to frequently confused concepts from every subject</p>
                 </div>
                 <button class="video__box--btn" href="">Start learning now</button>
             </div>
-            <img class="video__img" src="images/tablet.png" alt="">
+            <img class="video__img" src="{% static 'images/tablet.png' %}" alt="">
         </div>
-        <img class="ellipses5" src="images/ellipses.png" alt="">
+        <img class="ellipses5" src="{% static 'images/ellipses.png' %}" alt="">
     </section>
 
     <section id="section-doubts" class="container-fluid">
@@ -595,47 +558,47 @@
         <div class="doubts">
             <div class="doubts__box">
                 <div class="doubts__box--content">
-                    <img class="doubts__box--content-img" src="images/global-network.png" alt="">
+                    <img class="doubts__box--content-img" src="{% static 'images/global-network.png' %}" alt="">
                     <h3 class="doubts__box--content-heading">Accessible everywhere</h3>
                     <p class="doubts__box--content-para">Access to quality educations anytime, anywhere</p>
                 </div>
                 <div class="doubts__box--content">
-                    <img class="doubts__box--content-img" src="images/presentation.png" alt="">
+                    <img class="doubts__box--content-img" src="{% static 'images/presentation.png' %}" alt="">
                     <h3 class="doubts__box--content-heading">1 million+ videos</h3>
                     <p class="doubts__box--content-para">Unlimited access to video solutions</p>
                 </div>
             </div>
 
-            <img class="doubts__img" src="images/computer.png" alt="">
+            <img class="doubts__img" src="{%static 'images/computer.png' %}" alt="">
             
             <div class="doubts__work">
                 <h3 class="doubts__work--heading">How it works?</h3>
                 <div class="doubts__work--img">
                     <div class="doubts__work--img-item1">
                         <h4 class="doubts__work--img-item1-heading">Have a doubt?</h4>
-                        <img class="doubts__work--img-item1-image" src="images/doubt.png" alt="">
+                        <img class="doubts__work--img-item1-image" src="{% static 'images/doubt.png' %}" alt="">
                         <h5 class="number-circle">1</h5>
                     </div>
                     
-                    <img class="connect" src="images/connect.png" alt="">
+                    <img class="connect" src="{% static 'images/connect.png' %}" alt="">
                     
                     <div class="doubts__work--img-item2">
                         <div class="doubts__work--img-item2-image1">   
-                            <img class="keyboard" src="images/keyboard.png" alt="">
+                            <img class="keyboard" src="{% static 'images/keyboard.png' %}" alt="">
                             <h3 class="keyboard-text">Type the question</h3>
                         </div>
                         <h4 class="doubts__work--img-item2-text">OR</h4>
                         <div class="doubts__work--img-item2-image2">
-                            <img class="upload" src="images/upload.png" alt="">
+                            <img class="upload" src="{% static 'images/upload.png' %}" alt="">
                             <h3 class="upload-text">Upload image</h3>
                         </div>
                         <h5 class="number-circle">2</h5>
                     </div>
                     
-                    <img class="connect" src="images/connect.png" alt="">
+                    <img class="connect" src="{% static 'images/connect.png' %}" alt="">
 
                     <div class="doubts__work--img-item3">
-                        <img class="work" src="images/work.png" alt="">
+                        <img class="work" src="{% static 'images/work.png' %}" alt="">
                         <h3 class="work-text">Type the question</h3>
                         <h5 class="number-circle">3</h5>
                     </div>
@@ -643,13 +606,9 @@
                 </div>
             </div>
         </div>
-        <img class="doubt-ellipse" src="images/ellipses.png" alt="">
+        <img class="doubt-ellipse" src="{% static 'images/ellipses.png' %}" alt="">
         <button class="doubt-btn">Clarify your doubts now!</button>
     </section>
 
-    <script src="main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-</body>
-</html>
+  
+{% endblock content %}
