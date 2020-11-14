@@ -1,69 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-</head>
-<body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo">
-        <a class="navbar-brand" href="#"><img src="images/favicon.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Live classes <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Video Library</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Course</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Book</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Board</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
+{% extends 'Application/base.html' %}
+{% load static %}
+   
+{% block content %}
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    
     <section id="section-solve" class="container-fluid">
-        <img class="solve-img1" src="images/ellipses.png" alt="">
-        <img class="solve-img2" src="images/ellipse.png" alt="">
+        <img class="solve-img1" src="{% static 'images/ellipses.png' %}" alt="">
+        <img class="solve-img2" src="{% static 'images/ellipse.png' %}" alt="">
         <div class="solve">
             <div class="solve__content">
                 <h3 class="solve__content--sub">Practice makes you Perfect</h3>
                 <h1 class="solve__content--title">Solve your <span>Books</span>  with best Tutors</h1>
             
                 <div class="solve__content--box">
-                    <img class="solve__content--box-img" src="images/books.png" alt="">
+                    <img class="solve__content--box-img" src="{% static 'images/books.png' %}" alt="">
                     <h3 class="solve__content--box-heading">Questions from the best books</h3>
                     <p class="solve__content--box-para">Solve the best books with us and achieve better results!</p>
                 </div>
                 <div class="solve__content--box">
-                    <img class="solve__content--box-img" src="images/teacher.png" alt="">
+                    <img class="solve__content--box-img" src="{% static 'images/teacher.png' %}" alt="">
                     <h3 class="solve__content--box-heading">Learn with the best faculty</h3>
                     <p class="solve__content--box-para">Efficient solution taught by the best faculty to improve your results!</p>
                 </div>
             </div>
-            <img class="solve__img" src="images/champion.png" alt="">
+            <img class="solve__img" src="{% static 'images/champion.png' %}" alt="">
         </div>
         
     </section>
 
     <section id="section-must" class="container-fluid" >
-        <img class="solve-img3" src="images/ellipses.png" alt="">
+        <img class="solve-img3" src="{% static 'images/ellipses.png' %}" alt="">
         <h1 class="must-heading">Books</h1>
         <h3 class="must-subheading">Choose your Class and start learning now</h3>
         <div class="must">
@@ -86,22 +52,22 @@
                             <h3 class="material__content--item-title">Maths</h3>
                             <div class="chips">
                                 <div class="chips__box" style="width: 14rem;">
-                                    <img class="chips__box--img" src="images/book7.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/book7.png' %}" alt="">
                                     <h3 class="chips__box--title">Ncert</h3>
                                     <h4 class="chips__box--sub">Start Solving Now</h4>
                                 </div>
                                 <div class="chips__box" style="width: 14rem;">
-                                    <img class="chips__box--img" src="images/book8.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/book8.png' %}" alt="">
                                     <h3 class="chips__box--title">EXEMPLAR</h3>
                                     <h4 class="chips__box--sub">Start Solving Now</h4>
                                 </div>
                                 <div class="chips__box" style="width: 14rem;">
-                                    <img class="chips__box--img" src="images/book9.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/book9.png' %}" alt="">
                                     <h3 class="chips__box--title">R.S. AGGARWAL</h3>
                                     <h4 class="chips__box--sub">Start Solving Now</h4>
                                 </div>
                                 <div class="chips__box" style="width: 14rem;">
-                                    <img class="chips__box--img" src="images/book10.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/book10.png' %}" alt="">
                                     <h3 class="chips__box--title">R.D. SHARMA</h3>
                                     <h4 class="chips__box--sub">Start Solving Now</h4>
                                 </div>
@@ -113,22 +79,22 @@
                             <h3 class="material__content--item-title">Science</h3>
                             <div class="chips">
                                 <div class="chips__box" style="width: 14rem;">
-                                    <img class="chips__box--img" src="images/book11.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/book11.png' %}" alt="">
                                     <h3 class="chips__box--title">Ncert</h3>
                                     <h4 class="chips__box--sub">Start Solving Now</h4>
                                 </div>
                                 <div class="chips__box" style="width: 14rem;">
-                                    <img class="chips__box--img" src="images/book12.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/book12.png' %}" alt="">
                                     <h3 class="chips__box--title">EXEMPLAR</h3>
                                     <h4 class="chips__box--sub">Start Solving Now</h4>
                                 </div>
                                 <div class="chips__box" style="width: 14rem;">
-                                    <img class="chips__box--img" src="images/book13.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/book13.png' %}" alt="">
                                     <h3 class="chips__box--title">R.S. AGGARWAL</h3>
                                     <h4 class="chips__box--sub">Start Solving Now</h4>
                                 </div>
                                 <div class="chips__box" style="width: 14rem;">
-                                    <img class="chips__box--img" src="images/book14.png" alt="">
+                                    <img class="chips__box--img" src="{% static 'images/book14.png' %}" alt="">
                                     <h3 class="chips__box--title">R.D. SHARMA</h3>
                                     <h4 class="chips__box--sub">Start Solving Now</h4>
                                 </div>
@@ -142,29 +108,29 @@
     </section>   
     
     <section class="container-fluid" id="section-ncert">
-        <img class="solve-img4" src="images/ellipses.png" alt="">
+        <img class="solve-img4" src="{% static 'images/ellipses.png' %}" alt="">
         <h1 class="ncert-heading">NCERT Books</h1>
         <div class="ncert">
             <h3 class="ncert__heading">Class 12</h3>
             <div class="ncert__content">
                 <div class="chips">
                     <div class="chips__box">
-                        <img class="chips__box--img" src="images/book15.png" alt="">
+                        <img class="chips__box--img" src="{% static 'images/book15.png' %}" alt="">
                         <h3 class="chips__box--title">PHYSICS</h3>
                         <h4 class="chips__box--sub">Start Solving Now</h4>
                     </div>
                     <div class="chips__box">
-                        <img class="chips__box--img" src="images/book16.png" alt="">
+                        <img class="chips__box--img" src="{% static 'images/book16.png' %}" alt="">
                         <h3 class="chips__box--title">CHEMISTRY</h3>
                         <h4 class="chips__box--sub">Start Solving Now</h4>
                     </div>
                     <div class="chips__box">
-                        <img class="chips__box--img" src="images/book17.png" alt="">
+                        <img class="chips__box--img" src="{% static 'images/book17.png' %}" alt="">
                         <h3 class="chips__box--title">BIOLOGY</h3>
                         <h4 class="chips__box--sub">Start Solving Now</h4>
                     </div>
                     <div class="chips__box">
-                        <img class="chips__box--img" src="images/book18.png" alt="">
+                        <img class="chips__box--img" src="{% static 'images/book18.png' %}" alt="">
                         <h3 class="chips__box--title">MATHS</h3>
                         <h4 class="chips__box--sub">Start Solving Now</h4>
                     </div>
@@ -176,22 +142,22 @@
             <div class="ncert__content">
                 <div class="chips">
                     <div class="chips__box">
-                        <img class="chips__box--img" src="images/book15.png" alt="">
+                        <img class="chips__box--img" src="{% static 'images/book15.png' %}" alt="">
                         <h3 class="chips__box--title">PHYSICS</h3>
                         <h4 class="chips__box--sub">Start Solving Now</h4>
                     </div>
                     <div class="chips__box">
-                        <img class="chips__box--img" src="images/book19.png" alt="">
+                        <img class="chips__box--img" src="{% static 'images/book19.png' %}" alt="">
                         <h3 class="chips__box--title">CHEMISTRY</h3>
                         <h4 class="chips__box--sub">Start Solving Now</h4>
                     </div>
                     <div class="chips__box">
-                        <img class="chips__box--img" src="images/book20.png" alt="">
+                        <img class="chips__box--img" src="{% static 'images/book20.png' %}" alt="">
                         <h3 class="chips__box--title">BIOLOGY</h3>
                         <h4 class="chips__box--sub">Start Solving Now</h4>
                     </div>
                     <div class="chips__box">
-                        <img class="chips__box--img" src="images/book21.png" alt="">
+                        <img class="chips__box--img" src="{% static 'images/book21.png' %}" alt="">
                         <h3 class="chips__box--title">MATHS</h3>
                         <h4 class="chips__box--sub">Start Solving Now</h4>
                     </div>
@@ -207,12 +173,12 @@
                 <h2 class="lower__box--heading">Class 10</h2>
                 
                 <div class="lower__box--content" style="width: 17.5rem;">
-                    <img class="lower__box--content--img" src="images/book4.png" alt="">
+                    <img class="lower__box--content--img" src="{% static 'images/book4.png' %}" alt="">
                     <h3 class="lower__box--content--title">SCIENCE</h3>
                     <h4 class="lower__box--content--sub">Start Solving Now</h4>
                 </div>
                 <div class="lower__box--content" style="width: 17.5rem;">
-                    <img class="lower__box--content--img" src="images/book22.png" alt="">
+                    <img class="lower__box--content--img" src="{% static 'images/book22.png' %}" alt="">
                     <h3 class="lower__box--content--title">MATHS</h3>
                     <h4 class="lower__box--content--sub">Start Solving Now</h4>
                 </div>
@@ -220,12 +186,12 @@
             <div class="lower__box">
                 <h2 class="lower__box--heading">Class 9</h2>
                 <div class="lower__box--content" style="width: 17.5rem;">
-                    <img class="lower__box--content--img" src="images/book11.png" alt="">
+                    <img class="lower__box--content--img" src="{% static 'images/book11.pn' %}g" alt="">
                     <h3 class="lower__box--content--title">SCIENCE</h3>
                     <h4 class="lower__box--content--sub">Start Solving Now</h4>
                 </div>
                 <div class="lower__box--content" style="width:17.5rem;">
-                    <img class="lower__box--content--img" src="images/book7.png" alt="">
+                    <img class="lower__box--content--img" src="{% static 'images/book7.png' %}" alt="">
                     <h3 class="lower__box--content--title">MATHS</h3>
                     <h4 class="lower__box--content--sub">Start Solving Now</h4>
                 </div>
@@ -238,12 +204,12 @@
             <div class="lower1__box">
                 <h3 class="lower1__box--heading">Class 9</h3>
                 <div class="lower1__box--content" style="width: 17.5rem;">
-                    <img class="lower1__box--content--img" src="images/book23.png" alt="">
+                    <img class="lower1__box--content--img" src="{% static 'images/book23.png' %}" alt="">
                     <h3 class="lower1__box--content--title">MATHS</h3>
                     <h4 class="lower1__box--content--sub">Start Solving Now</h4>
                 </div>
                 <div class="lower1__box--content" style="width: 17.5rem;margin-top:10rem;">
-                    <img class="lower1__box--content--img" src="images/book26.png" alt="">
+                    <img class="lower1__box--content--img" src="{% static 'images/book26.png' %}" alt="">
                     <h3 class="lower1__box--content--title">SCIENCE</h3>
                     <h4 class="lower1__box--content--sub">Start Solving Now</h4>
                 </div>
@@ -251,12 +217,12 @@
             <div class="lower1__box">
                 <h3 class="lower1__box--heading">Class 8</h3>
                 <div class="lower1__box--content" style="width: 17.5rem;">
-                    <img class="lower1__box--content--img" src="images/book24.png" alt="">
+                    <img class="lower1__box--content--img" src="{% static 'images/book24.png' %}" alt="">
                     <h3 class="lower1__box--content--title">MATHS</h3>
                     <h4 class="lower1__box--content--sub">Start Solving Now</h4>
                 </div>
                 <div class="lower1__box--content" style="width: 17.5rem;margin-top:10rem;">
-                    <img class="lower1__box--content--img" src="images/book27.png" alt="">
+                    <img class="lower1__box--content--img" src="{% static 'images/book27.png' %}" alt="">
                     <h3 class="lower1__box--content--title">SCIENCE</h3>
                     <h4 class="lower1__box--content--sub">Start Solving Now</h4>
                 </div>
@@ -264,12 +230,12 @@
             <div class="lower1__box">
                 <h3 class="lower1__box--heading">Class 7</h3>
                 <div class="lower1__box--content" style="width: 17.5rem;">
-                    <img class="lower1__box--content--img" src="images/book25.png" alt="">
+                    <img class="lower1__box--content--img" src="{% static 'images/book25.png' %}" alt="">
                     <h3 class="lower1__box--content--title">MATHS</h3>
                     <h4 class="lower1__box--content--sub">Start Solving Now</h4>
                 </div>
                 <div class="lower1__box--content" style="width: 17.5rem;margin-top:10rem;">
-                    <img class="lower1__box--content--img" src="images/book28.png" alt="">
+                    <img class="lower1__box--content--img" src="{% static 'images/book28.png' %}" alt="">
                     <h3 class="lower1__box--content--title">SCIENCE</h3>
                     <h4 class="lower1__box--content--sub">Start Solving Now</h4>
                 </div>
@@ -279,44 +245,44 @@
 
 
     <section id="section-sharma" class="container-fluid">
-        <img class="solve-img5" src="images/ellipses.png" alt="">
-        <img class="solve-img6" src="images/ellipses.png" alt="">
+        <img class="solve-img5" src="{% static 'images/ellipses.png' %}" alt="">
+        <img class="solve-img6" src="{% static 'images/ellipses.png' %}" alt="">
         <h2 class="sharma-heading">R.D. SHARMA</h2>
         <div class="sharma">
             <div class="sharma__box" style="width: 17.5rem;">
-                <img class="sharma__box--img" src="images/book29.png" alt="">
+                <img class="sharma__box--img" src="{% static 'images/book29.png' %}" alt="">
                 <h3 class="sharma__box--title">12TH</h3>
                 <h4 class="sharma__box--sub">Start Solving Now</h4>
             </div>
             <div class="sharma__box" style="width: 17.5rem;">
-                <img class="sharma__box--img" src="images/book1.png" alt="">
+                <img class="sharma__box--img" src="{% static 'images/book1.png' %}" alt="">
                 <h3 class="sharma__box--title">11TH</h3>
                 <h4 class="sharma__box--sub">Start Solving Now</h4>
             </div>
             <div class="sharma__box" style="width: 17.5rem;">
-                <img class="sharma__box--img" src="images/book2.png" alt="">
+                <img class="sharma__box--img" src="{% static 'images/book2.png' %}" alt="">
                 <h3 class="sharma__box--title">10TH</h3>
                 <h4 class="sharma__box--sub">Start Solving Now</h4>
             </div>
             <div class="sharma__box" style="width:17.5rem;">
-                <img class="sharma__box--img" src="images/book3.png" alt="">
+                <img class="sharma__box--img" src="{% static 'images/book3.png' %}" alt="">
                 <h3 class="sharma__box--title">9TH</h3>
                 <h4 class="sharma__box--sub">Start Solving Now</h4>
             </div>
         </div>
         <div class="sharma" style="grid-template-columns: repeat(3,1fr);">
             <div class="sharma__box" style="width: 17.5rem;">
-                <img class="sharma__box--img" src="images/book30.png" alt="">
+                <img class="sharma__box--img" src="{% static 'images/book30.png' %}" alt="">
                 <h3 class="sharma__box--title">8TH</h3>
                 <h4 class="sharma__box--sub">Start Solving Now</h4>
             </div>
             <div class="sharma__box" style="width: 17.5rem;">
-                <img class="sharma__box--img" src="images/book31.png" alt="">
+                <img class="sharma__box--img" src="{% static 'images/book31.png' %}" alt="">
                 <h3 class="sharma__box--title">7TH</h3>
                 <h4 class="sharma__box--sub">Start Solving Now</h4>
             </div>
             <div class="sharma__box sharma__last" style="width: 17.5rem;">
-                <img class="sharma__box--img" src="images/book32.png" alt="">
+                <img class="sharma__box--img" src="{% static 'images/book32.png' %}" alt="">
                 <h3 class="sharma__box--title">6TH</h3>
                 <h4 class="sharma__box--sub">Start Solving Now</h4>
             </div>
@@ -324,47 +290,47 @@
     </section>
 
     <section id="section-exam" class="container-fluid">
-        <img class="solve-img7" src="images/ellipses.png" alt="">
-        <img class="solve-img8" src="images/ellipses.png" alt="">
+        <img class="solve-img7" src="{% static 'images/ellipses.png' %}" alt="">
+        <img class="solve-img8" src="{% static 'images/ellipses.png' %}" alt="">
         <h1 class="exam-heading">Competetive Exams</h1>
         <div class="exam">
             <h2 class="exam__heading">JEE - MAINS & ADVANCED</h2>
             <div class="exam__content">
                 <div class="exams">
                     <div class="exams__box" style="width: 17.5rem;">
-                        <img class="exams__box--img" src="images/book33.png" alt="">
+                        <img class="exams__box--img" src="{% static 'images/book33.png' %}" alt="">
                         <h3 class="exams__box--title">K.C.SINHA</h3>
                         <h4 class="exams__box--sub">Start Solving Now</h4>
                     </div>
                     <div class="exams__box" style="width: 17.5rem;">
-                        <img class="exams__box--img" src="images/book34.png" alt="">
+                        <img class="exams__box--img" src="{% static 'images/book34.png' %}" alt="">
                         <h3 class="exams__box--title">R.D.SHARMA</h3>
                         <h4 class="exams__box--sub">Start Solving Now</h4>
                     </div>
                     <div class="exams__box" style="width: 17.5rem;">
-                        <img class="exams__box--img" src="images/book35.png" alt="">
+                        <img class="exams__box--img" src="{% static 'images/book35.png' %}" alt="">
                         <h3 class="exams__box--title">PRADEEPS'S</h3>
                         <h4 class="exams__box--sub">Start Solving Now</h4>
                     </div>
                     <div class="exams__box" style="width: 17.5rem;">
-                        <img class="exams__box--img" src="images/book36.png" alt="">
+                        <img class="exams__box--img" src="{% static 'images/book36.png' %}" alt="">
                         <h3 class="exams__box--title">CENGAGE</h3>
                         <h4 class="exams__box--sub">Start Solving Now</h4>
                     </div>
                 </div>
                 <div class="exams" style="grid-template-columns: repeat(3,1fr); width:68%">
                     <div class="exams__box" style="width: 17.5rem;">
-                        <img class="exams__box--img" src="images/book37.png" alt="">
+                        <img class="exams__box--img" src="{% static 'images/book37.png' %}" alt="">
                         <h3 class="exams__box--title">M.S.CHOUHAN</h3>
                         <h4 class="exams__box--sub">Start Solving Now</h4>
                     </div>
                     <div class="exams__box" style="width: 17.5rem;">
-                        <img class="exams__box--img" src="images/book38.png" alt="">
+                        <img class="exams__box--img" src="{% static 'images/book38.png' %}" alt="">
                         <h3 class="exams__box--title">H.C.VERMA</h3>
                         <h4 class="exams__box--sub">Start Solving Now</h4>
                     </div>
                     <div class="exams__box exams__last" style="width: 17.5rem;">
-                        <img class="exams__box--img" src="images/book39.png" alt="">
+                        <img class="exams__box--img" src="{% static 'images/book39.png' %}" alt="">
                         <h3 class="exams__box--title">P. BAHADUR</h3>
                         <h4 class="exams__box--sub">Start Solving Now</h4>
                     </div>
@@ -373,11 +339,11 @@
             <div class="year">
                 <h4 class="year__heading">Previous Year Question Papers Solved</h4>
                 <div class="year__content year__pink">
-                    <img class="year__content--img" style="transform:scale(1.1,1.2);" src="images/arora.png" alt="">
+                    <img class="year__content--img" style="transform:scale(1.1,1.2);" src="{% static 'images/arora.png' %}" alt="">
                     <h3 class="year__content--title">Book1</h3>
                 </div>
                 <div class="year__content year__blue">
-                    <img class="year__content--img" src="images/ncert.png" alt="">
+                    <img class="year__content--img" src="{% static 'images/ncert.png' %}" alt="">
                     <h3 class="year__content--title">Book2</h3>
                 </div>
             </div>
@@ -386,39 +352,39 @@
             <div class="exam__content">
                 <div class="exams">
                     <div class="exams__box" style="width: 17.5rem;">
-                        <img class="exams__box--img" src="images/book40.png" alt="">
+                        <img class="exams__box--img" src="{% static 'images/book40.png' %}" alt="">
                         <h3 class="exams__box--title">FINGERTIPS</h3>
                         <h4 class="exams__box--sub">Start Solving Now</h4>
                     </div>
                     <div class="exams__box" style="width: 17.5rem;">
-                        <img class="exams__box--img" src="images/book41.png" alt="">
+                        <img class="exams__box--img" src="{% static 'images/book41.png' %}" alt="">
                         <h3 class="exams__box--title">H.C.VERMA</h3>
                         <h4 class="exams__box--sub">Start Solving Now</h4>
                     </div>
                     <div class="exams__box" style="width: 17.5rem;">
-                        <img class="exams__box--img" src="images/book42.png" alt="">
+                        <img class="exams__box--img" src="{% static 'images/book42.png' %}" alt="">
                         <h3 class="exams__box--title">ERRORLESS</h3>
                         <h4 class="exams__box--sub">Start Solving Now</h4>
                     </div>
                     <div class="exams__box" style="width: 17.5rem;">
-                        <img class="exams__box--img" src="images/book43.png" alt="">
+                        <img class="exams__box--img" src="{% static 'images/book43.png' %}" alt="">
                         <h3 class="exams__box--title">P.BAHADUR</h3>
                         <h4 class="exams__box--sub">Start Solving Now</h4>
                     </div>
                 </div>
                 <div class="exams" style="grid-template-columns: repeat(3,1fr); width:68%">
                     <div class="exams__box" style="width: 17.5rem;">
-                        <img class="exams__box--img" src="images/book44.png" alt="">
+                        <img class="exams__box--img" src="{% static 'images/book44.png' %}" alt="">
                         <h3 class="exams__box--title">M.S.CEXEMPLAR</h3>
                         <h4 class="exams__box--sub">Start Solving Now</h4>
                     </div>
                     <div class="exams__box" style="width: 17.5rem;">
-                        <img class="exams__box--img" src="images/book45.png" alt="">
+                        <img class="exams__box--img" src="{% static 'images/book45.png' %}" alt="">
                         <h3 class="exams__box--title">M.S.CHOUHAN</h3>
                         <h4 class="exams__box--sub">Start Solving Now</h4>
                     </div>
                     <div class="exams__box exams__last"style="width: 17.5rem;">
-                        <img class="exams__box--img" src="images/book46.png" alt="">
+                        <img class="exams__box--img" src="{% static 'images/book46.png' %}" alt="">
                         <h3 class="exams__box--title">ERRORLESS</h3>
                         <h4 class="exams__box--sub">Start Solving Now</h4>
                     </div>
@@ -427,11 +393,11 @@
             <div class="year">
                 <h4 class="year__heading">Previous Year Question Papers Solved</h4>
                 <div class="year__content year__pink">
-                    <img class="year__content--img" style="transform:scale(1.1,1.2);" src="images/arora.png" alt="">
+                    <img class="year__content--img" style="transform:scale(1.1,1.2);" src="{% static 'images/arora.png' %}" alt="">
                     <h3 class="year__content--title">Book1</h3>
                 </div>
                 <div class="year__content year__blue">
-                    <img class="year__content--img" src="images/ncert.png" alt="">
+                    <img class="year__content--img" src="{% static 'images/ncert.png' %}" alt="">
                     <h3 class="year__content--title">Book2</h3>
                 </div>
             </div>
@@ -441,25 +407,25 @@
     <section id="section-live" class="container-fluid">
         <h1 class="live-heading">LIVE classes</h1>
         <div class="live">
-            <img class="live__img" src="images/live.png" alt="">
+            <img class="live__img" src="{% static 'images/live.png' %}" alt="">
             <div class="live__box">
                 <div class="live__box--content">
-                    <img class="live__box--content-img" src="images/global-network.png" alt="">
+                    <img class="live__box--content-img" src="{% static 'images/global-network.png' %}" alt="">
                     <h3 class="live__box--content-heading">Accessible everywhere</h3>
                     <h5 class="live__box--content-para">Access to quality education anytime, anywhere</h5>
                 </div>
                 <div class="live__box--content">
-                    <img class="live__box--content-img" src="images/coaching.png" alt="">
+                    <img class="live__box--content-img" src="{% static 'images/coaching.png' %}" alt="">
                     <h3 class="live__box--content-heading">Expert Teachers</h3>
                     <h5 class="live__box--content-para">Unlimited access to video solutions</h5>
                 </div>
                 <div class="live__box--content">
-                    <img class="live__box--content-img" src="images/presentation.png" alt="">
+                    <img class="live__box--content-img" src="{% static 'images/presentation.png' %}" alt="">
                     <h3 class="live__box--content-heading">Interactive Sessions</h3>
                     <h5 class="live__box--content-para">Small groups for maximum student - teacher interaction</h5>
                 </div>
             </div>
-            <img class="ellipses4" src="images/ellipses.png" alt="">
+            <img class="ellipses4" src="{% static 'images/ellipses.png' %}" alt="">
         </div>
         
         <h2 class="live-free">FIRST CLASS FREE!</h2>
@@ -471,17 +437,17 @@
         <div class="video">
             <div class="video__box">
                 <div class="video__box--content">
-                    <img class="video__box--content-img" src="images/chronometer.png" alt="">
+                    <img class="video__box--content-img" src="{% static 'images/chronometer.png' %}" alt="">
                     <h3 class="video__box--content-heading">Save hours of scrolling pages</h3>
                 </div>
                 <div class="video__box--content">
-                    <img class="video__box--content-img" src="images/bulb.png" alt="">
+                    <img class="video__box--content-img" src="{% static 'images/bulb.png' %}" alt="">
                     <h3 class="video__box--content-heading">Clarify your concepts instantly</h3>
                     <p class="video__box--content-para">Find multilingual video explainations to frequently confused concepts from every subject</p>
                 </div>
                 <button class="video__box--btn" href="">Start learning now</button>
             </div>
-            <img class="video__img" src="images/tablet.png" alt="">
+            <img class="video__img" src="{% static 'images/tablet.png' %}" alt="">
         </div>
     </section>
 
@@ -489,7 +455,7 @@
 
         <section style="font-family: 'Roboto', sans-serif;" class="footer-sec1">
 
-            <img style="transform:scale(.8)" src="images/favicon.png" alt="Coursify" height="80px">
+            <img style="transform:scale(.8)" src="{% static 'images/favicon.png' %}" alt="Coursify" height="80px">
 
             <section class="flex footer-sec2 contact">
 
@@ -525,13 +491,13 @@
 
                   <span class="flex">
 
-                      <a class="m-2" href="#"><img width="29" height="29" src="images/facebook.png" alt=""></a>
+                      <a class="m-2" href="#"><img width="29" height="29" src="{% static 'images/facebook.png' %}" alt=""></a>
 
-                      <a class="m-2" href="#"><img width="29" height="29" src="images/instagram.png" alt=""></a>
+                      <a class="m-2" href="#"><img width="29" height="29" src="{% static 'images/instagram.png' %}" alt=""></a>
 
-                      <a class="m-2" href="#"><img width="29" height="29" src="images/youtube.png" alt=""></a>
+                      <a class="m-2" href="#"><img width="29" height="29" src="{% static 'images/youtube.png' %}" alt=""></a>
 
-                      <a class="m-2" href="#"><img width="29" height="29" src="images/linkedin.png" alt=""></a>
+                      <a class="m-2" href="#"><img width="29" height="29" src="{% static 'images/linkedin.png' %}" alt=""></a>
 
                   </span>
 
@@ -714,9 +680,4 @@
 </footer>
 
 </div>
-    <script src="main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-</body>
-</html>
+{% endblock %}

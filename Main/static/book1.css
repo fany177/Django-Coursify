@@ -1,0 +1,729 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(85, 83, 83);
+}
+
+
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family:'Poppins', sans-serif;
+}
+
+h1
+{
+    font-size: 35px;
+}
+
+.wrap
+{
+    flex-wrap: wrap;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+span
+{
+    font-weight: bolder;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.flex-column
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.slide img
+{
+    height: 100px;
+    width: 100px;    
+}
+
+.book
+{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mytiles
+{
+    border: 1px solid rgb(229 229 229);
+    border-radius:0px 0px 15px 15px;
+    box-shadow: 0px 3px 6px rgb(229 229 229);
+}
+
+.card
+{
+    border-radius: 15px;
+    box-shadow: 0px 3px 6px rgb(187, 185, 185);
+}
+
+.underline
+{
+        width: 80%;
+        height: 4px;
+        border-radius: 25px;
+        background-color: rgb(214,11,60);
+        margin-top: 0.5rem;
+}
+
+.header h1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.red
+{
+    color:  rgb(214,11,60);
+}
+
+ul
+{
+    list-style: none;
+}
+
+.view
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    width: 100px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 6px rgb(187, 185, 185);
+}
+
+.view span
+{
+    color: rgb(214,11,60);
+    border-bottom: 2px solid rgb(214,11,60);
+}
+
+.blue
+{
+    color:rgb(30,65,144);
+}
+
+.flex
+{
+    display: flex;
+}
+
+.button
+{
+    color: white;
+    background-color: rgb(214,11,60);
+    padding: 10px 25px;
+    border-radius: 15px;
+    margin: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+ul
+{
+    list-style: none;
+}
+
+.landing
+{
+    width: 100vw;
+}
+
+nav
+{
+width: 98%;
+display: flex;
+justify-content: space-between;
+}
+
+nav ul
+{
+width: 40%;
+display: flex;
+justify-content: space-around;
+font-size: 20px;
+align-items: center;
+}
+
+.main
+{
+    width: 90%;
+    margin: 5rem auto 2rem auto;
+    padding: 5rem 2rem;
+}
+
+.flex-center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-around
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.head
+{
+    margin-bottom: 5rem;
+}
+
+.flex-between
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-div
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+margin: 2rem;
+}
+
+.main-div ul
+{
+    width: 100%;
+}
+
+.main-div li
+{
+    width: 100%;
+}
+
+.main-div li span
+{
+    padding: 0.5rem;
+}
+
+.main-div a
+{
+    margin:0.5rem;
+}
+
+.main-div img
+{
+    height: 73px;
+    width: 175px;
+}
+
+.other h1   
+{
+    margin: 5rem 0rem 2rem 0rem;
+}
+
+.other-first
+{
+    width: 90%;
+    margin: 2rem;
+}
+
+.book
+{
+    overflow: hidden;
+}
+
+.maths
+{
+    box-shadow: 0px 3px 6px rgb(187, 185, 185);
+    border-radius: 0px 0px 15px 15px;
+    margin: 1rem;
+}
+
+.maths img
+{
+    height: 270px;
+    width: 258px;
+}
+
+.maths a
+{
+    background-color: rgb(214,11,60);
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+
+.micro
+{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.left
+{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left h2
+{
+    margin-bottom: 1rem;
+}
+
+.left p
+{
+    width: 60%;
+    margin: 1rem;
+    text-align: center;
+}
+
+.left img
+{
+    width: 40px;
+    height: auto;
+    margin:0rem 1rem;
+}
+
+.right
+{
+    width: 50%;
+}
+
+.right img
+{
+    width: 85%;
+    height: auto;
+}
+
+.avail-main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.avail
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.right-block
+{
+    margin: 1rem;
+}
+
+.right-sec
+{
+    width: 78%;
+}
+
+.flex-combo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-sec section
+{
+    margin: 0.5rem;
+}
+
+.right-sec img
+{
+    width: 50px;
+    height: 50px;
+    margin: 1rem;
+}
+
+.accessible
+    {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;   
+    }
+
+    .accessible h1
+    {
+        margin: 2rem 0rem;
+    }
+
+    .access-div
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .access-div svg
+    {
+        margin: 1rem;
+    }
+
+    .access-div ul
+    {
+        width:50%;
+    }
+
+    .access-div ul li
+    {
+        margin: 1rem;
+        width: 60%;
+    }
+
+    .access-div ul li h2
+    {
+        margin:1rem 0rem;
+    }
+
+    .access-div-svg
+    {
+        height: auto;
+        width: 50%;
+    }
+
+    .works
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .works h1
+    {
+        margin: 2rem 0rem;
+    }
+
+    .works svg
+    {
+        width: 90%;
+        height: auto;
+    }
+
+    .live
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .live-main
+    {
+        width: 90%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .live-left
+    {
+        width: 40%;
+        height: auto;
+    }
+
+    .live-right img
+    {
+        width: 50px;
+        height: 50px;
+        margin: 1rem;
+    }
+
+    .vcenter
+    {
+        align-items: center;
+    }
+
+    .live-main h2
+    {
+        margin: 0.5rem 0rem;
+    }
+
+    .live-main section
+    {
+        margin: 0.5rem;
+    }
+
+    .live h1
+    {
+        margin: 2rem;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    .live a
+    {
+        margin: 0rem 0rem 5rem 0rem;
+    }
+
+    .myfooter
+{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1rem 0rem;
+}
+
+.myfooter a
+{
+    color: #a1a1a1;
+    margin: 5px 0px;
+}
+
+.footer-sec1
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;   
+}
+.footer-sec2
+{
+    display: flex;  
+    flex-direction: column;   
+}
+
+.contact span
+{
+    align-items: center;
+    margin: 0.5rem;    
+}
+
+.contact h2
+{
+    margin: 0.5rem;
+}
+
+.contact a
+{
+    margin: 0.5rem;
+}
+
+@media only screen and (max-width: 600px)
+{
+    nav
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    nav ul
+    {
+        width: 90%;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav ul li
+    {
+        margin: 10px;
+    }
+
+    .main
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main h1
+    {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .main-div
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .main-div ul
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-div ul li
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-div ul li div
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-div ul li div a
+    {
+        margin: 1rem;
+    }
+
+    .other
+    {
+        width: 100%;
+    }
+
+    h1
+    {
+        font-size: 20px;
+        width: 70%;
+        text-align: center;
+    }
+
+    .book
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slide
+    {
+        display: none;
+    }
+
+    .maths
+    {
+        margin: 1rem;
+        border-radius: 0px 0px 15px 15px;
+        overflow: hidden;
+    }
+    .micro
+    {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left
+    {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .right
+    {
+        display: flex;
+        width: 90%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
+    .other h1 {
+        margin: 1rem 0rem 1rem 0rem;
+    }
+
+    .avail
+    {
+        flex-direction: column;
+    }
+
+    .avail-sec
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .avail-sec img
+    {
+        width: 90%;
+        height: auto;
+    }
+
+    .access-div
+    {
+        flex-direction: column-reverse;
+    }
+    .access-div ul
+    {
+        width: 100%;
+    }
+    .access-div-svg
+    {
+        width: 100%;
+        height: auto;
+    }
+    .access-div ul li {
+        margin: 1rem;
+        width: 100%;
+    }
+
+    .live-main
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .live-main img
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .live-right img
+    {
+        height: 50px;
+        width: 50px;
+    }
+    .myfooter
+    {
+        flex-wrap: wrap;
+    }
+}

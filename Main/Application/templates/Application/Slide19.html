@@ -1,63 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+{% extends 'Application/base.html' %}
+{% load static %}
 
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-</head>
-<body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo">
-        <a class="navbar-brand" href="#"><img src="images/favicon.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Live classes <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Video Library</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Course</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Book</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Board</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
+{% block content %}
+<link rel="stylesheet" href="{% static 'main.css' %}">
     <section id="section-embark" class="container-fluid">
-        <img class="embark-img" src="images/ellipses.png" alt="">
+        <img class="embark-img" src="{% static 'images/ellipses.png' %}" alt="">
         <div class="embark">
             <div class="embark__picture">
-                <img class="embark__picture--img" src="images/fly.png" alt="">
+                <img class="embark__picture--img" src="{% static 'images/fly.png' %}" alt="">
             </div>
             <div class="embark__box">
                 <h2 class="embark__box--title"><span>Embark on the Best Courses</span> With Us.</h2>
                 <div class="embark__box--content">
-                    <img class="embark__box--content-img" src="images/glow.png" alt="">
+                    <img class="embark__box--content-img" src="{% static 'images/glow.png' %}" alt="">
                     <h3 class="embark__box--content-heading">Courses curated for your Goals</h3>
                     <h5 class="embark__box--content-para">Learn from the best and crack the exams of your dream!</h5>
                 </div>
                 <div class="embark__box--content">
-                    <img class="embark__box--content-img" src="images/magnifying-glass.png" alt="">
+                    <img class="embark__box--content-img" src="{% static 'images/magnifying-glass.png' %}" alt="">
                     <h3 class="embark__box--content-heading">Find the Right Course</h3>
                     <h5 class="embark__box--content-para">prepare for your goals and shine more than others</h5>
                 </div>
                 <div class="embark__box--content">
-                    <img class="embark__box--content-img" src="images/trophy.png" alt="">
+                    <img class="embark__box--content-img" src="{% static 'images/trophy.png' %}" alt="">
                     <h3 class="embark__box--content-heading">Contains all the ingredients of success</h3>
                     <h5 class="embark__box--content-para">Best Concept Explanation to Question Solving to Doubt Clarity</h5>
                 </div>
@@ -67,8 +32,8 @@
     </section>
 
     <section id="section-jee" class="container-fluid" >
-        <img class="jee-img1" src="images/ellipses.png" alt="">
-        <img class="jee-img2" src="images/ellipses.png" alt="">
+        <img class="jee-img1" src="{% static 'images/ellipses.png' %}" alt="">
+        <img class="jee-img2" src="{% static 'images/ellipses.png' %}" alt="">
         <div class="jee">
             <div class="jee__names">
                 <h3 class="jee__names--heading">Choose your Course</h3>
@@ -83,19 +48,19 @@
             <div class="jee__content">
                 <h2 class="jee__content--heading">JEE MAIN <span>Prep Course</span></h2>
                 <div class="jee__content--box">
-                    <img class="jee__content--box-img" src="images/pencil.png" alt="">
+                    <img class="jee__content--box-img" src="{% static 'images/pencil.png' %}" alt="">
                     <h4 class="jee__content--box-heading">Crack the Exam of your Dreams</h4>
                     <h5 class="jee__content--box-para">with such a huge competition, improve your score and your rank with us!</h5>
                 </div>
                 <div class="jee__build">
                     <div class="row">
                         <div class="jee__build--box col-lg-6 col-md-12">
-                            <img class="jee__build--box-img" src="images/build.png" alt="">
+                            <img class="jee__build--box-img" src="{% static 'images/build.png' %}" alt="">
                             <h4 class="jee__build--box-heading">Build your Future</h4>
                             <h5 class="jee__build--box-para">These exams will build your future</h5>
                         </div>
                         <div class="jee__build--box col-lg-6 col-md-12">
-                            <img class="jee__build--box-img" src="images/medal.png" alt="">
+                            <img class="jee__build--box-img" src="{% static 'images/medal.png' %}" alt="">
                             <h4 class="jee__build--box-heading">Become the Best</h4>
                             <h5 class="jee__build--box-para">Prepare for your goals and shine more than</h5>
                         </div>
@@ -121,20 +86,20 @@
                 </div>
 
                 <div class="reading">
-                    <img class="reading__img" src="images/reading.png" alt="">
+                    <img class="reading__img" src="{% static 'images/reading.png' %}" alt="">
                     <div class="reading__content">
                         <div class="reading__content--sub">
-                            <img class="reading__content--sub-img" src="images/tick.png" alt="">  
+                            <img class="reading__content--sub-img" src="{% static 'images/tick.png' %}" alt="">  
                             <h3 class="reading__content--sub-title">Course curated for your Goals  </h3> 
                             <h5 class="reading__content--sub-para">Learn from the best and crack the exams of your dreams!</h5>
                         </div>
                         <div class="reading__content--sub">
-                            <img class="reading__content--sub-img" src="images/tick.png" alt="">  
+                            <img class="reading__content--sub-img" src="{% static 'images/tick.png' %}" alt="">  
                             <h3 class="reading__content--sub-title">Know what to study </h3> 
                             <h5 class="reading__content--sub-para">The course gives you the complete study package</h5>
                         </div>
                         <div class="reading__content--sub">
-                            <img class="reading__content--sub-img" src="images/tick.png" alt="">  
+                            <img class="reading__content--sub-img" src="{% static 'images/tick.png' %}" alt="">  
                             <h3 class="reading__content--sub-title">From start to end </h3> 
                             <h5 class="reading__content--sub-para">Starting from basic, and ending an advanced concepts</h5>
                         </div>
@@ -147,7 +112,7 @@
                     <div class="courses__content">
                         <div class="courses__content--box">
                             <div class="courses__content--box-picture">
-                                <img class="courses__content--box-picture-img" src="images/bulb1.png" alt="">
+                                <img class="courses__content--box-picture-img" src="{% static 'images/bulb1.png' %}" alt="">
                             </div>
                             <h2 class="courses__content--box-heading">All Concepts Covered</h2>
                             <h3 class="courses__content--box-sub">2000+ Concepts Videos</h3>
@@ -156,7 +121,7 @@
                         </div>
                         <div class="courses__content--box">
                             <div class="courses__content--box-picture">
-                                <img class="courses__content--box-picture-img" src="images/test.png" alt="">
+                                <img class="courses__content--box-picture-img" src="{% static 'images/test.png' %}" alt="">
                             </div>
                             <h2 class="courses__content--box-heading">Tests to help You Prepare</h2>
                             <h3 class="courses__content--box-sub">100+ Tests</h3>
@@ -164,7 +129,7 @@
                         </div>
                         <div class="courses__content--box">
                             <div class="courses__content--box-picture">
-                                <img class="courses__content--box-picture-img" src="images/bulb1.png" alt="">
+                                <img class="courses__content--box-picture-img" src="{% static 'images/tutor.png' %}" alt="">
                             </div>
                             <h2 class="courses__content--box-heading">Weekly Contact With Tutor</h2>
                             <h3 class="courses__content--box-sub">Clarify your Doubts</h3>
@@ -182,7 +147,7 @@
                             <h5 class="best__content--box-sub">Details</h5>
                         </div>
                         <div class="best__content--box">
-                            <div class="best__content--box-img"></div>
+                            <div class="best__content--box-img""></div>
                             <h4 class="best__content--box-heading">Teacher Name</h4>
                             <h5 class="best__content--box-sub">Details</h5>
                         </div>
@@ -209,16 +174,16 @@
     </section>
 
     <section id="section-need" class="container-fluid">
-        <img class="jee-img3" src="images/ellipses.png" alt="">
+        <img class="jee-img3" src="{% static 'images/ellipses.png' %}" alt="">
         <h1 class="need-heading">Course that you might Need...</h1>
-        <div class="need">
+        <div class="need" style="position: relative;">
             <dir class="need__content">
                 <button class="need__content--back"><</button>
                 <div class="chips">
                     <div class="chips__box">
                         <div class="chips__box--item">
                             <div class="chips__box--item-img chips__box--item-pink">
-                                <img class="chips__box--item-img-pic" src="images/pradeep.png" alt="">
+                                <img class="chips__box--item-img-pic" src="{% static 'images/pradeep.png' %}" alt="">
                             </div>
                             <h4 class="chips__box--item-title">JEE Advanced</h4>
                             <h5 class="chips__box--item-subtitle">2000+ concept Video</h5>
@@ -227,7 +192,16 @@
                         </div>
                         <div class="chips__box--item">
                             <div class="chips__box--item-img chips__box--item-green">
-                                <img class="chips__box--item-img-pic" src="images/pradeep.png" alt="">
+                                <img class="chips__box--item-img-pic" src="{% static 'images/pradeep.png' %}" alt="">
+                            </div>
+                            <h4 class="chips__box--item-title">JEE Advanced</h4>
+                            <h5 class="chips__box--item-subtitle">2000+ concept Video</h5>
+                            <h5 class="chips__box--item-subtitle" style="margin-bottom:5rem">300+ Question</h5>
+                            <button class="chips__box--item-btn">Join the Course Now</button>
+                        </div>
+                        <div class="chips__box--item">
+                            <div class="chips__box--item-img chips__box--item-pink">
+                                <img class="chips__box--item-img-pic" src="{% static 'images/pradeep.png' %}" alt="">
                             </div>
                             <h4 class="chips__box--item-title">JEE Advanced</h4>
                             <h5 class="chips__box--item-subtitle">2000+ concept Video</h5>
@@ -236,16 +210,7 @@
                         </div>
                         <div class="chips__box--item">
                             <div class="chips__box--item-img chips__box--item-green">
-                                <img class="chips__box--item-img-pic" src="images/pradeep.png" alt="">
-                            </div>
-                            <h4 class="chips__box--item-title">JEE Advanced</h4>
-                            <h5 class="chips__box--item-subtitle">2000+ concept Video</h5>
-                            <h5 class="chips__box--item-subtitle" style="margin-bottom:5rem">300+ Question</h5>
-                            <button class="chips__box--item-btn">Join the Course Now</button>
-                        </div>
-                        <div class="chips__box--item">
-                            <div class="chips__box--item-img chips__box--item-green">
-                                <img class="chips__box--item-img-pic" src="images/pradeep.png" alt="">
+                                <img class="chips__box--item-img-pic" src="{% static 'images/pradeep.png' %}" alt="">
                             </div>
                             <h4 class="chips__box--item-title">JEE Advanced</h4>
                             <h5 class="chips__box--item-subtitle">2000+ concept Video</h5>
@@ -260,22 +225,22 @@
     </section>
 
     <section id="section-video" class="container-fluid">
-        <img class="jee-img4" src="images/ellipses.png" alt="">
+        <img class="jee-img4" src="{% static 'images/ellipses.png' %}" alt="">
         <h1 class="video-heading">Microconcept videos</h1>
         <div class="video">
             <div class="video__box">
                 <div class="video__box--content">
-                    <img class="video__box--content-img" src="images/chronometer.png" alt="">
+                    <img class="video__box--content-img" src="{% static 'images/chronometer.png' %}" alt="">
                     <h3 class="video__box--content-heading">Save hours of scrolling pages</h3>
                 </div>
                 <div class="video__box--content">
-                    <img class="video__box--content-img" src="images/bulb.png" alt="">
+                    <img class="video__box--content-img" src="{% static 'images/bulb.png' %}" alt="">
                     <h3 class="video__box--content-heading">Clarify your concepts instantly</h3>
                     <p class="video__box--content-para">Find multilingual video explainations to frequently confused concepts from every subject</p>
                 </div>
                 <button class="video__box--btn" href="">Start learning now</button>
             </div>
-            <img class="video__img" src="images/tablet.png" alt="">
+            <img class="video__img" src="{% static 'images/tablet.png' %}" alt="">
         </div>
     </section>
 
@@ -284,47 +249,47 @@
         <div class="doubts">
             <div class="doubts__box">
                 <div class="doubts__box--content">
-                    <img class="doubts__box--content-img" src="images/global-network.png" alt="">
+                    <img class="doubts__box--content-img" src="{% static 'images/global-network.png' %}" alt="">
                     <h3 class="doubts__box--content-heading">Accessible everywhere</h3>
                     <p class="doubts__box--content-para">Access to quality educations anytime, anywhere</p>
                 </div>
                 <div class="doubts__box--content">
-                    <img class="doubts__box--content-img" src="images/presentation.png" alt="">
+                    <img class="doubts__box--content-img" src="{% static 'images/presentation.png' %}" alt="">
                     <h3 class="doubts__box--content-heading">1 million+ videos</h3>
                     <p class="doubts__box--content-para">Unlimited access to video solutions</p>
                 </div>
             </div>
 
-            <img class="doubts__img" src="images/computer.png" alt="">
+            <img class="doubts__img" src="{% static 'images/computer.png' %}" alt="">
             
             <div class="doubts__work">
                 <h3 class="doubts__work--heading">How it works?</h3>
                 <div class="doubts__work--img">
                     <div class="doubts__work--img-item1">
                         <h4 class="doubts__work--img-item1-heading">Have a doubt?</h4>
-                        <img class="doubts__work--img-item1-image" src="images/doubt.png" alt="">
+                        <img class="doubts__work--img-item1-image" src="{% static 'images/doubt.png' %}" alt="">
                         <h5 class="number-circle">1</h5>
                     </div>
                     
-                    <img class="connect" src="images/connect.png" alt="">
+                    <img class="connect" src="{% static 'images/connect.png' %}" alt="">
                     
                     <div class="doubts__work--img-item2">
                         <div class="doubts__work--img-item2-image1">   
-                            <img class="keyboard" src="images/keyboard.png" alt="">
+                            <img class="keyboard" src="{% static 'images/keyboard.png' %}" alt="">
                             <h3 class="keyboard-text">Type the question</h3>
                         </div>
                         <h4 class="doubts__work--img-item2-text">OR</h4>
                         <div class="doubts__work--img-item2-image2">
-                            <img class="upload" src="images/upload.png" alt="">
+                            <img class="upload" src="{% static 'images/upload.png' %}" alt="">
                             <h3 class="upload-text">Upload image</h3>
                         </div>
                         <h5 class="number-circle">2</h5>
                     </div>
                     
-                    <img class="connect" src="images/connect.png" alt="">
+                    <img class="connect" src="{% static 'images/connect.png' %}" alt="">
 
                     <div class="doubts__work--img-item3">
-                        <img class="work" src="images/work.png" alt="">
+                        <img class="work" src="{% static 'images/work.png' %}" alt="">
                         <h3 class="work-text">Type the question</h3>
                         <h5 class="number-circle">3</h5>
                     </div>
@@ -332,32 +297,32 @@
                 </div>
             </div>
         </div>
-        <img class="doubt-ellipse" src="images/ellipses.png" alt="">
+        <img class="doubt-ellipse" src="{% static 'images/ellipses.png' %}" alt="">
         <button class="doubt-btn">Clarify your doubts now!</button>
     </section>
 
     <section id="section-live" class="container-fluid">
         <h1 class="live-heading">LIVE classes</h1>
         <div class="live">
-            <img class="live__img" src="images/live.png" alt="">
+            <img class="live__img" src="{% static 'images/live.png' %}" alt="">
             <div class="live__box">
                 <div class="live__box--content">
-                    <img class="live__box--content-img" src="images/global-network.png" alt="">
+                    <img class="live__box--content-img" src="{% static 'images/global-network.png' %}" alt="">
                     <h3 class="live__box--content-heading">Accessible everywhere</h3>
                     <h5 class="live__box--content-para">Access to quality education anytime, anywhere</h5>
                 </div>
                 <div class="live__box--content">
-                    <img class="live__box--content-img" src="images/coaching.png" alt="">
+                    <img class="live__box--content-img" src="{% static 'images/coaching.png' %}" alt="">
                     <h3 class="live__box--content-heading">Expert Teachers</h3>
                     <h5 class="live__box--content-para">Unlimited access to video solutions</h5>
                 </div>
                 <div class="live__box--content">
-                    <img class="live__box--content-img" src="images/presentation.png" alt="">
+                    <img class="live__box--content-img" src="{% static 'images/presentation.png' %}" alt="">
                     <h3 class="live__box--content-heading">Interactive Sessions</h3>
                     <h5 class="live__box--content-para">Small groups for maximum student - teacher interaction</h5>
                 </div>
             </div>
-            <img class="jee-img5" src="images/ellipses.png" alt="">
+            <img class="jee-img5" src="{% static 'images/ellipses.png' %}" alt="">
         </div>
         
         <h2 class="live-free">FIRST CLASS FREE!</h2>
@@ -369,7 +334,7 @@
 
         <section style="font-family: 'Roboto', sans-serif;" class="footer-sec1">
 
-            <img style="transform:scale(.8)" src="images/favicon.png" alt="Coursify" height="80px">
+            <img style="transform:scale(.8)" src="{% static 'images/favicon.png' %}" alt="Coursify" height="80px">
 
             <section class="flex footer-sec2 contact">
 
@@ -405,13 +370,13 @@
 
                   <span class="flex">
 
-                      <a class="m-2" href="#"><img width="29" height="29" src="images/facebook.png" alt=""></a>
+                      <a class="m-2" href="#"><img width="29" height="29" src="{% static 'images/facebook.png' %}" alt=""></a>
 
-                      <a class="m-2" href="#"><img width="29" height="29" src="images/instagram.png" alt=""></a>
+                      <a class="m-2" href="#"><img width="29" height="29" src="{% static 'images/instagram.png' %}" alt=""></a>
 
-                      <a class="m-2" href="#"><img width="29" height="29" src="images/youtube.png" alt=""></a>
+                      <a class="m-2" href="#"><img width="29" height="29" src="{% static 'images/youtube.png' %}" alt=""></a>
 
-                      <a class="m-2" href="#"><img width="29" height="29" src="images/linkedin.png" alt=""></a>
+                      <a class="m-2" href="#"><img width="29" height="29" src="{% static 'images/linkedin.png' %}" alt=""></a>
 
                   </span>
 
@@ -594,11 +559,4 @@
 </footer>
 
 </div>
-
-
-    <script src="main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-</body>
-</html>
+ {% endblock %}
