@@ -10,77 +10,130 @@
                         Choose your goal
                     </h1>
                     <section class="border goalsection" >
-                        <section class="border goalsection" >
-                        <a id="vlink1" href="{% url 'boardexams' %}" class="mylink text-center px-5 py-2 border-bottom" style="color: #1E4190;">Board Exams</a>
-                        <a href="{% url 'schoolexams' %}" id="vlink2" class="mylink text-center px-5 py-2 border-bottom" style="color: white;background-color: #DB0C3E;"">School Exams</a>
+                        <a href="{% url 'boardexams' %}" id="vlink1" class="mylink text-center px-5 py-2 border-bottom" style="color: #1E4190;">Board Exams</a>
+                        <a href="{% url 'schoolexams' %}" id="vlink2" class="mylink text-center px-5 py-2 border-bottom" style="color: #1E4190;">School Exams</a>
                         <a href="{% url 'jeemain' %}" id="vlink3" class="mylink text-center px-5 py-2 border-bottom" style="color: #1E4190;">JEE-Mains</a>
-                        <a href="{% url 'jeeadvance' %}"  id="vlink4" class="mylink text-center px-5 py-2 border-bottom" style="color: #1E4190;">JEE-Advaced</a>
+                        <a href="{% url 'jeeadvance' %}" id="vlink4" class="mylink text-center px-5 py-2 border-bottom" style="color: white;background-color: #DB0C3E;">JEE-Advaced</a>
                         <a href="{% url 'neet' %}" id="vlink5" class="mylink text-center px-5 py-2 border-bottom" style="color: #1E4190;">NEET</a>
                         <a href="{% url 'previousyear' %}"" id="vlink6" class="mylink text-center py-2" style="color: #1E4190;">Previous Year Qs</a>
                     </section>
-                    </section>
                 </section>
                 <div class="py-1 show">
-            <section class="mybox border border-radius-15" id="schoolexams">
-                <h1 style="font-family: 'Poppins', sans-serif;" class="text-center font-weight-bold d-flex flex-column my-3 mb-5 my-5"><span class="mb-2">School Exams</span><span style="width: 15%;margin: auto;height:4px;background: #DB0C3E;border-radius: 50px;"></span>
-                    </h1>
-                    <ul class="list-style-none">
-                        <li class="d-flex align-items-center my-3" style="width: 100%;">
-                            <h3 class="font-weight-bold">Class 12</h3>
-                            <section style="width: 100%;" class="d-flex justify-content-around flex-wrap align-items-center">
-                                <a class="m-1" href="#"><img height="120" width="180" src="{% static 'images/orangemaths.png' %}" alt=""></a>
-                                <a  class="m-1" href="#"><img height="120" width="180" src="{% static 'images/pinkphysics.png' %}" alt=""></a>
-                                <a  class="m-1" href="#"><img height="120" width="180" src="{% static 'images/bluechemistry.png' %}" alt=""></a>
-                                <a  class="m-1" href="#"><img height="120" width="180" src="{% static 'images/orangebiology.png' %}" alt=""></a>
-                            </section>
+<section class="mybox border border-radius-15" id="jeeadvanced">
+                <h1 style="font-family: 'Poppins', sans-serif;" class="text-center font-weight-bold d-flex flex-column my-5"><span class="mb-2">JEE-Advanced</span><span style="width: 15%;margin: auto;height:4px;background: #DB0C3E;border-radius: 50px;"></span>
+                </h1>
+                <ul class="list-style-none">
+                    <li class="d-flex align-items-center my-2" style="width: 100%;">
+                        <h3 style="width: 10%;" class="text-center font-weight-bold heading">Maths</h3>
+                        <section style="width: 100%;" class="d-flex justify-content-around align-items-center">
+                            <a href="#"><img height="120" width="180" src="{% static 'images/cengage1.png' %}" alt=""></a>
+                            <a href="#" style="height: 120; width: 180;" class="d-flex justify-content-center align-items-center">
+                                <img height="120" width="180" src="{% static 'images/MaskGrouporange.png' %}" alt=""  style="position: relative;">
+                                <img src="{% static 'images/nc.png' %}" height="35px" alt="" style="position: absolute;">
+                            </a>
+                            <a href="#" style="height: 120; width: 180;" class="d-flex justify-content-center align-items-center">
+                                <img height="120" width="180" src="{% static 'images/MaskGrouporange.png' %}" alt=""  style="position: relative;">
+                                <img src="{% static 'images/rdsharma.png' %}" height="35px" alt="" style="position: absolute;">
+                            </a>
+                            <a href="#" style="height: 120; width: 180;" class="d-flex justify-content-center align-items-center">
+                                <img height="120" width="180" src="{% static 'images/MaskGrouporange.png' %}" alt=""  style="position: relative;">
+                                <img src="{% static 'images/kcsinha.png' %}" height="35px" alt="" style="position: absolute;">
+                            </a>
+                            <a style="height: 120; width: 180;text-decoration: none;" class="d-flex justify-content-center align-items-center border px-2 py-5 border-radius-15" href=""><span class="font-weight-bold" style="color: #DB0C3E; border-bottom:2px solid  #DB0C3E;">View All</span></a>
+                        </section>
+                    </li>
+                    <li class="d-flex align-items-center my-2" style="width: 100%;">
+                        <h3 style="width: 10%;" class="text-center font-weight-bold heading">Physics</h3>
+                        <section style="width: 100%;" class="d-flex justify-content-around align-items-center">
+                            <a href="#" style="height: 120; width: 180;" class="d-flex justify-content-center align-items-center">
+                                <img height="120" width="180" src="{% static 'images/MaskGrouppink.png' %}" alt=""  style="position: relative;">
+                                <img src="{% static 'images/cengage.png' %}" height="35px" alt="" style="position: absolute;">
+                            </a>
+                            <a href="#" style="height: 120; width: 180;" class="d-flex justify-content-center align-items-center">
+                                <img height="120" width="180" src="{% static 'images/MaskGrouppink.png' %}" alt=""  style="position: relative;">
+                                <img src="{% static 'images/nc.png' %}" height="35px" alt="" style="position: absolute;">
+                            </a>
+                            <a href="#" style="height: 120; width: 180;" class="d-flex justify-content-center align-items-center">
+                                <img height="120" width="180" src="{% static 'images/MaskGrouppink.png' %}" alt=""  style="position: relative;">
+                                <img src="{% static 'images/rdsharma.png' %}" height="35px" alt="" style="position: absolute;">
+                            </a>
+                            <a href="#" style="height: 120; width: 180;" class="d-flex justify-content-center align-items-center">
+                                <img height="120" width="180" src="{% static 'images/MaskGrouppink.png' %}" alt=""  style="position: relative;">
+                                <img src="{% static 'images/kcsinha.png' %}" height="35px" alt="" style="position: absolute;">
+                            </a>
+                            <a style="height: 120; width: 180;text-decoration: none;" class="d-flex justify-content-center align-items-center border px-2 py-5 border-radius-15" href=""><span class="font-weight-bold" style="color: #DB0C3E; border-bottom:2px solid  #DB0C3E;">View All</span></a>
+                        </section>
                         </li>
-                        <li class="d-flex align-items-center my-3" style="width: 100%;">
-                            <h3 class="font-weight-bold">Class 11</h3>
-                            <section style="width: 100%;" class="d-flex justify-content-around flex-wrap align-items-center">
-                                <a class="m-1" href="#"><img height="120" width="180" src="{% static 'images/orangemaths.png' %}" alt=""></a>
-                                <a class="m-1" href="#"><img height="120" width="180" src="{% static 'images/pinkphysics.png' %}" alt=""></a>
-                                <a class="m-1" href="#"><img height="120" width="180" src="{% static 'images/bluechemistry.png' %}" alt=""></a>
-                                <a class="m-1" href="#"><img height="120" width="180" src="{% static 'images/orangebiology.png' %}" alt=""></a>
-                            </section>
+                        <li class="d-flex align-items-center my-2" style="width: 100%;">
+                    <h3 class="text-center font-weight-bold chem">Chemistry</h3>
+                    <section style="width: 100%;" class="d-flex justify-content-around align-items-center">
+                        <a href="#"><img height="120" width="180" src="{% static 'images/blue1.png' %}" alt=""></a>
+                        <a href="#"><img height="120" width="180" src="{% static 'images/blue2.png' %}" alt=""></a>
+                        <a href="#"><img height="120" width="180" src="{% static 'images/blue3.png' %}" alt=""></a>
+                        <a href="#"><img height="120" width="180" src="{% static 'images/blue4.png' %}" alt=""></a>
+                        <a style="height: 120; width: 180;text-decoration: none;" class="d-flex justify-content-center align-items-center border px-2 py-5 border-radius-15" href=""><span class="font-weight-bold" style="color: #DB0C3E; border-bottom:2px solid  #DB0C3E;">View All</span></a>
+                    </section>
                         </li>
-                            <li class="d-flex align-items-center my-3" style="width: 100%;">
-                                <h3  class="font-weight-bold">Class 10</h3>
-                                <section style="width: 100%;" class="d-flex justify-content-start  flex-wrap align-items-center">
-                                    <a class="m-3" href="#"><img height="120" width="180" src="{% static 'images/orangemaths.png' %}" alt=""></a>
-                                    <a class="m-3" href="#"><img height="120" width="180" src="{% static 'images/pinkscience.png' %}" alt=""></a>
-                                </section>
-                            </li>
-                            <li class="d-flex align-items-center my-3" style="width: 100%;">
-                                <h3  class="font-weight-bold">Class 9</h3>
-                                <section style="width: 100%;" class="d-flex justify-content-start
-                                flex-wrap align-items-center">
-                                    <a class="mx-3" href="#"><img height="120" width="180" src="{% static 'images/orangemaths.png' %}" alt=""></a>
-                                    <a class="mx-3" href="#"><img height="120" width="180" src="{% static 'images/pinkscience.png' %}" alt=""></a>
-                                </section>
-                            </li>
-                            <li class="d-flex align-items-center my-3" style="width: 100%;">
-                                <h3  class="font-weight-bold">Class 8</h3>
-                                <section style="width: 100%;" class="d-flex justify-content-start flex-wrap align-items-center">
-                                    <a class="mx-3" href="#"><img height="120" width="180" src="{% static 'images/orangemaths.png' %}" alt=""></a>
-                                    <a class="mx-3" href="#"><img height="120" width="180" src="{% static 'images/pinkscience.png' %}" alt=""></a>
-                                </section>
-                            </li>
-                            <li class="d-flex align-items-center my-3" style="width: 100%;">
-                                <h3  class="font-weight-bold">Class 7</h3>
-                                <section style="width: 100%;" class="d-flex justify-content-start flex-wrap align-items-center">
-                                    <a class="mx-3" href="#"><img height="120" width="180" src="{% static 'images/orangemaths.png' %}" alt=""></a>
-                                    <a class="mx-3" href="#"><img height="120" width="180" src="{% static 'images/pinkscience.png' %}" alt=""></a>
-                                </section>
-                            </li>
-                            <li class="d-flex align-items-center my-3" style="width: 100%;">
-                                <h3 class="font-weight-bold">Class 6</h3>
-                                <section style="width: 100%;" class="d-flex justify-content-start align-items-center">
-                                    <a class="mx-3" href="#"><img height="120" width="180" src="{% static 'images/orangemaths.png' %}" alt=""></a>
-                                    <a class="mx-3" href="#"><img height="120" width="180" src="{% static 'images/pinkscience.png' %}" alt=""></a>
-                                </section>
-                            </li>
-                        </ul>
-            </section> 
+                    </ul>
+                </section>
+                <section class="mybox border border-radius-15" id="neet">
+                <h1 style="font-family: 'Poppins', sans-serif;" class="text-center font-weight-bold d-flex flex-column my-5"><span class="mb-2">NEET</span><span style="width: 10%;margin: auto;height:4px;background: #DB0C3E;border-radius: 50px;"></span>
+                </h1>
+                <ul class="list-style-none">
+                    <li class="d-flex align-items-center my-2" style="width: 100%;">
+                        <h3 style="width: 10%;" class="text-center font-weight-bold heading" >Maths</h3>
+                        <section style="width: 100%;" class="d-flex justify-content-around align-items-center">
+                            <a href="#"><img height="120" width="180" src="{% static 'images/cengage1.png' %}" alt=""></a>
+                            <a href="#" style="height: 120; width: 180;" class="d-flex justify-content-center align-items-center">
+                                <img height="120" width="180" src="{% static 'images/MaskGrouporange.png' %}" alt=""  style="position: relative;">
+                                <img src="{% static 'images/nc.png' %}" height="35px" alt="" style="position: absolute;">
+                            </a>
+                            <a href="#" style="height: 120; width: 180;" class="d-flex justify-content-center align-items-center">
+                                <img height="120" width="180" src="{% static 'images/MaskGrouporange.png' %}" alt=""  style="position: relative;">
+                                <img src="{% static 'images/rdsharma.png' %}" height="35px" alt="" style="position: absolute;">
+                            </a>
+                            <a href="#" style="height: 120; width: 180;" class="d-flex justify-content-center align-items-center">
+                                <img height="120" width="180" src="{% static 'images/MaskGrouporange.png' %}" alt=""  style="position: relative;">
+                                <img src="{% static 'images/kcsinha.png' %}" height="35px" alt="" style="position: absolute;">
+                            </a>
+                            <a style="height: 120; width: 180;text-decoration: none;" class="d-flex justify-content-center align-items-center border px-2 py-5 border-radius-15" href=""><span class="font-weight-bold" style="color: #DB0C3E; border-bottom:2px solid  #DB0C3E;">View All</span></a>
+                        </section>
+                    </li>
+                    <li class="d-flex align-items-center my-2" style="width: 100%;">
+                        <h3 style="width: 10%;" class="text-center font-weight-bold heading">Physics</h3>
+                        <section style="width: 100%;" class="d-flex justify-content-around align-items-center">
+                          <a href="#" style="height: 120; width: 180;" class="d-flex justify-content-center align-items-center">
+                            <img height="120" width="180" src="{% static 'images/MaskGrouppink.png' %}" alt=""  style="position: relative;">
+                            <img src="{% static 'images/cengage.png' %}" height="35px" alt="" style="position: absolute;">
+                        </a>
+                        <a href="#" style="height: 120; width: 180;" class="d-flex justify-content-center align-items-center">
+                            <img height="120" width="180" src="{% static 'images/MaskGrouppink.png' %}" alt=""  style="position: relative;">
+                            <img src="{% static 'images/nc.png' %}" height="35px" alt="" style="position: absolute;">
+                        </a>
+                        <a href="#" style="height: 120; width: 180;" class="d-flex justify-content-center align-items-center">
+                            <img height="120" width="180" src="{% static 'images/MaskGrouppink.png' %}" alt=""  style="position: relative;">
+                            <img src="{% static 'images/rdsharma.png' %}" height="35px" alt="" style="position: absolute;">
+                        </a>
+                        <a href="#" style="height: 120; width: 180;" class="d-flex justify-content-center align-items-center">
+                            <img height="120" width="180" src="{% static 'images/MaskGrouppink.png' %}" alt=""  style="position: relative;">
+                            <img src="{% static 'images/kcsinha.png' %}" height="35px" alt="" style="position: absolute;">
+                        </a>
+                            <a style="height: 120; width: 180;text-decoration: none;" class="d-flex justify-content-center align-items-center border px-2 py-5 border-radius-15" href=""><span class="font-weight-bold" style="color: #DB0C3E; border-bottom:2px solid  #DB0C3E;">View All</span></a>
+                        </section>
+                        </li>
+                        <li class="d-flex align-items-center my-2" style="width: 100%;">
+                    <h3 class="font-weight-bold text-center chemistry">Biology</h3>
+                    <section style="width: 100%;" class="d-flex justify-content-around align-items-center">
+                      <a href="#"><img height="120" width="180" src="{% static 'images/blue1.png' %}" alt=""></a>
+                      <a href="#"><img height="120" width="180" src="{% static 'images/blue2.png' %}" alt=""></a>
+                      <a href="#"><img height="120" width="180" src="{% static 'images/blue3.png' %}" alt=""></a>
+                      <a href="#"><img height="120" width="180" src="{% static 'images/blue4.png' %}" alt=""></a>
+                        <a style="height: 120; width: 180;text-decoration: none;" class="d-flex justify-content-center align-items-center border px-2 py-5 border-radius-15" href=""><span class="font-weight-bold" style="color: #DB0C3E; border-bottom:2px solid  #DB0C3E;">View All</span></a>
+                    </section>
+                        </li>
+                    </ul>
+                </section>
+            
             </div>
             </div>
     <div class="live">
@@ -114,7 +167,7 @@
                         </div>
                     </div>
                     <h1 class="blue" style="font-family:poppins;">FIRST CLASS FREE!</h1>
-                        <a class="btn btn-danger border-radius-15" href="./liveclasses.html">Book a class now!</a>
+                        <a class="btn btn-danger border-radius-15" href="">Book a class now!</a>
                 </div>
             <div class="d-flex flex-column justify-content-around align-items-center mains">
                 <h1 style="font-family: 'Poppins', sans-serif;" class="text-center my-5 font-weight-bold d-flex flex flex-column"><span class="mb-2">JEE Mains & Advanced Preparation</span><span style="width: 75%;margin: auto;height:4px;background: #DB0C3E;border-radius: 50px;"></span> </h1>
@@ -205,7 +258,7 @@
                         </section>
                     </div>
                 </section>
-                <a class="btn btn-danger border-radius-15 my-5 px-5" href="./jeemains.html">Prepare for JEE now</a>
+                <a class="btn btn-danger border-radius-15 my-5 px-5" href="#">Prepare for JEE now</a>
             </div>
         </div>
     
@@ -300,7 +353,7 @@
                     </section>
                 </section>
             </div>
-            <a class="btn btn-danger border-radius-15 my-5 px-5" href="./neet.html">Prepare for NEET now</a>
+            <a class="btn btn-danger border-radius-15 my-5 px-5" href="#">Prepare for NEET now</a>
         </div>
     
         <div class="tilescrousel">
@@ -727,7 +780,7 @@
                       </svg>                  
                     </section>
                     <section class="d-flex m-auto justify-content-end" style="width:60%">
-                        <a class="text-danger float-right mt-5 font-size-20"  href="./book.html">View all</a>
+                        <a class="text-danger float-right mt-5 font-size-20"  href="#">View all</a>
                     </section>
             </div>
             <div>
@@ -1382,5 +1435,4 @@
             </section>
         </div>
     </div>
-</body>
 {% endblock %}

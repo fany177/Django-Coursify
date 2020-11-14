@@ -12,4 +12,10 @@ urlpatterns = [
     path('boardexams/',views.boardexams,name='boardexams'),
     path('schoolexams/',views.schoolexams,name='schoolexams'),
     path('jeemain/',views.jeemain,name='jeemain'),
+    path('jeeadvance/',views.jeeadvance,name='jeeadvance'),
+    path('neet/',views.neet,name='neet'),
+    path('previousyear/',views.previousyear,name='previousyear'),
+    path('ncert_chapter1/',views.ncert_chapter1,name='ncert_chapter1'),
+    path('book/',views.book,name='book'),
+    path('book1/',views.book1,name='book1'),
 ]
