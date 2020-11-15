@@ -7,7 +7,29 @@
     color: rgb(85, 83, 83);
 }
 
+@keyframes moveDownShow {
+    0% {
+      opacity: 0;
+      transform: translateY(-6rem); }
+    100% {
+      opacity: 1;
+      transform: translateY(0rem); } }
 
+.navbar-brand img {
+    height: 5rem; }
+  
+  nav {
+    background: white; }
+  
+  .navbar-nav .nav-item .nav-link {
+    transform: translateX(-2rem);
+    color: #4B4B4B !important;
+    font-size: 1.25rem;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    border-bottom: .3rem solid transparent; }
+    .navbar-nav .nav-item .nav-link:active, .navbar-nav .nav-item .nav-link:focus {
+      border-bottom: 0.3rem solid #DF0B39; }
 
 h1,h2,h3,h4,h5,h6
 {
@@ -153,22 +175,6 @@ ul
 .landing
 {
     width: 100vw;
-}
-
-nav
-{
-width: 98%;
-display: flex;
-justify-content: space-between;
-}
-
-nav ul
-{
-width: 40%;
-display: flex;
-justify-content: space-around;
-font-size: 20px;
-align-items: center;
 }
 
 .main

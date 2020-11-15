@@ -51,3 +51,9 @@ def book1(request):
 
 def chapter(request):
     return render(request,'Application/chapter.html')
+
+def live(request):
+    return render(request,'Application/live.html')
+
+def home(request):
+    return render(request,'Application/home.html')

@@ -19,4 +19,6 @@ urlpatterns = [
     path('book/',views.book,name='book'),
     path('book1/',views.book1,name='book1'),
     path('chapter/',views.chapter,name='chapter'),
+    path('live/',views.live,name='live'),
+    path('home/',views.home,name='home')
 ]
