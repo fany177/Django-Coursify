@@ -18,4 +18,5 @@ urlpatterns = [
     path('ncert_chapter1/',views.ncert_chapter1,name='ncert_chapter1'),
     path('book/',views.book,name='book'),
     path('book1/',views.book1,name='book1'),
+    path('chapter/',views.chapter,name='chapter'),
 ]

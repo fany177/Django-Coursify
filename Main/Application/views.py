@@ -48,3 +48,6 @@ def book(request):
 
 def book1(request):
     return render(request,'Application/book1.html')
+
+def chapter(request):
+    return render(request,'Application/chapter.html')
