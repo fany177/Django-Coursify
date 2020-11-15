@@ -3,36 +3,425 @@
 
 {% block content %}
         <body style="margin-top: 10rem;">
-            <link rel="stylesheet" href="{% static 'book.css' %}">
-        <div class="upper card">
-            <h1><span class="red" style="font-family:poppins;">Class 9th > </span><span class="blue">Maths</span></h1>
-            <div class="flex inner">
-            <section class="flex">
-                <h1 class="blue">Maths</h1>
+            <link rel="stylesheet" href="{% static 'book1.css' %}">
+        <div class="main card">
+            <h1 class="head">
+                <span style="font-family: poppins;" class="red">Class 9th > Maths > NCERT ></span> <span style="font-family: poppins;" class="blue">Chapter 1</span>
+            </h1>
+            <div class="flex main-div">
                 <ul class="flex">
-                    <li><a href="./book1.html"><img src="{% static 'images/pradeep1.png' %}" alt=""></a></li>
-                    <li><a href="./book1.html"><img src="{% static 'images/ncert1.png' %}" alt=""></a></li>
-                    <li><a href="./book1.html"><img src="{% static 'images/kcsinha1.png' %}" alt=""></a></li>
-                    <li><a href="./book1.html"><img src="{% static 'images/slarora.png' %}" alt=""></a></li>
-                    <li><a href="./book1.html"><img src="{% static 'images/pradeep1.png' %}" alt=""></a></li>
-                    <li><a href="./book1.html"><img src="{% static 'images/ncert1.png' %}" alt=""></a></li>
+                    <li class="flex flex-around">
+                        <section class="flex-column text-center">
+                        <span class="red">Exercise 1.1</span>
+                        <h2 class="blue">Topic Name</h2>
+                        </section>
+                        <div class="flex wrap">
+                            <a href="{% url 'book3' %}" class="flex-column mytiles">
+                                <img src="{% static 'images/pradeepnew.png' %}" alt="">
+                                <span class="text-center">EX 1.1</span>
+                            </a>
+                            <a href="{% url 'book3' %}" class="flex-column mytiles">
+                                <img src="{% static 'images/ncert1new.png' %}" alt="">
+                                <span class="text-center">EX 1.2</span>
+                            </a>
+                            <a href="{% url 'book3' %}" class="flex-column mytiles">
+                                <img src="{% static 'images/kcsinha1new.png' %}" alt="">
+                                <span class="text-center">EX 1.3</span>
+                            </a>
+                            <a href="{% url 'book3' %}" class="flex-column mytiles">
+                                <img src="{% static 'images/slaroranew.png' %}" alt="">
+                                <span class="text-center">EX 1.3</span>
+                            </a>
+                            <a class="view" href="{% url 'book3' %}"><span>View All</span></a>
+                        </div>
+                    </li>
                 </ul>
-            </section>
-            <section class="flex">
-                <h1 class="blue">Science</h1>
-                <ul class="flex">
-                    <li><a href="./book1.html"><img src="{% static 'images/pradeep1.png' %}" alt=""></a></li>
-                    <li><a href="./book1.html"><img src="{% static 'images/ncert1.png' %}" alt=""></a></li>
-                    <li><a href="./book1.html"><img src="{% static 'images/kcsinha1.png' %}" alt=""></a></li>
-                    <li><a href="./book1.html"><img src="{% static 'images/slarora.png' %}" alt=""></a></li>
-                </ul>   
-            </section>
             </div>
+        <div class="flex main-div">
+            <ul class="flex">
+                <li class="flex flex-around">
+                    <section class="flex-column text-center">
+                    <span class="red">Exercise 1.1</span>
+                    <h2 class="blue">Topic Name</h2>
+                    </section>
+                    <div class="flex wrap">
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/pradeepnew.png' %}" alt="">
+                            <span class="text-center">EX 1.1</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/ncert1new.png' %}" alt="">
+                            <span class="text-center">EX 1.2</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/kcsinha1new.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/slaroranew.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a class="view" href="{% url 'book3' %}"><span>View All</span></a>
+                    </div>
+                </li>
+            </ul>
         </div>
+        <div class="flex main-div">
+            <ul class="flex">
+                <li class="flex flex-around">
+                    <section class="flex-column text-center">
+                    <span class="red">Exercise 1.1</span>
+                    <h2 class="blue">Topic Name</h2>
+                    </section>
+                    <div class="flex wrap">
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/pradeepnew.png' %}" alt="">
+                            <span class="text-center">EX 1.1</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/ncert1new.png' %}" alt="">
+                            <span class="text-center">EX 1.2</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/kcsinha1new.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/slaroranew.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a class="view" href="{% url 'book3' %}"><span>View All</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="flex main-div">
+            <ul class="flex">
+                <li class="flex flex-around">
+                    <section class="flex-column text-center">
+                    <span class="red">Exercise 1.1</span>
+                    <h2 class="blue">Topic Name</h2>
+                    </section>
+                    <div class="flex wrap">
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/pradeepnew.png' %}" alt="">
+                            <span class="text-center">EX 1.1</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/ncert1new.png' %}" alt="">
+                            <span class="text-center">EX 1.2</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/kcsinha1new.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/slaroranew.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a class="view" href="{% url 'book3' %}"><span>View All</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="flex main-div">
+            <ul class="flex">
+                <li class="flex flex-around">
+                    <section class="flex-column text-center">
+                    <span class="red">Exercise 1.1</span>
+                    <h2 class="blue">Topic Name</h2>
+                    </section>
+                    <div class="flex wrap">
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/pradeepnew.png' %}" alt="">
+                            <span class="text-center">EX 1.1</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/ncert1new.png' %}" alt="">
+                            <span class="text-center">EX 1.2</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/kcsinha1new.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/slaroranew.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a class="view" href="{% url 'book3' %}"><span>View All</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="flex main-div">
+            <ul class="flex">
+                <li class="flex flex-around">
+                    <section class="flex-column text-center">
+                    <span class="red">Exercise 1.1</span>
+                    <h2 class="blue">Topic Name</h2>
+                    </section>
+                    <div class="flex wrap">
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/pradeepnew.png' %}" alt="">
+                            <span class="text-center">EX 1.1</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/ncert1new.png' %}" alt="">
+                            <span class="text-center">EX 1.2</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/kcsinha1new.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/slaroranew.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a class="view" href="{% url 'book3' %}"><span>View All</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="flex main-div">
+            <ul class="flex">
+                <li class="flex flex-around">
+                    <section class="flex-column text-center">
+                    <span class="red">Exercise 1.1</span>
+                    <h2 class="blue">Topic Name</h2>
+                    </section>
+                    <div class="flex wrap">
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/pradeepnew.png' %}" alt="">
+                            <span class="text-center">EX 1.1</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/ncert1new.png' %}" alt="">
+                            <span class="text-center">EX 1.2</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/kcsinha1new.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/slaroranew.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a class="view" href="{% url 'book3' %}"><span>View All</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="flex main-div">
+            <ul class="flex">
+                <li class="flex flex-around">
+                    <section class="flex-column text-center">
+                    <span class="red">Exercise 1.1</span>
+                    <h2 class="blue">Topic Name</h2>
+                    </section>
+                    <div class="flex wrap">
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/pradeepnew.png' %}" alt="">
+                            <span class="text-center">EX 1.1</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/ncert1new.png' %}" alt="">
+                            <span class="text-center">EX 1.2</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/kcsinha1new.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/slaroranew.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a class="view" href="{% url 'book3' %}"><span>View All</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="flex main-div">
+            <ul class="flex">
+                <li class="flex flex-around">
+                    <section class="flex-column text-center">
+                    <span class="red">Exercise 1.1</span>
+                    <h2 class="blue">Topic Name</h2>
+                    </section>
+                    <div class="flex wrap">
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/pradeepnew.png' %}" alt="">
+                            <span class="text-center">EX 1.1</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/ncert1new.png' %}" alt="">
+                            <span class="text-center">EX 1.2</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/kcsinha1new.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/slaroranew.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a class="view" href="{% url 'book3' %}"><span>View All</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="flex main-div">
+            <ul class="flex">
+                <li class="flex flex-around">
+                    <section class="flex-column text-center">
+                    <span class="red">Exercise 1.1</span>
+                    <h2 class="blue">Topic Name</h2>
+                    </section>
+                    <div class="flex wrap">
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/pradeepnew.png' %}" alt="">
+                            <span class="text-center">EX 1.1</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/ncert1new.png' %}" alt="">
+                            <span class="text-center">EX 1.2</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/kcsinha1new.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/slaroranew.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a class="view" href="{% url 'book3' %}"><span>View All</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="flex main-div">
+            <ul class="flex">
+                <li class="flex flex-around">
+                    <section class="flex-column text-center">
+                    <span class="red">Exercise 1.1</span>
+                    <h2 class="blue">Topic Name</h2>
+                    </section>
+                    <div class="flex wrap">
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/pradeepnew.png' %}" alt="">
+                            <span class="text-center">EX 1.1</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/ncert1new.png' %}" alt="">
+                            <span class="text-center">EX 1.2</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/kcsinha1new.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/slaroranew.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a class="view" href="{% url 'book3' %}"><span>View All</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="flex main-div">
+            <ul class="flex">
+                <li class="flex flex-around">
+                    <section class="flex-column text-center">
+                    <span class="red">Exercise 1.1</span>
+                    <h2 class="blue">Topic Name</h2>
+                    </section>
+                    <div class="flex wrap">
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/pradeepnew.png' %}" alt="">
+                            <span class="text-center">EX 1.1</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/ncert1new.png' %}" alt="">
+                            <span class="text-center">EX 1.2</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/kcsinha1new.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a href="{% url 'book3' %}" class="flex-column mytiles">
+                            <img src="{% static 'images/slaroranew.png' %}" alt="">
+                            <span class="text-center">EX 1.3</span>
+                        </a>
+                        <a class="view" href="{% url 'book3' %}"><span>View All</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="other flex flex-center flex-column">
+            <h1>
+                <span style="font-family: poppins;" class="blue ">Other Math Books you</span><span style="font-family: poppins;" class="red"> Must Have</span>
+            </h1>
+            <div class="flex-around other-first">
+                <section class="flex flex-column flex-center slide"><img src="{% static 'images/left-arrow.png' %}" alt=""></section>
+                <div class="book">
+                <section class="flex flex-column flex-center maths">
+                    <img src="{% static 'images/maths1.jpg' %}" alt="">
+                    <h2>R.D SHARMA</h2>
+                    <h4 class="blue">1000+ Questions</h4>
+                    <h4 class="blue">2000+ Videos</h4>
+                    <a class="button1" href="">Start Solving Now</a>
+                </section>
+                <section class="flex flex-column flex-center maths">
+                <img src="{% static 'images/maths2.jpg' %}" alt="">
+                    <h2>R.S AGRAWAL</h2>
+                    <h4 class="blue">1000+ Questions</h4>
+                    <h4 class="blue">2000+ Videos</h4>
+                    <a class="button1" href="">Start Solving Now</a>
+                </section>
+                <section class="flex flex-column flex-center maths">
+                <img src="{% static 'images/maths3.jpg' %}" alt="">
+                    <h2>S.S LONEY</h2>
+                    <h4 class="blue">1000+ Questions</h4>
+                    <h4 class="blue">2000+ Videos</h4>
+                    <a class="button1" href="">Start Solving Now</a>
+                </section>
+            </div>
+                <section class="flex flex-column flex-center slide"><img src="{% static 'images/right-arrow.png' %}" alt=""></section>
+            </div>
+            <h1>
+                <span style="font-family: poppins;" class="blue ">Other Subjects Books </span><span style="font-family: poppins;" class="red">you Must Prepare</span>
+            </h1>
+            <div class="flex-around other-first">
+                <section class="flex flex-column flex-center slide"><img src="{% static 'images/left-arrow.png' %}" alt=""></section>
+            <div class="book">
+                <section class="flex flex-column flex-center maths">
+                    <img src="{% static 'images/science1.jpg' %}" alt="">
+                    <h2>R.D SHARMA</h2>
+                    <h4 class="blue">1000+ Questions</h4>
+                    <h4 class="blue">2000+ Videos</h4>
+                    <a class="button1" href="">Start Solving Now</a>
+                </section>
+                <section class="flex flex-column flex-center maths">
+                <img src="{% static 'images/science2.jfif' %}" alt="">
+                    <h2>R.S AGRAWAL</h2>
+                    <h4 class="blue">1000+ Questions</h4>
+                    <h4 class="blue">2000+ Videos</h4>
+                    <a class="button1" href="">Start Solving Now</a>
+                </section>
+                <section class="flex flex-column flex-center maths">
+                <img src="{% static 'images/science3.jpg' %}" alt="">
+                    <h2>S.S LONEY</h2>
+                    <h4 class="blue">1000+ Questions</h4>
+                    <h4 class="blue">2000+ Videos</h4>
+                    <a class="button1" href="">Start Solving Now</a>
+                </section>
+            </div>
+                <section class="flex flex-column flex-center slide"><img src="{% static 'images/right-arrow.png' %}" alt=""></section>
+            </div>
             <div >
                 <section class="header">
                     <h1>
-                        <span style="font-family:poppins;">Microconcept videos</span>
+                        <span style="font-family: poppins;">Microconcept videos</span>
                         <span class="underline"> </span>
                     </h1>
                 </section>
@@ -48,7 +437,7 @@
             </div>
             <div class="avail-main">
                 <section class="header">
-                    <h1><span>Simply Avail the Complete Course for Free</span><span class="underline"></span></h1>
+                    <h1><span style="font-family: poppins;">Simply Avail the Complete Course for Free</span><span class="underline"></span></h1>
                 </section>
                 <div class="flex avail">
                     <section class="avail-sec">
@@ -86,7 +475,7 @@
             </div>
             <div class=" accessible">
                 <section class="header">
-                <h1><span style="font-family:poppins;">Solve your doubts faster.</span><span class="underline"></span> </h1>
+                <h1 style="font-family: 'Poppins', sans-serif;" ><span style="font-family: poppins;">Solve your doubts faster.</span><span class="underline"></span> </h1>
             </section>
                 <div class="flex access-div">
                     <ul >
@@ -134,7 +523,7 @@
                                 </g>
                             </svg>
                             <section>
-                                <h2>Accesible everywhere</h2>
+                                <h2 >Accesible everywhere</h2>
                                 <span>Access to quality education anytime, anywhere</span>
                             </section>
                         </li>
@@ -500,7 +889,7 @@
                 </div>
             </div>
             <div class="works">
-                <h1 class="blue" style="font-family:poppins;">How it works?</h1>
+                <h1 style="font-family: poppins;" class="blue">How it works?</h1>
                 <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     width="90%" height="300" viewBox="0 0 1541 335">
                     <defs>
@@ -1159,7 +1548,7 @@
             </div>
             <div class="live">
                 <section class="header">
-                    <h1><span style="font-family:poppins;">LIVE classes</span><span class="underline"></span></h1>
+                    <h1><span style="font-family: poppins;">LIVE classes</span><span class="underline"></span></h1>
                 </section>
                 <div class="live-main flex">
                     <img class="live-left" src="{% static 'images/Group 283.png' %}" alt="">
@@ -1187,7 +1576,7 @@
                         </section>
                     </div>
                 </div>
-                <h1 class="blue" style="font-family:poppins;" >FIRST CLASS FREE!</h1>
+                <h1 class="blue" >FIRST CLASS FREE!</h1>
                     <a class="button" href="">Book a class now!</a>
             </div>
             <hr>
@@ -1304,6 +1693,8 @@
                     <a href="">class 6</a>
                 </section>
             </div>
+        </div>
     </div>
 </body>
-{% endblock content %}
+
+{% endblock %}

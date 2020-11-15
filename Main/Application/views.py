@@ -1,25 +1,34 @@
 from django.shortcuts import render
 
-# Create your views here.
-def slide9(request):
-    return render(request,'Application/Slide9.html')
+def home(request):
+    return render(request,'Application/home.html')
 
-def slide10(request):
-    return render(request,'Application/Slide10.html')
+def course(request):
+    return render(request,'Application/course.html')
+
+def board(request):
+    return render(request,'Application/board.html')
+
+def book(request):
+    return render(request,'Application/book.html')
+
+def book1(request):
+    return render(request,'Application/book1.html')
+
+def book2(request):
+    return render(request,'Application/book2.html')
+
+def book3(request):
+    return render(request,'Application/book3.html')
+
+def join(request):
+    return render(request,'Application/join.html')
+
+def video(request):
+    return render(request,'Application/video.html')
 
 
-def slide13(request):
-    return render(request,'Application/Slide13.html')
 
-def slide14(request):
-    return render(request,'Application/Slide14.html')
-
-def slide15(request):
-    return render(request,'Application/Slide15.html')
-
-
-def slide19(request):
-    return render(request,'Application/Slide19.html')
 
 def boardexams(request):
     return render(request,'Application/boardexams.html')
@@ -43,17 +52,9 @@ def previousyear(request):
 def ncert_chapter1(request):
     return render(request,'Application/ncert_chapter1.html')
 
-def book(request):
-    return render(request,'Application/book.html')
-
-def book1(request):
-    return render(request,'Application/book1.html')
 
 def chapter(request):
     return render(request,'Application/chapter.html')
 
 def live(request):
     return render(request,'Application/live.html')
-
-def home(request):
-    return render(request,'Application/home.html')
