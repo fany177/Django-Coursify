@@ -3,32 +3,9 @@ from django.shortcuts import render
 def home(request):
     return render(request,'Application/home.html')
 
-def course(request):
-    return render(request,'Application/course.html')
 
-def board(request):
-    return render(request,'Application/board.html')
-
-def book(request):
-    return render(request,'Application/book.html')
-
-def book1(request):
-    return render(request,'Application/book1.html')
-
-def book2(request):
-    return render(request,'Application/book2.html')
-
-def book3(request):
-    return render(request,'Application/book3.html')
-
-def join(request):
-    return render(request,'Application/join.html')
-
-def video(request):
-    return render(request,'Application/video.html')
-
-
-
+def live(request):
+    return render(request,'Application/live.html')
 
 def boardexams(request):
     return render(request,'Application/boardexams.html')
@@ -49,12 +26,55 @@ def neet(request):
 def previousyear(request):
     return render(request,'Application/previousyear.html')
 
+
+def book(request):
+    return render(request,'Application/book.html')
+
+def book_list(request):
+    return render(request,'Application/book_list.html')
+
+def ncert(request):
+    return render(request,'Application/ncert.html')
+
 def ncert_chapter1(request):
     return render(request,'Application/ncert_chapter1.html')
 
+def ncert_chapter1_exercise(request):
+    return render(request,'Application/ncert_chapter1_exercise.html')
 
-def chapter(request):
-    return render(request,'Application/chapter.html')
+def question(request):
+    return render(request,'Application/question.html')
 
-def live(request):
-    return render(request,'Application/live.html')
+
+def course(request):
+    return render(request,'Application/course.html')
+
+def join(request):
+    return render(request,'Application/join.html')
+
+def board(request):
+    return render(request,'Application/board.html')
+
+
+
+
+
+
+
+
+
+
+
+# def book3(request):
+#     return render(request,'Application/book3.html')
+
+
+
+
+# def video(request):
+#     return render(request,'Application/video.html')
+
+
+
+
+
