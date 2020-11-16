@@ -161,3 +161,7 @@ next5.on('click',function (event){
       scrollLeft: `+=${chips__width5+64.5}`
     }, "slow");
 })
+
+if($('.navbar-toggler-icon').is(':visible')){
+   $('.navbar').addClass('navbar-dark bg-primary')
+}
