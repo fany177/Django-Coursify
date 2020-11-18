@@ -1708,7 +1708,7 @@ body {
     .free__content--box {
       display: grid;
       grid-template-columns: repeat(5, 13%) 10%;
-      column-gap: 4.5rem;
+      column-gap: 5rem;
       position: relative;
       left: 50%;
       transform: translateX(-50%); }
@@ -4482,7 +4482,7 @@ nav {
 #section-search {
   height: fit-content;
   position: relative;
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding: 10rem 0rem; }
 
 #section-clear {
