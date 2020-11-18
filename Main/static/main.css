@@ -2918,7 +2918,8 @@ body {
           grid-column: 1 / 2; } }
 
 .navbar-brand img {
-  height: 7rem; }
+  height: 7rem;
+  margin-left: 4rem; }
 
 nav {
   background: white; }
@@ -2926,9 +2927,11 @@ nav {
 .navbar-nav .nav-item .nav-link {
   color: #4B4B4B !important;
   font-size: 1.8rem;
-  margin-right: 4rem;
+  margin-right: 3rem;
   font-weight: 500;
   border-bottom: .3rem solid transparent; }
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #D60B3C !important; }
   .navbar-nav .nav-item .nav-link:active, .navbar-nav .nav-item .nav-link:focus {
     border-bottom: 0.3rem solid #DF0B39; }
 
