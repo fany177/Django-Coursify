@@ -46,19 +46,6 @@ $(function(){
    }catch(e){console.log(e)}
 })
 
-
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-       $(".navbar").css({'animation':'moveDownShow 1s','visibility': 'visible','background-color':'white'});
-    }else{
-        $(".navbar").css({'animation':'moveUpHide .5s','visibility': 'hidden'});
-    }
-  prevScrollpos = currentScrollPos;
-}
-
 $(document).ready(function() {
 	var pathname = window.location.pathname;
 	$('.navbar-nav > li >  a[href="'+pathname+'"]').css({'border-bottom':'.3rem solid #F50057'});
