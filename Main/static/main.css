@@ -1696,11 +1696,12 @@ body {
     .free__content--heading {
       width: 100%;
       font-family: 'Poppins',sans-serif;
-      font-weight: 400;
+      font-weight: 500;
       font-size: 2.5rem;
       border-right: 0.3rem solid #D60B3C;
       position: relative; }
       .free__content--heading span {
+        color: #4B4B4B;
         position: absolute;
         top: 40%;
         transform: translateY(-50%); }
