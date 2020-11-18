@@ -1,7 +1,521 @@
 {% extends 'Application/base.html' %}
 {% load static %}
-
+   
 {% block content %}
- <link rel="stylesheet" href="{% static 'main.css' %}">
- 
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+
+    <section id="section-search" class="container-fluid">
+        <img class="search-img1" src="{% static 'images/geomentry.png' %}" alt="">
+        <img class="search-img2" src="{% static 'images/geomentry1.png' %}" alt="">
+        <img class="search-img3" src="{% static 'images/question.png' %}" alt="">
+        <img class="search-img4" src="{% static 'images/cloud.png' %}" alt="">
+        <img class="search-img5" src="{% static 'images/cloud.png' %}" alt="">
+        <img class="search-img6" src="{% static 'images/question.png' %}" alt="">
+        <h1 class="search-heading">Ask Your <span>Doubt</span> Now?</h1>
+        <form class="search-form" action="" style="position: relative;">
+            <div class="search">
+                <img class="search__magnify" src="{% static 'images/search.png' %}" alt="">
+                <input class="search__box" type="text" placeholder="Search Questions, Doubts & Images">
+                <div class="search__camera">
+                    <img class="search__camera--item" src="{% static 'images/camera.png' %}" alt="">
+                    <h5 class="search__camera--text">upload image</h5>
+                </div>
+            </div>
+            <ul class="search__languages">
+                <li class="search__languages--item"><button class="search__languages--item-btn">Bengali</button></li>
+                <li class="search__languages--item"><button class="search__languages--item-btn">English</button></li>
+                <li class="search__languages--item"><button class="search__languages--item-btn">Hindi</button></li>
+                <li class="search__languages--item"><button class="search__languages--item-btn">Malayalam</button></li>
+                <li class="search__languages--item"><button class="search__languages--item-btn">Marathi</button></li>
+                <li class="search__languages--item"><button class="search__languages--item-btn">Tamil</button></li>
+                <li class="search__languages--item"><button class="search__languages--item-btn">Telugu</button></li>
+                <li class="search__languages--item"><button class="search__languages--item-btn">Kannada</button></li>
+                <li class="search__languages--item"><button class="search__languages--item-btn">Urudu</button></li>
+                <li class="search__languages--item"><button class="search__languages--item-btn">Punjabi</button></li>
+                <li class="search__languages--item"><button class="search__languages--item-btn">Odia</button></li>
+            </ul>
+        </form>
+        <button class="search__btn">Search Doubt</button>
+    </section>
+    <div class="search-chips">
+        <div class="search-chips--img">
+            <img class="search-chips--img-item" src="{% static 'images/Group 622.png' %}" alt="">
+            <h3 class="search-chips--img-text">40,000+ doubts cleared</h3>
+        </div>
+        <div class="search-chips--img">
+            <img class="search-chips--img-item" src="{% static 'images/Group 623.png' %}" alt="">
+            <h3 class="search-chips--img-text">20+ state Boards</h3>
+        </div>
+        <div class="search-chips--img">
+            <img class="search-chips--img-item" src="{% static 'images/Group 624.png' %}" alt="">
+            <h3 class="search-chips--img-text">1,000,000+ Video Lectures</h3>
+        </div>
+        <div class="search-chips--img">
+            <img class="search-chips--img-item" src="{% static 'images/Group 627.png' %}" alt="">
+            <h3 class="search-chips--img-text">5000+ Books cover</h3>
+        </div>
+    </div>
+
+    <section id="section-clear" class="container-fluid">
+        <h1 class="clear-heading">Clear your Doubts in just 2 Steps</h1>
+        <div class="clear">
+            <img class="clear__img1" src="{% static 'images/one.png' %}" alt="">
+            <img class="clear__img2" src="{% static 'images/brain.png' %}" alt="">
+            <img class="clear__img3" src="{% static 'images/two.png' %}" alt="">
+        </div>
+        <h2 class="clear-para">Our complex Searching Algorithm Finds solutions for you and saves time.</h2>
+        <button class="clear-btn">Clarify your doubts now!</button>
+    </section>
+
+    <section id="section-live" class="container-fluid">
+        <h1 class="live-heading" style="border-bottom: none;">LIVE classes</h1>
+        <div class="live">
+            <img class="live__img" src="{% static 'images/live1.png' %}" alt="">
+            <div class="live__box">
+                <div class="live__box--content">
+                    <img class="live__box--content-img" src="{% static 'images/global-network.png' %}" alt="">
+                    <h3 class="live__box--content-heading">Accessible everywhere</h3>
+                    <h5 class="live__box--content-para">Access to quality education anytime, anywhere</h5>
+                </div>
+                <div class="live__box--content">
+                    <img class="live__box--content-img" src="{% static 'images/coaching.png' %}" alt="">
+                    <h3 class="live__box--content-heading">Expert Teachers</h3>
+                    <h5 class="live__box--content-para">Unlimited access to video solutions</h5>
+                </div>
+                <div class="live__box--content">
+                    <img class="live__box--content-img" src="{% static 'images/presentation.png' %}" alt="">
+                    <h3 class="live__box--content-heading">Interactive Sessions</h3>
+                    <h5 class="live__box--content-para">Small groups for maximum student - teacher interaction</h5>
+                </div>
+            </div>
+            <img class="ellipses4" src="{% static 'images/ellipses.png' %}" alt="">
+        </div>
+        
+        <h2 class="live-free">FIRST CLASS FREE!</h2>
+        <button class="live-btn" href="">Book a class now!</button>
+    </section>
+
+    <section id="section-prep" class="container-fluid">
+        <h1 class="prep-heading">JEE Mains & Advanced Preparation</h1>
+        <div class="prep">
+            <img class="prep__img" src="{% static 'images/tablet.png' %}" alt="">
+            <div class="prep__content">
+                <img class="prep__content--img" src="{% static 'images/responsive.png' %}" alt="">
+                <h4 class="prep__content--text">Micro concept videos</h4>
+                <p class="prep__content--para">Find multilingual video explanations important and frequently confused concepts from every subject.</p>
+            </div>
+        </div>
+        <div class="prep-radio">
+            <input class="prep-radio__item" type="radio" name="prep">
+            <input class="prep-radio__item" type="radio" name="prep">
+            <input class="prep-radio__item" type="radio" name="prep">
+        </div>
+        <button class="prep-btn">Prepare for JEE now</button>
+    </section>
+
+    <section id="section-prep" class="container-fluid">
+        <h1 class="prep-heading">NEET Preperation</h1>
+        <div class="prep">
+            <img class="prep__img" src="{% static 'images/tablet.png' %}" alt="">
+            <div class="prep__content">
+                <img class="prep__content--img" src="{% static 'images/003-books.png' %}" alt="">
+                <h4 class="prep__content--text">Solved reference books</h4>
+                <p class="prep__content--para">Get access to a library of solved reference books for better preperation fro the future.</p>
+            </div>
+        </div>
+        <div class="prep-radio">
+            <input class="prep-radio__item" type="radio" name="prep1">
+            <input class="prep-radio__item" type="radio" name="prep1">
+            <input class="prep-radio__item" type="radio" name="prep1">
+        </div>
+        <button class="prep-btn">Prepare for NEET now</button>
+    </section>
+
+    <section id="section-explore" class="container-fluid">
+        <h1 class="explore-heading">Explore the subjects with us!</h1>
+        <div class="explore">
+            <div class="explore__content">
+                <img class="explore__content--img" src="{% static 'images/symbol.png' %}" alt="">
+                <h3 class="explore__content--title">Maths</h3>
+            </div>
+            <div class="explore__content">
+                <img class="explore__content--img" src="{% static 'images/atom.png' %}" alt="">
+                <h3 class="explore__content--title">Phsics</h3>
+            </div>
+            <div class="explore__content">
+                <img class="explore__content--img" src="{% static 'images/flask.png' %}" alt="">
+                <h3 class="explore__content--title">Chemistry</h3>
+            </div>
+            <div class="explore__content">
+                <img class="explore__content--img" src="{% static 'images/leaf.png' %}" alt="">
+                <h3 class="explore__content--title">Biology</h3>
+            </div>
+            <div class="explore__content">
+                <img class="explore__content--img" src="{% static 'images/atoz.png' %}" alt="">
+                <h3 class="explore__content--title">English</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-free" class="container-fluid">
+        <h1 class="free-heading">Free acess to 5000+ books</h1>
+        <h3 class="free-para">Get access to virtual of 5000+ text books and reference books of various stateboards and competitive exams.</h3>
+        <div class="free">
+            <div class="free__content">
+                <h2 class="free__content--heading"><span> Maths</span></h2>
+                <div class="free__content--box">
+                    <div class="free__content--box-item">
+                        <img class="free__content--box-item-img" src="{% static 'books/12TH/918O3XZAW9L.jpg' %}" alt="">
+                        <button class="free__content--box-item-btn">Solve Now</button>
+                        <h3 class="free__content--box-item-title">NCERT - XII</h3>
+                    </div>
+                    <div class="free__content--box-item">
+                        <img class="free__content--box-item-img" src="{% static 'books/12TH/51FuWDNfpmL._SX257_BO1,204,203,200_.jpg' %}" alt="">
+                        <button class="free__content--box-item-btn">Solve Now</button>
+                        <h3 class="free__content--box-item-title">EXEMPLAR - XII</h3>
+                    </div> <div class="free__content--box-item">
+                        <img class="free__content--box-item-img" src="{% static 'books/12TH/41-tLI03f2L._SX315_BO1,204,203,200_.jpg' %}" alt="">
+                        <button class="free__content--box-item-btn">Solve Now</button>
+                        <h3 class="free__content--box-item-title">K.C. SINHA - XI</h3>
+                    </div> <div class="free__content--box-item">
+                        <img class="free__content--box-item-img" src="{% static 'books/10TH/A1Md7XPuqPL.jpg' %}" alt="">
+                        <button class="free__content--box-item-btn">Solve Now</button>
+                        <h3 class="free__content--box-item-title">RD SHARMA - X</h3>
+                    </div>
+                    <div class="free__content--box-item">
+                        <img class="free__content--box-item-img" src="{% static 'books/9TH/A1A+sL+oSCL.jpg' %}" alt="">
+                        <button class="free__content--box-item-btn">Solve Now</button>
+                        <h3 class="free__content--box-item-title">R.S. AGGARWAL - IX</h3>
+                    </div>
+                    <button class="free__content--box-btn">View all</button>
+                </div>
+            </div>
+            <div class="free__content">
+                <h2 class="free__content--heading"><span> Physics</span></h2>
+                <div class="free__content--box">
+                    <div class="free__content--box-item">
+                        <img class="free__content--box-item-img" src="{% static 'books/12TH/911-2v5Yq8L.jpg' %}" alt="">
+                        <button class="free__content--box-item-btn">Solve Now</button>
+                        <h3 class="free__content--box-item-title">NCERT - XII</h3>
+                    </div>
+                    <div class="free__content--box-item">
+                        <img class="free__content--box-item-img" src="{% static 'books/11TH/EXMPLAR.jpg' %}" alt="">
+                        <button class="free__content--box-item-btn">Solve Now</button>
+                        <h3 class="free__content--box-item-title">EXEMPLAR - XI</h3>
+                    </div> <div class="free__content--box-item">
+                        <img class="free__content--box-item-img" src="{% static 'books/12TH/71EK+TbNJkL.jpg' %}" alt="">
+                        <button class="free__content--box-item-btn">Solve Now</button>
+                        <h3 class="free__content--box-item-title">HC VERMA VOL1</h3>
+                    </div> <div class="free__content--box-item">
+                        <img class="free__content--box-item-img" src="{% static 'books/12TH/81KGHTlw9CL.jpg' %}" alt="">
+                        <button class="free__content--box-item-btn">Solve Now</button>
+                        <h3 class="free__content--box-item-title">ERRORLESS</h3>
+                    </div>
+                    <div class="free__content--box-item">
+                        <img class="free__content--box-item-img" src="{% static 'books/11TH/mbd1194-155x235.jpg' %}" alt="">
+                        <button class="free__content--box-item-btn">Solve Now</button>
+                        <h3 class="free__content--box-item-title">CENCAGE</h3>
+                    </div>
+                    <button class="free__content--box-btn">View all</button>
+                </div>
+            </div>
+            <div class="free__content">
+                <h2 class="free__content--heading"><span> Chemistry</span></h2>
+                <div class="free__content--box">
+                    <div class="free__content--box-item">
+                        <img class="free__content--box-item-img" src="{% static 'books/12TH/91DKzsw46IL.jpg' %}" alt="">
+                        <button class="free__content--box-item-btn">Solve Now</button>
+                        <h3 class="free__content--box-item-title">NCERT - XII</h3>
+                    </div>
+                    <div class="free__content--box-item">
+                        <img class="free__content--box-item-img" src="{% static 'books/12TH/413THTvmAvL._SX324_BO1,204,203,200_.jpg' %}" alt="">
+                        <button class="free__content--box-item-btn">Solve Now</button>
+                        <h3 class="free__content--box-item-title">EXEMPLAR - XI</h3>
+                    </div> <div class="free__content--box-item">
+                        <img class="free__content--box-item-img" src="{% static 'books/11TH/51IKPjxv2BL._SX258_BO1,204,203,200_.jpg' %}" alt="">
+                        <button class="free__content--box-item-btn">Solve Now</button>
+                        <h3 class="free__content--box-item-title">P. BAHADUR</h3>
+                    </div> <div class="free__content--box-item">
+                        <img class="free__content--box-item-img" src="{% static 'books/11TH/A1-k8aBzP-L.jpg' %}" alt="">
+                        <button class="free__content--box-item-btn">Solve Now</button>
+                        <h3 class="free__content--box-item-title">N. AWASTHI</h3>
+                    </div>
+                    <div class="free__content--box-item">
+                        <img class="free__content--box-item-img" src="{% static 'books/11TH/81zptch5WRL.jpg' %}" alt="">
+                        <button class="free__content--box-item-btn">Solve Now</button>
+                        <h3 class="free__content--box-item-title">R.S. AGGARWAL - IX</h3>
+                    </div>
+                    <button class="free__content--box-btn">View all</button>
+                </div>
+            </div>
+            <div class="free__content">
+                <h2 class="free__content--heading"><span> Biology</span></h2>
+                <div class="free__content--box">
+                    <div class="free__content--box-item">
+                        <img class="free__content--box-item-img" src="{% static 'books/11TH/71GhcCJ76gL._SY679_.jpg' %}" alt="">
+                        <button class="free__content--box-item-btn">Solve Now</button>
+                        <h3 class="free__content--box-item-title">NCERT - XII</h3>
+                    </div>
+                    <div class="free__content--box-item">
+                        <img class="free__content--box-item-img" src="{% static 'books/11TH/413GoVytHsL._SX322_BO1,204,203,200_.jpg' %}" alt="">
+                        <button class="free__content--box-item-btn">Solve Now</button>
+                        <h3 class="free__content--box-item-title">EXEMPLAR - XI</h3>
+                    </div> <div class="free__content--box-item">
+                        <img class="free__content--box-item-img" src="{% static 'books/11TH/71lwEUHwfeL.jpg' %}" alt="">
+                        <button class="free__content--box-item-btn">Solve Now</button>
+                        <h3 class="free__content--box-item-title">P. BAHADUR</h3>
+                    </div> <div class="free__content--box-item">
+                        <img class="free__content--box-item-img" src="{% static 'books/12TH/51QejXXKDvL.jpg' %}" alt="">
+                        <button class="free__content--box-item-btn">Solve Now</button>
+                        <h3 class="free__content--box-item-title">N. AWASTHI</h3>
+                    </div>
+                    <div class="free__content--box-item">
+                        <img class="free__content--box-item-img" src="{% static 'books/12TH/81bX+IU66fL.jpg' %}" alt="">
+                        <button class="free__content--box-item-btn">Solve Now</button>
+                        <h3 class="free__content--box-item-title">R.S. AGGARWAL - IX</h3>
+                    </div>
+                    <button class="free__content--box-btn">View all</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-board" class="container-fluid">
+        <h1 class="board-heading">State Boards</h1>
+        <h3 class="board-para">Learn your board syllabus from the best teacher with us</h3>
+        <div class="board">
+            <div class="board__content">
+                <div class="board__content--box">
+                    <img class="board__content--box-img" src="{% static 'State/board-of-high-school-intermediate-uttar-pradesh-logo-C72295BBDE-seeklogo.com.png' %}" alt="">
+                </div>
+                <h3 class="board__content--title">Uttar Pradesh</h3>
+            </div>
+            <div class="board__content">
+                <div class="board__content--box">
+                    <img class="board__content--box-img" src="{% static 'State/bhse new logo JU.png' %}" alt="">
+                </div>
+                <h3 class="board__content--title">Delhi</h3>
+            </div>
+            <div class="board__content">
+                <div class="board__content--box">
+                    <img class="board__content--box-img" src="{% static 'State/ap.png' %}" alt="">
+                </div>
+                <h3 class="board__content--title">Arunachal Pradesh</h3>
+            </div>
+            <div class="board__content">
+                <div class="board__content--box">
+                    <img class="board__content--box-img" src="{% static 'State/punj.png' %}" alt="">
+                </div>
+                <h3 class="board__content--title">Punjab</h3>
+            </div>
+            <div class="board__content">
+                <div class="board__content--box">
+                    <img class="board__content--box-img" src="{% static 'State/uksarkar.png' %}" alt="">
+                </div>
+                <h3 class="board__content--title">Uttarkhand</h3>
+            </div>
+        </div>
+        <div class="board">
+            <div class="board__content">
+                <div class="board__content--box">
+                    <img class="board__content--box-img" src="{% static 'State/MAHA.png' %}" alt="">
+                </div>
+                <h3 class="board__content--title">Madhya Pradesh</h3>
+            </div>
+            <div class="board__content">
+                <div class="board__content--box">
+                    <img class="board__content--box-img" src="{% static 'State/HH.png' %}" alt="">
+                </div>
+                <h3 class="board__content--title">Harayana</h3>
+            </div>
+            <div class="board__content">
+                <div class="board__content--box">
+                    <img class="board__content--box-img" src="{% static 'State/CG.png' %}" alt="">
+                </div>
+                <h3 class="board__content--title">Chattisgarh</h3>
+            </div>
+            <div class="board__content">
+                <div class="board__content--box">
+                    <img class="board__content--box-img" src="{% static 'State/logo_loading.png' %}" alt="">
+                </div>
+                <h3 class="board__content--title">Jammu & Kashmir</h3>
+            </div>
+            <div class="board__content">
+                <div class="board__content--box">
+                    <img class="board__content--box-img" src="{% static 'State/9dWFdq-8_400x400.png' %}" alt="">
+                    
+                </div>
+                <h3 class="board__content--title">Bihar</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-expert" class="container-fluid">
+        <h1 class="expert-heading">Meet our Expert tutors</h1>
+        <div class="expert">
+            <div class="expert__content">
+                <div class="expert__content--box">
+                    <div class="expert__content--box-img" style="background-image: url('../../../static/images/group.jpg');"></div>
+                    <p class="expert__content--box-para">Coursify enabled me to teach in small groups and have better connection with my students.</p>
+                    <h4 class="expert__content--box-text">-Shiv Arora , BSc Science</h4>
+                </div>
+                <div class="expert__content--box">
+                    <div class="expert__content--box-img" style="background-image: url('../../../static/images/group.jpg');transform:translateX(140%)"></div>
+                    <p class="expert__content--box-para" style="justify-self: end;">Coursify enabled me to teach in small groups and have better connection with my students.</p>
+                    <h4 class="expert__content--box-text" style="justify-self: end;">-Shiv Arora , BSc Science</h4>
+                </div>
+                <div class="expert__content--box" style="grid-column: 1 / 3;width:50%;justify-self:center;">
+                    <div class="expert__content--box-img" style="background-image: url('../../../static/images/group.jpg');height:14rem;width:14rem"></div>
+                    <p class="expert__content--box-para" style="justify-self: center;font-size:2.5rem;width:80%;">Coursify enabled me to teach in small groups and have better connection with my students.</p>
+                    <h4 class="expert__content--box-text" style="justify-self: center;font-size:2rem;">-Shiv Arora , BSc Science</h4>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="section-say" class="container-fluid">
+        <h1 class="say-heading">See what our students have to say</h1>
+        <div class="say">
+            <img class="say__img" src="{% static 'images/play.png' %}" alt="">
+            <div class="say__content">
+                <div class="say__content--img" style="background-image: url('../../../static/images/group.jpg');"></div>
+                <p class="say__content--para">Coursify enabled me to teach in small groups and have better connection with my students.</p>
+                <h4 class="say__content--text">-Shiv Arora , BSc Science</h4>
+            </div> 
+            <div class="say__arrow">
+                <h2 class="say__arrow--1"><</h2>
+                <h2 class="say__arrow--2">></h2>
+            </div> 
+        </div>
+        <button class="say-btn">Download the app for free</button>
+    </section>
+
+    <footer id="section-footer1" class="container-fluid">
+        <div class="footer1">
+            <div class="footer1__content">
+                <div class="footer1__content--ncert">
+                    <h1 class="ncert-heading">NCERT</h1>
+                    <div class="ncert-content">
+                        <h2 class="ncert-title">Class 11-12</h2>
+                        <div class="ncert-link">
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                        </div>
+                    </div>
+                    <div class="ncert-content">
+                        <h2 class="ncert-title">Class 9-10</h2>
+                        <div class="ncert-link">
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                        </div>
+                    </div>
+                    <div class="ncert-content">
+                        <h2 class="ncert-title">Class 6-8</h2>
+                        <div class="ncert-link">
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                        </div>
+                    </div>
+                    <h1 class="ncert-heading" style="margin-top: 2rem;">CBSE</h1>
+                    <div class="ncert-link">
+                        <a class="ncert-link--items" style="margin-right: 2rem; font-size:1.5rem;" href="">Class 12</a>
+                        <a class="ncert-link--items" style="margin-right: 2rem; font-size:1.5rem;" href="">Class 11</a>
+                        <a class="ncert-link--items" style="margin-right: 2rem; font-size:1.5rem;" href="">Class 10</a>
+                        <a class="ncert-link--items" style="margin-right: 2rem; font-size:1.5rem;" href="">Class 9</a>
+                        <a class="ncert-link--items" style="margin-right: 2rem; font-size:1.5rem;" href="">Class 8</a>
+                        <a class="ncert-link--items" style="margin-right: 2rem; font-size:1.5rem;" href="">Class 7</a>
+                    </div>
+                    <h1 class="ncert-heading" style="margin-top: 2rem;">ICSE</h1>
+                    <div class="ncert-link">
+                        <a class="ncert-link--items" style="margin-right: 2rem; font-size:1.5rem;" href="">Class 12</a>
+                        <a class="ncert-link--items" style="margin-right: 2rem; font-size:1.5rem;" href="">Class 11</a>
+                        <a class="ncert-link--items" style="margin-right: 2rem; font-size:1.5rem;" href="">Class 10</a>
+                        <a class="ncert-link--items" style="margin-right: 2rem; font-size:1.5rem;" href="">Class 9</a>
+                        <a class="ncert-link--items" style="margin-right: 2rem; font-size:1.5rem;" href="">Class 8</a>
+                        <a class="ncert-link--items" style="margin-right: 2rem; font-size:1.5rem;" href="">Class 7</a>
+                    </div>
+                    <h1 class="ncert-heading" style="margin-top: 2rem;">State Boards</h1>
+                    <div class="ncert-link">
+                        <a class="ncert-link--items" style="margin-right: 2rem;font-size:1.5rem;" href="">Uttar Pradesh Board</a>
+                        <a class="ncert-link--items" style="margin-right: 2rem;font-size:1.5rem;" href="">Delhi Board</a>
+                        <a class="ncert-link--items" style="margin-right: 2rem;font-size:1.5rem;" href="">Harayana Board</a>
+                        <a class="ncert-link--items" style="margin-right: 2rem;font-size:1.5rem;" href="">Himachal Pradesh Board</a>
+                        <a class="ncert-link--items" style="margin-right: 2rem;font-size:1.5rem;" href="">Bihar Board</a>
+                        <a class="ncert-link--items" style="margin-right: 2rem;font-size:1.5rem;" href="">Jarkhand Board</a>
+                        <a class="ncert-link--items" style="margin-right: 2rem;font-size:1.5rem;" href="">madhya Pradesh Board</a>
+                        <a class="ncert-link--items" style="margin-right: 2rem;font-size:1.5rem;" href="">Chhattishgarh Board</a>
+                    </div>
+                    <h1 class="ncert-heading" style="margin-top: 2rem;">Reference Books</h1>
+                    <div class="ncert-content">
+                        <h2 class="ncert-title">Class 11-12</h2>
+                        <div class="ncert-link">
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                        </div>
+                    </div>
+                    <div class="ncert-content">
+                        <h2 class="ncert-title">Class 9-10</h2>
+                        <div class="ncert-link">
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                        </div>
+                    </div>
+                    <div class="ncert-content">
+                        <h2 class="ncert-title">Class 6-8</h2>
+                        <div class="ncert-link">
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                            <a class="ncert-link--items" href="">Class 12 Physics NCERT Solutions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer1__img">
+                <!-- Contact <img src="images/" alt=""> -->
+                <img class="footer1__img--logo" src="{% static 'images/favicon.png' %}" alt="">
+                <h3 class="footer1__img--text">Clarify your Doubts.</h3>
+                <h3 class="footer1__img--text">In your Language.</h3>
+
+                <h4 class="footer1__img--links">Quick Links</h4>
+                <a class="footer1__img--items" href="">About US</a>
+                <a class="footer1__img--items" href="">Careers</a>
+                <a class="footer1__img--items" href="">Press Releases</a>
+                <a class="footer1__img--items" href="">Provacy</a>
+                <a class="footer1__img--items" href="">About US</a>
+            </div>
+            
+        </div>
+    </footer>
+
+    
+
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
 {% endblock content %}
