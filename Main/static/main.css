@@ -100,13 +100,14 @@ body {
     left: 50%;
     transform: translateX(-50%); }
     .board__content--box {
+      background-color: white;
       box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.1);
       border-radius: 2rem;
       height: 13rem;
       width: 14rem;
       margin-bottom: 1.5rem; }
       .board__content--box-img {
-        padding: 1rem;
+        padding: 1.5rem;
         width: 100%;
         position: relative;
         top: 50%;
