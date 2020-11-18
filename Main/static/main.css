@@ -1421,6 +1421,34 @@ body {
   word-spacing: .5rem;
   margin-bottom: 5rem; }
 
+.expert-img1 {
+  position: absolute;
+  z-index: -1;
+  top: -70%;
+  height: 70rem;
+  left: -30%; }
+
+.expert-img2 {
+  position: absolute;
+  z-index: -1;
+  bottom: 45%;
+  height: 20rem;
+  left: 3%; }
+
+.expert-img3 {
+  position: absolute;
+  z-index: -1;
+  bottom: 10%;
+  height: 27rem;
+  left: 28%; }
+
+.expert-img4 {
+  position: absolute;
+  z-index: -1;
+  top: -5%;
+  height: 15rem;
+  right: 2%; }
+
 .expert__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1439,24 +1467,25 @@ body {
     grid-template-areas: 'img para' 'img text'; }
     .expert__content--box-img {
       grid-area: img;
-      height: 10rem;
-      width: 10rem;
+      height: 12rem;
+      width: 12rem;
       clip-path: circle(50% at 50% 50%);
       background-size: cover; }
     .expert__content--box-para {
       width: 65%;
       align-self: end;
       grid-area: para;
-      font-family: 'Poppins',sans-serif;
+      font-family: 'Roboto',sans-serif;
       font-size: 2rem;
-      font-weight: 600;
+      font-weight: 500;
       color: #4B4B4B; }
     .expert__content--box-text {
       font-size: 2rem;
       width: fit-content;
+      font-family: 'Roboto',sans-serif;
       grid-area: text;
       justify-self: start;
-      font-weight: 800;
+      font-weight: 400;
       color: #1E4190;
       margin-left: 3rem; }
 
@@ -1537,30 +1566,71 @@ body {
   .myfooter {
     flex-wrap: wrap; } }
 
+.footer1-connect {
+  margin-bottom: 4rem; }
+  .footer1-connect--text {
+    color: #4B4B4B;
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: 'Poppins',sans-serif;
+    margin-left: 2rem; }
+    .footer1-connect--text-img {
+      width: 3rem;
+      height: 3rem;
+      margin-left: 1rem;
+      cursor: pointer;
+      transition: all .2s; }
+      .footer1-connect--text-img:hover {
+        transform: scale(1.1) translateY(-0.2rem); }
+  .footer1-connect--text1 {
+    color: #4B4B4B;
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-family: 'Poppins',sans-serif;
+    position: absolute;
+    right: 8rem;
+    top: 0rem; }
+    .footer1-connect--text1-img {
+      width: 3rem;
+      height: 3rem;
+      margin-left: 1rem;
+      cursor: pointer;
+      transition: all .2s; }
+      .footer1-connect--text1-img:hover {
+        transform: scale(1.1) translateY(-0.2rem); }
+    .footer1-connect--text1 span {
+      font-size: 1.5rem;
+      color: rgba(75, 75, 75, 0.6); }
+
 .footer1 {
   display: grid;
   grid-template-columns: 70% 30%; }
-  .footer1__content--ncert {
-    margin-left: 2rem; }
-    .footer1__content--ncert .ncert-heading {
-      text-align: left;
-      color: #4B4B4B;
-      font-size: 3rem; }
-    .footer1__content--ncert .ncert-content {
-      display: grid;
-      grid-template-columns: 13% 87%;
-      margin-top: 2rem; }
-      .footer1__content--ncert .ncert-content .ncert-title {
-        color: #D60B3C;
-        font-family: 'Poppins',sans-serif;
-        font-weight: 700;
-        align-self: center; }
-      .footer1__content--ncert .ncert-content .ncert-link {
+  .footer1__content {
+    margin-top: -10rem; }
+    .footer1__content--ncert {
+      margin-left: 2rem; }
+      .footer1__content--ncert .ncert-heading {
+        text-align: left;
+        color: #4B4B4B;
+        font-size: 3rem; }
+      .footer1__content--ncert .ncert-content {
         display: grid;
-        grid-template-columns: repeat(4, 22rem); }
-        .footer1__content--ncert .ncert-content .ncert-link--items {
-          font-size: 1.3rem; }
+        grid-template-columns: 13% 87%;
+        margin-top: 2rem; }
+        .footer1__content--ncert .ncert-content .ncert-title {
+          color: #D60B3C;
+          font-family: 'Poppins',sans-serif;
+          font-weight: 700;
+          align-self: center; }
+        .footer1__content--ncert .ncert-content .ncert-link {
+          display: grid;
+          grid-template-columns: repeat(4, 22rem); }
+          .footer1__content--ncert .ncert-content .ncert-link--items {
+            font-size: 1.3rem; }
   .footer1__img--logo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     height: 10rem; }
   .footer1__img--text {
     font-size: 4rem;
@@ -1609,7 +1679,8 @@ body {
   position: absolute;
   bottom: 8%;
   height: 60%;
-  left: 50%; }
+  left: 50%;
+  z-index: -1; }
 
 .free {
   width: 90%;
@@ -3549,6 +3620,13 @@ nav {
   word-spacing: .5rem;
   margin-bottom: 8rem; }
 
+.say-img1 {
+  position: absolute;
+  z-index: -1;
+  top: 24%;
+  height: 115%;
+  right: -27%; }
+
 .say {
   width: 80%;
   position: relative;
@@ -3566,7 +3644,8 @@ nav {
     padding-bottom: 1rem;
     height: fit-content;
     border-radius: 2rem;
-    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.1); }
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.1);
+    background-color: white; }
     .say__content--img {
       top: -4rem;
       transform: translateX(-50%);
