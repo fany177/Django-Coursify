@@ -15,11 +15,11 @@ urlpatterns = [
     path('previousyear/',views.previousyear,name='previousyear'),
     
     path('book/',views.book,name='book'),
-    path('book/book_list/',views.book_list,name='book_list'),
-    path('book/book_list/ncert/',views.ncert,name='ncert'),
-    path('book/book_list/ncert/ncert_chapter1/',views.ncert_chapter1,name='ncert_chapter1'),
-    path('book/book_list/ncert_chapter1/ncert_chapter1_exercise/',views.ncert_chapter1_exercise,name='ncert_chapter1_exercise'),
-    path('book/book_list/ncert_chapter1/ncert_chapter1_exercise/1uestion',views.question,name='question'),
+    path('book1/',views.book1,name='book1'),
+    # path('book/book_list/ncert/',views.ncert,name='ncert'),
+    # path('book/book_list/ncert/ncert_chapter1/',views.ncert_chapter1,name='ncert_chapter1'),
+    # path('book/book_list/ncert_chapter1/ncert_chapter1_exercise/',views.ncert_chapter1_exercise,name='ncert_chapter1_exercise'),
+    # path('book/book_list/ncert_chapter1/ncert_chapter1_exercise/1uestion',views.question,name='question'),
     
     path('course/',views.course,name='course'),
     path('join/',views.join,name='join'),

@@ -30,17 +30,17 @@ def previousyear(request):
 def book(request):
     return render(request,'Application/book.html')
 
-def book_list(request):
-    return render(request,'Application/book_list.html')
+def book1(request):
+    return render(request,'Application/book1.html')
 
-def ncert(request):
-    return render(request,'Application/ncert.html')
+# def ncert(request):
+#     return render(request,'Application/ncert.html')
 
-def ncert_chapter1(request):
-    return render(request,'Application/ncert_chapter1.html')
+# def ncert_chapter1(request):
+#     return render(request,'Application/ncert_chapter1.html')
 
-def ncert_chapter1_exercise(request):
-    return render(request,'Application/ncert_chapter1_exercise.html')
+# def ncert_chapter1_exercise(request):
+#     return render(request,'Application/ncert_chapter1_exercise.html')
 
 def question(request):
     return render(request,'Application/question.html')
@@ -54,27 +54,4 @@ def join(request):
 
 def board(request):
     return render(request,'Application/board.html')
-
-
-
-
-
-
-
-
-
-
-
-# def book3(request):
-#     return render(request,'Application/book3.html')
-
-
-
-
-# def video(request):
-#     return render(request,'Application/video.html')
-
-
-
-
 
