@@ -1923,16 +1923,16 @@ body {
     outline: none;
     border: none; }
 
-.state {
+.must {
   height: 100%;
   margin-bottom: 3rem;
   display: grid;
   grid-template-columns: 17% 83%;
   column-gap: 6rem; }
-  .state__names {
+  .must__names {
     display: grid;
     grid-template-rows: repeat(10, 4.5rem); }
-    .state__names--btn {
+    .must__names--btn {
       transform: translateY(5rem);
       background-color: transparent;
       border-left: none;
@@ -1944,21 +1944,21 @@ body {
       border-right: 0.1rem solid #bbb9b9;
       border-top-right-radius: 1rem;
       background-color: white; }
-      .state__names--btn:not(:first-child) {
+      .must__names--btn:not(:first-child) {
         border-top: none;
         box-shadow: 0rem -0.2rem 1.5rem rgba(0, 0, 0, 0.1);
         border-bottom: 0.1rem solid #bbb9b9; }
-      .state__names--btn:first-child {
+      .must__names--btn:first-child {
         border-top: 0.1rem solid #bbb9b9;
         border-bottom: 0.1rem solid #bbb9b9; }
-      .state__names--btn:hover, .state__names--btn:focus {
+      .must__names--btn:hover, .must__names--btn:focus {
         background-color: #DE0B38;
         color: white;
         outline: none; }
 
-.class {
+.material {
   width: 85%; }
-  .class .heading {
+  .material .heading {
     margin-top: 4rem;
     padding-bottom: 1.5rem;
     font-size: 3rem;
@@ -1967,14 +1967,18 @@ body {
     color: #D60B3C;
     border-bottom: 0.3rem solid #DE0B38;
     margin-bottom: 5rem; }
-  .class__content {
+  .material__content {
     position: relative; }
-    .class__content--heading {
+    .material__content--heading {
       font-size: 2.5rem;
       font-family: 'Poppins',sans-serif;
       color: #4B4B4B;
       font-weight: 700; }
-    .class__content--btn {
+    .material__content--subheading {
+      color: #1E4190;
+      font-family: 'Poppins',sans-serif;
+      font-style: italic; }
+    .material__content--btn {
       right: 4%;
       top: .5rem;
       position: absolute;
@@ -1984,23 +1988,23 @@ body {
       border-radius: 20rem;
       border: none;
       padding: 0rem .5rem; }
-      .class__content--btn:focus, .class__content--btn:active {
+      .material__content--btn:focus, .material__content--btn:active {
         outline: none; }
-    .class__content--box {
+    .material__content--box {
       display: grid;
       grid-template-columns: repeat(5, 13%) 10%;
       column-gap: 7.5rem;
       margin-bottom: 5rem; }
-      .class__content--box-item {
+      .material__content--box-item {
         position: relative;
         width: 20rem; }
-        .class__content--box-item-img {
+        .material__content--box-item-img {
           transform: translateY(1rem);
           width: 16rem;
           height: 22rem;
           margin-bottom: 2rem;
           border-radius: .5rem; }
-        .class__content--box-item-btn {
+        .material__content--box-item-btn {
           position: absolute;
           bottom: 3.5rem;
           left: 50%;
@@ -2012,79 +2016,12 @@ body {
           width: fit-content;
           font-size: 1.5rem;
           border-radius: .5rem; }
-          .class__content--box-item-btn:focus, .class__content--box-item-btn:active {
+          .material__content--box-item-btn:focus, .material__content--box-item-btn:active {
             outline: none; }
-        .class__content--box-item-title {
+        .material__content--box-item-title {
           position: relative;
           left: 50%;
           transform: translate(-59%, 0.6rem);
-          font-size: 1.5rem;
-          font-family: 'Roboto',sans-serif;
-          font-weight: 500;
-          color: #1E4190;
-          text-align: center;
-          justify-self: center; }
-
-.school {
-  width: fit-content;
-  position: absolute;
-  left: 40%;
-  transform: translateX(-50%);
-  grid-column: 1 / -1; }
-  .school__btn {
-    background-color: transparent;
-    color: #1E4190;
-    font-size: 3rem;
-    font-weight: 700;
-    padding: 0rem 10rem;
-    font-family: 'Poppins',sans-serif; }
-    .school__btn:hover {
-      color: white;
-      background-color: #DE0B38; }
-
-.class1 {
-  width: 70%;
-  position: relative;
-  left: 52%;
-  transform: translateX(-50%); }
-  .class1__content {
-    position: relative; }
-    .class1__content--heading {
-      font-size: 2.5rem;
-      font-family: 'Poppins',sans-serif;
-      color: #4B4B4B;
-      font-weight: 700; }
-    .class1__content--box {
-      display: grid;
-      grid-template-columns: repeat(5, 13%) 10%;
-      column-gap: 6rem;
-      margin-bottom: 5rem; }
-      .class1__content--box-item {
-        position: relative; }
-        .class1__content--box-item-img {
-          transform: translateY(1rem);
-          width: 16rem;
-          height: 21rem;
-          margin-bottom: 2rem;
-          border-radius: .5rem; }
-        .class1__content--box-item-btn {
-          position: absolute;
-          bottom: 3.5rem;
-          left: 50%;
-          transform: translateX(-41%) translateY(1rem);
-          background-color: #D60B3C;
-          color: white;
-          border: none;
-          padding: .2rem 3rem;
-          width: fit-content;
-          font-size: 1.5rem;
-          border-radius: .5rem; }
-          .class1__content--box-item-btn:focus, .class1__content--box-item-btn:active {
-            outline: none; }
-        .class1__content--box-item-title {
-          position: relative;
-          left: 50%;
-          transform: translate(-42%, 0.6rem);
           font-size: 1.5rem;
           font-family: 'Roboto',sans-serif;
           font-weight: 500;
@@ -3560,34 +3497,12 @@ nav {
   height: fit-content; }
 
 #section-solve {
-  margin-top: 0rem;
   position: relative; }
 
 #section-must {
   height: fit-content;
-  margin-top: 4rem;
+  margin-top: 8rem;
   position: relative; }
-
-#section-ncert {
-  height: fit-content;
-  margin-top: 4rem;
-  position: relative; }
-
-#section-lower {
-  height: fit-content;
-  margin-top: 4rem;
-  position: relative; }
-
-#section-sharma {
-  height: fit-content;
-  margin-top: 4rem;
-  position: relative; }
-
-#section-exam {
-  height: fit-content;
-  margin-top: 15rem;
-  position: relative;
-  margin-bottom: 5rem; }
 
 #landing-section {
   height: fit-content;
@@ -3596,13 +3511,6 @@ nav {
 #state-section {
   height: fit-content;
   margin-left: -1rem;
-  position: relative; }
-
-#section-classes {
-  height: fit-content;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
   position: relative; }
 
 #section-live {
