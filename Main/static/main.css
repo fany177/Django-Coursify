@@ -3641,7 +3641,7 @@ nav {
         outline: none; }
 
 .class {
-  width: 70%; }
+  width: 85%; }
   .class .heading {
     margin-top: 4rem;
     padding-bottom: 1.5rem;
@@ -3659,7 +3659,7 @@ nav {
       color: #4B4B4B;
       font-weight: 700; }
     .class__content--btn {
-      right: 3%;
+      right: 4%;
       top: .5rem;
       position: absolute;
       font-size: 1.5rem;
@@ -3673,26 +3673,26 @@ nav {
     .class__content--box {
       display: grid;
       grid-template-columns: repeat(5, 13%) 10%;
-      column-gap: 6rem;
+      column-gap: 7.5rem;
       margin-bottom: 5rem; }
       .class__content--box-item {
         position: relative;
         width: 20rem; }
         .class__content--box-item-img {
           transform: translateY(1rem);
-          width: 15rem;
-          height: 20rem;
+          width: 16rem;
+          height: 22rem;
           margin-bottom: 2rem;
           border-radius: .5rem; }
         .class__content--box-item-btn {
           position: absolute;
           bottom: 3.5rem;
           left: 50%;
-          transform: translateX(-71%) translateY(1rem);
+          transform: translateX(-65%) translateY(1rem);
           background-color: #D60B3C;
           color: white;
           border: none;
-          padding: .2rem 2.5rem;
+          padding: .2rem 3rem;
           width: fit-content;
           font-size: 1.5rem;
           border-radius: .5rem; }
@@ -3701,7 +3701,7 @@ nav {
         .class__content--box-item-title {
           position: relative;
           left: 50%;
-          transform: translate(-62.5%, 0.6rem);
+          transform: translate(-59%, 0.6rem);
           font-size: 1.5rem;
           font-family: 'Roboto',sans-serif;
           font-weight: 500;
@@ -3747,15 +3747,15 @@ nav {
         position: relative; }
         .class1__content--box-item-img {
           transform: translateY(1rem);
-          width: 15rem;
-          height: 20rem;
+          width: 16rem;
+          height: 21rem;
           margin-bottom: 2rem;
           border-radius: .5rem; }
         .class1__content--box-item-btn {
           position: absolute;
           bottom: 3.5rem;
-          left: 47%;
-          transform: translateX(-42%) translateY(1rem);
+          left: 50%;
+          transform: translateX(-41%) translateY(1rem);
           background-color: #D60B3C;
           color: white;
           border: none;
@@ -3767,8 +3767,8 @@ nav {
             outline: none; }
         .class1__content--box-item-title {
           position: relative;
-          left: 42%;
-          transform: translate(-45%, 0.6rem);
+          left: 50%;
+          transform: translate(-42%, 0.6rem);
           font-size: 1.5rem;
           font-family: 'Roboto',sans-serif;
           font-weight: 500;
