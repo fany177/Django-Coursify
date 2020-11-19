@@ -3612,7 +3612,7 @@ nav {
   margin-bottom: 3rem;
   display: grid;
   grid-template-columns: 17% 83%;
-  column-gap: 10rem; }
+  column-gap: 6rem; }
   .state__names {
     display: grid;
     grid-template-rows: repeat(10, 4.5rem); }
@@ -3641,7 +3641,7 @@ nav {
         outline: none; }
 
 .class {
-  width: 80%; }
+  width: 70%; }
   .class .heading {
     margin-top: 4rem;
     padding-bottom: 1.5rem;
@@ -3659,7 +3659,7 @@ nav {
       color: #4B4B4B;
       font-weight: 700; }
     .class__content--btn {
-      right: 0rem;
+      right: 3%;
       top: .5rem;
       position: absolute;
       font-size: 1.5rem;
@@ -3673,10 +3673,11 @@ nav {
     .class__content--box {
       display: grid;
       grid-template-columns: repeat(5, 13%) 10%;
-      column-gap: 8rem;
+      column-gap: 6rem;
       margin-bottom: 5rem; }
       .class__content--box-item {
-        position: relative; }
+        position: relative;
+        width: 20rem; }
         .class__content--box-item-img {
           transform: translateY(1rem);
           width: 15rem;
@@ -3687,12 +3688,12 @@ nav {
           position: absolute;
           bottom: 3.5rem;
           left: 50%;
-          transform: translateX(-42%) translateY(1rem);
+          transform: translateX(-71%) translateY(1rem);
           background-color: #D60B3C;
           color: white;
           border: none;
           padding: .2rem 2.5rem;
-          width: 100%;
+          width: fit-content;
           font-size: 1.5rem;
           border-radius: .5rem; }
           .class__content--box-item-btn:focus, .class__content--box-item-btn:active {
@@ -3700,7 +3701,7 @@ nav {
         .class__content--box-item-title {
           position: relative;
           left: 50%;
-          transform: translate(-45%, 0.6rem);
+          transform: translate(-62.5%, 0.6rem);
           font-size: 1.5rem;
           font-family: 'Roboto',sans-serif;
           font-weight: 500;
@@ -3740,7 +3741,7 @@ nav {
     .class1__content--box {
       display: grid;
       grid-template-columns: repeat(5, 13%) 10%;
-      column-gap: 8rem;
+      column-gap: 6rem;
       margin-bottom: 5rem; }
       .class1__content--box-item {
         position: relative; }
