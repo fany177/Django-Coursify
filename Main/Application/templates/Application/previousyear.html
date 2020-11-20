@@ -6,12 +6,12 @@
     <img class="ellipses1" src="{% static 'images/ellipses.png' %}" alt="">
     <div class="exams">
         <div class="exams__names">
-            <button class="exams__names--btn">Board Exams</button>
-            <button class="exams__names--btn">School exams</button>
-            <button class="exams__names--btn">JEE - Mains</button>
-            <button class="exams__names--btn">JEE - Advanced</button>
-            <button class="exams__names--btn">NEET</button>
-            <button class="exams__names--btn" style="color: white;background-color:#D60B3C;">Previous Year Q's</button>
+            <button onclick="location.href={% url 'boardexams' %}" class="exams__names--btn">Board Exams</button>
+            <button onclick="location.href={% url 'schoolexams' %}" class="exams__names--btn">School exams</button>
+            <button onclick="location.href={% url 'jeemain' %}" class="exams__names--btn">JEE - Mains</button>
+            <button onclick="location.href={% url 'jeeadvance' %}" class="exams__names--btn">JEE - Advanced</button>
+            <button onclick="location.href={% url 'neet' %}" class="exams__names--btn">NEET</button>
+            <button onclick="location.href={% url 'previousyear' %}" class="exams__names--btn" style="color: white;background-color:#D60B3C;">Previous Year Q's</button>
         </div>
         <div class="examination">
             <h2 class="heading">State Boards</h2>
