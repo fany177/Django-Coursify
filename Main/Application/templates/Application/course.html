@@ -2,7 +2,6 @@
 {% load static %}
 
 {% block content %}
-<link rel="stylesheet" href="{% static 'main.css' %}">
     <section id="section-embark" class="container-fluid">
         <img class="embark-img" src="{% static 'images/ellipses.png' %}" alt="">
         <div class="embark">
@@ -47,19 +46,19 @@
             </div>
             <div class="jee__content">
                 <h2 class="jee__content--heading">JEE MAIN <span>Prep Course</span></h2>
-                <div class="jee__content--box">
-                    <img class="jee__content--box-img" src="{% static 'images/pencil.png' %}" alt="">
-                    <h4 class="jee__content--box-heading">Crack the Exam of your Dreams</h4>
-                    <h5 class="jee__content--box-para">with such a huge competition, improve your score and your rank with us!</h5>
-                </div>
                 <div class="jee__build">
                     <div class="row">
-                        <div class="jee__build--box col-lg-6 col-md-12">
+                        <div class="jee__build--box col-lg-4 col-md-12">
                             <img class="jee__build--box-img" src="{% static 'images/build.png' %}" alt="">
                             <h4 class="jee__build--box-heading">Build your Future</h4>
                             <h5 class="jee__build--box-para">These exams will build your future</h5>
                         </div>
-                        <div class="jee__build--box col-lg-6 col-md-12">
+                        <div class="jee__build--box col-lg-4">
+                            <img class="jee__build--box-img" src="{% static 'images/pencil.png' %}" alt="">
+                            <h4 class="jee__build--box-heading">Crack the Exam of your Dreams</h4>
+                            <h5 class="jee__build--box-para">with such a huge competition, improve your score and your rank with us!</h5>
+                        </div>
+                        <div class="jee__build--box col-lg-4 col-md-12">
                             <img class="jee__build--box-img" src="{% static 'images/medal.png' %}" alt="">
                             <h4 class="jee__build--box-heading">Become the Best</h4>
                             <h5 class="jee__build--box-para">Prepare for your goals and shine more than</h5>
@@ -89,17 +88,17 @@
                     <img class="reading__img" src="{% static 'images/reading.png' %}" alt="">
                     <div class="reading__content">
                         <div class="reading__content--sub">
-                            <img class="reading__content--sub-img" src="{% static 'images/tick.png' %}" alt="">  
+                            <h3 class="reading__content--sub-icon">>></h3>  
                             <h3 class="reading__content--sub-title">Course curated for your Goals  </h3> 
                             <h5 class="reading__content--sub-para">Learn from the best and crack the exams of your dreams!</h5>
                         </div>
                         <div class="reading__content--sub">
-                            <img class="reading__content--sub-img" src="{% static 'images/tick.png' %}" alt="">  
+                            <h3 class="reading__content--sub-icon">>></h3>  
                             <h3 class="reading__content--sub-title">Know what to study </h3> 
                             <h5 class="reading__content--sub-para">The course gives you the complete study package</h5>
                         </div>
                         <div class="reading__content--sub">
-                            <img class="reading__content--sub-img" src="{% static 'images/tick.png' %}" alt="">  
+                            <h3 class="reading__content--sub-icon">>></h3>  
                             <h3 class="reading__content--sub-title">From start to end </h3> 
                             <h5 class="reading__content--sub-para">Starting from basic, and ending an advanced concepts</h5>
                         </div>
@@ -159,18 +158,16 @@
                     </div>
                 </div>
 
-                <div class="say">
-                    <h1 class="say__heading">What Students say about this Course</h1>
-                    <div class="say__content">
-                        <div class="say__content--img"></div>
-                        <h4 class="say__content--para">Coursify enabled me to teach in small groups and have better connectionwith my students. And help them</h4>
-                        <h5 class="say__content--sub">Shiv Arora, BSc Science</h5>
+                <div class="about">
+                    <h1 class="about__heading">What Students say about this Course</h1>
+                    <div class="about__content">
+                        <div class="about__content--img"></div>
+                        <h4 class="about__content--para">Coursify enabled me to teach in small groups and have better connectionwith my students. And help them</h4>
+                        <h5 class="about__content--sub">Shiv Arora, BSc Science</h5>
                     </div>
-                    <button class="say__btn">Start your Preperation Now.</button>
+                    <button class="about__btn">Start your Preperation Now.</button>
                 </div>
             </div>
-
-
     </section>
 
     <section id="section-need" style="position: relative;" class="container-fluid">
@@ -224,10 +221,50 @@
         </div>
     </section>
 
+    <section id="section-clear" class="container-fluid">
+        <h1 class="clear-heading">Clear your Doubts in just 2 Steps</h1>
+        <img class="clear-img" src="{% static 'images/ellipses.png' %}" alt="">
+        <div class="clear">
+            <img class="clear__img1" src="{% static 'images/one.png' %}" alt="">
+            <img class="clear__img2" src="{% static 'images/brain.png' %}" alt="">
+            <img class="clear__img3" src="{% static 'images/two.png' %}" alt="">
+        </div>
+        <h2 class="clear-para">Our complex Searching Algorithm Finds solutions for you and saves time.</h2>
+        <button class="clear-btn">Clarify your doubts now!</button>
+    </section>
+
+    <section id="section-live" class="container-fluid">
+        <h1 class="live-heading" style="border-bottom: none;">LIVE classes</h1>
+        <div class="live">
+            <img class="live__img" src="{% static 'images/live1.png' %}" alt="">
+            <div class="live__box">
+                <div class="live__box--content">
+                    <img class="live__box--content-img" src="{% static 'images/global-network.png' %}" alt="">
+                    <h3 class="live__box--content-heading">Accessible everywhere</h3>
+                    <h5 class="live__box--content-para">Access to quality education anytime, anywhere</h5>
+                </div>
+                <div class="live__box--content">
+                    <img class="live__box--content-img" src="{% static 'images/coaching.png' %}" alt="">
+                    <h3 class="live__box--content-heading">Expert Teachers</h3>
+                    <h5 class="live__box--content-para">Unlimited access to video solutions</h5>
+                </div>
+                <div class="live__box--content">
+                    <img class="live__box--content-img" src="{% static 'images/presentation.png' %}" alt="">
+                    <h3 class="live__box--content-heading">Interactive Sessions</h3>
+                    <h5 class="live__box--content-para">Small groups for maximum student - teacher interaction</h5>
+                </div>
+            </div>
+            <img class="ellipses4" src="{% static 'images/ellipses.png' %}" alt="">
+        </div>
+        
+        <h2 class="live-free">FIRST CLASS FREE!</h2>
+        <button class="live-btn" href="">Book a class now!</button>
+    </section>
+
     <section id="section-video" class="container-fluid">
-        <img class="jee-img4" src="{% static 'images/ellipses.png' %}" alt="">
         <h1 class="video-heading">Microconcept videos</h1>
         <div class="video">
+            <img class="video__img" src="{% static 'images/tablet.png' %}" alt="">
             <div class="video__box">
                 <div class="video__box--content">
                     <img class="video__box--content-img" src="{% static 'images/chronometer.png' %}" alt="">
@@ -240,11 +277,12 @@
                 </div>
                 <button class="video__box--btn" href="">Start learning now</button>
             </div>
-            <img class="video__img" src="{% static 'images/tablet.png' %}" alt="">
+            
         </div>
+        <img class="ellipses5" src="{% static 'images/ellipses.png' %}" alt="">
     </section>
 
-    <section id="section-doubts" class="container-fluid">
+    <!-- <section id="section-doubts" class="container-fluid">
         <h1 class="doubts-heading">Solve your doubts faster.</h1>
         <div class="doubts">
             <div class="doubts__box">
@@ -327,6 +365,6 @@
         
         <h2 class="live-free">FIRST CLASS FREE!</h2>
         <button class="live-btn" href="">Book a class now!</button>
-    </section>
+    </section> -->
     
  {% endblock %}
