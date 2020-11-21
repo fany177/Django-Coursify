@@ -33,14 +33,14 @@ def book(request):
 def book1(request):
     return render(request,'Application/book1.html')
 
-# def ncert(request):
-#     return render(request,'Application/ncert.html')
+def ncert(request):
+    return render(request,'Application/ncert.html')
 
-# def ncert_chapter1(request):
-#     return render(request,'Application/ncert_chapter1.html')
+def chapter1(request):
+    return render(request,'Application/chapter1.html')
 
-# def ncert_chapter1_exercise(request):
-#     return render(request,'Application/ncert_chapter1_exercise.html')
+def exercise(request):
+    return render(request,'Application/exercise.html')
 
 def question(request):
     return render(request,'Application/question.html')
