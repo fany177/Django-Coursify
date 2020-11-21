@@ -3682,10 +3682,19 @@ nav {
           transform: translate(-59%, 0.6rem);
           font-size: 1.5rem;
           font-family: 'Roboto',sans-serif;
-          font-weight: 500;
+          font-weight: 600;
           color: #1E4190;
           text-align: center;
           justify-self: center; }
+        .sub__content--box-item-text {
+          position: absolute;
+          left: 40%;
+          transform: translateX(-50%);
+          font-size: 1.5rem;
+          font-family: 'Poppins',sans-serif;
+          font-weight: 600;
+          color: #4B4B4B;
+          margin-top: .5rem; }
 
 .video-heading {
   text-align: center;
@@ -3954,6 +3963,11 @@ nav {
 #section-sub {
   height: fit-content;
   margin-top: 4rem;
+  position: relative; }
+
+#section-course {
+  height: fit-content;
+  margin-top: 6rem;
   position: relative; }
 
 #section-question {
