@@ -1346,7 +1346,13 @@ body {
   .get-heading span {
     color: #D60B3C; }
 
+.get-img1 {
+  position: absolute;
+  width: 80%;
+  left: -40%; }
+
 .get {
+  position: relative;
   margin-top: 7rem;
   display: grid;
   grid-template-columns: repeat(2, 50%); }
@@ -2283,6 +2289,33 @@ body {
   font-weight: 700;
   color: #4B4B4B; }
 
+.meet-img1 {
+  position: absolute;
+  z-index: -1;
+  width: 15rem;
+  top: 10rem; }
+
+.meet-img2 {
+  position: absolute;
+  z-index: -1;
+  width: 15rem;
+  top: 5rem;
+  left: 5rem; }
+
+.meet-img3 {
+  position: absolute;
+  z-index: -1;
+  width: 25rem;
+  top: 2rem;
+  right: -15rem; }
+
+.meet-img4 {
+  position: absolute;
+  z-index: -1;
+  width: 15rem;
+  bottom: 1rem;
+  left: -7rem; }
+
 .meet {
   display: grid;
   grid-template-columns: repeat(2, 50%);
@@ -2292,7 +2325,8 @@ body {
   width: 70%;
   margin-top: 5rem; }
   .meet__content {
-    width: fit-content; }
+    width: fit-content;
+    position: relative; }
     .meet__content--img {
       filter: drop-shadow(0rem 0rem 1rem rgba(0, 0, 0, 0.2));
       border-radius: 30rem;
@@ -3925,7 +3959,13 @@ nav {
   font-weight: 800;
   text-align: center; }
 
+.why-img1 {
+  position: absolute;
+  width: 80%;
+  right: -40%; }
+
 .why {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
   .why__img {
