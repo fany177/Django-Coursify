@@ -121,161 +121,6 @@ body {
       font-size: 2rem;
       width: 250%; }
 
-.maths-heading,
-.science-heading {
-  text-align: center;
-  font-size: 3rem;
-  color: #1E4190;
-  font-family: 'Poppins',sans-serif;
-  font-weight: 900;
-  word-spacing: 1rem; }
-  .maths-heading span,
-  .science-heading span {
-    color: #DE0B38; }
-
-.maths-img {
-  position: absolute;
-  z-index: 0;
-  height: 130%;
-  left: -20%; }
-
-.maths,
-.science {
-  background-color: transparent;
-  position: relative;
-  margin-top: 6rem;
-  height: 35rem;
-  width: 85%;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 5rem; }
-  .maths__content,
-  .science__content {
-    display: grid;
-    height: 100%;
-    background-color: transparent;
-    justify-items: center;
-    grid-template-columns: 10% 80% 10%;
-    justify-items: center;
-    align-items: center; }
-    .maths__content--back,
-    .science__content--back {
-      background-color: transparent;
-      border: none;
-      width: fit-content;
-      font-size: 8rem;
-      font-family: 'Poppins',sans-serif;
-      font-weight: 700;
-      color: #1E4190;
-      height: fit-content;
-      transition: all .3s; }
-      .maths__content--back:hover,
-      .science__content--back:hover {
-        transform: scaleX(1.3); }
-      .maths__content--back:focus, .maths__content--back:active,
-      .science__content--back:focus,
-      .science__content--back:active {
-        outline: none; }
-    .maths__content--next,
-    .science__content--next {
-      background-color: transparent;
-      border: none;
-      width: fit-content;
-      font-size: 8rem;
-      font-family: 'Poppins',sans-serif;
-      font-weight: 700;
-      color: #1E4190;
-      height: fit-content;
-      transition: all .3s; }
-      .maths__content--next:hover,
-      .science__content--next:hover {
-        transform: scaleX(1.3); }
-      .maths__content--next:focus, .maths__content--next:active,
-      .science__content--next:focus,
-      .science__content--next:active {
-        outline: none; }
-    .maths__content .chips,
-    .science__content .chips {
-      width: 90%;
-      height: 100%;
-      display: grid;
-      background-color: transparent;
-      justify-items: center; }
-      .maths__content .chips__box,
-      .science__content .chips__box {
-        display: grid;
-        grid-template-columns: repeat(100, 20rem);
-        width: 100%;
-        height: 100%;
-        margin-bottom: 3rem;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        column-gap: 11.3rem; }
-        .maths__content .chips__box--green,
-        .science__content .chips__box--green {
-          background: #4BAEA0; }
-        .maths__content .chips__box--item,
-        .science__content .chips__box--item {
-          box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.2);
-          border-bottom-left-radius: 1rem;
-          border-bottom-right-radius: 1rem;
-          transition: all .5s;
-          display: grid;
-          grid-template-rows: 62% 23% 15%;
-          align-items: center;
-          justify-items: center;
-          height: 100%;
-          width: 100%;
-          position: relative; }
-          .maths__content .chips__box--item-img,
-          .science__content .chips__box--item-img {
-            position: relative;
-            z-index: 0;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden; }
-          .maths__content .chips__box--item-title,
-          .science__content .chips__box--item-title {
-            background: #D60B3C;
-            width: 100%;
-            background: white;
-            text-align: center;
-            font-family: 'Poppins',sans-serif;
-            font-size: 2.5rem;
-            position: relative;
-            height: 100%;
-            bottom: -.4rem;
-            display: grid;
-            align-items: center; }
-            .maths__content .chips__box--item-title-1,
-            .science__content .chips__box--item-title-1 {
-              font-weight: 800;
-              color: #4B4B4B;
-              font-size: 2rem; }
-            .maths__content .chips__box--item-title-2,
-            .science__content .chips__box--item-title-2 {
-              font-weight: 800;
-              color: #1E4196;
-              font-size: 1.5rem; }
-          .maths__content .chips__box--item-subtitle,
-          .science__content .chips__box--item-subtitle {
-            background: #D60B3C;
-            width: 100%;
-            color: white;
-            text-align: center;
-            font-size: 1.5rem;
-            height: 100%;
-            bottom: -.4rem;
-            position: relative;
-            border-bottom-left-radius: 1rem;
-            border-bottom-right-radius: 1rem;
-            display: grid;
-            align-items: center; }
-      .maths__content .chips ::-webkit-scrollbar,
-      .science__content .chips ::-webkit-scrollbar {
-        background: transparent;
-        display: none; }
-
 .chapter-img1 {
   position: absolute;
   left: -70rem;
@@ -996,6 +841,56 @@ body {
   word-spacing: 1rem; }
   .exercise-heading span {
     color: #1E4190; }
+
+.exercise__content {
+  margin-top: 4rem;
+  display: grid;
+  width: 80%;
+  justify-items: center;
+  grid-template-columns: 5% 90% 5%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+  .exercise__content--btn {
+    font-size: 6rem;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900;
+    color: #4B4B4B;
+    align-self: center; }
+  .exercise__content--box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 5rem; }
+    .exercise__content--box-item {
+      border-radius: 1rem;
+      background-color: #4BAEA0;
+      padding: 3rem 4rem;
+      position: relative; }
+      .exercise__content--box-item-img {
+        width: 12rem;
+        margin-bottom: 1rem; }
+      .exercise__content--box-item-btn {
+        position: absolute;
+        bottom: -1rem;
+        font-size: 1.4rem;
+        font-family: 'Poppins',sans-serif;
+        font-weight: 400;
+        background-color: #D60B3C;
+        border: none;
+        padding: .5rem 3.2rem;
+        border-radius: .5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white; }
+      .exercise__content--box-item-text {
+        font-size: 1.3rem;
+        color: #1E4190;
+        font-family: 'Poppins',sans-serif;
+        font-weight: 500;
+        position: absolute;
+        bottom: -4rem;
+        left: 50%;
+        transform: translateX(-50%); }
 
 .expert-heading {
   text-align: center;
@@ -2120,109 +2015,6 @@ body {
   .live-btn:focus, .live-btn:active {
     outline: none;
     border: none; }
-
-.math-heading {
-  font-size: 5rem;
-  color: #1E4190;
-  margin-left: 11.5rem;
-  margin-top: 5rem;
-  font-weight: 800;
-  font-family: 'Poppins',sans-serif; }
-
-.math-subheading {
-  margin-left: 11.5rem;
-  margin-top: 5rem;
-  color: #1E4190;
-  font-size: 3rem;
-  font-weight: 700;
-  font-family: 'Poppins',sans-serif;
-  margin-top: 1rem; }
-  .math-subheading span {
-    color: #D60B3C; }
-
-.math-img {
-  position: absolute;
-  left: -50%;
-  top: -40%;
-  height: 70rem;
-  z-index: -1; }
-
-.math {
-  margin-top: 2rem;
-  width: 85%;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%); }
-  .math .heading {
-    margin-top: 4rem;
-    padding-bottom: 1.5rem;
-    font-size: 3rem;
-    font-family: 'Poppins',sans-serif;
-    font-weight: 700;
-    color: #D60B3C;
-    border-bottom: 0.3rem solid #DE0B38;
-    margin-bottom: 5rem; }
-  .math__content {
-    position: relative; }
-    .math__content--heading {
-      font-size: 2.5rem;
-      font-family: 'Poppins',sans-serif;
-      color: #4B4B4B;
-      font-weight: 700; }
-    .math__content--subheading {
-      color: #1E4190;
-      font-family: 'Poppins',sans-serif;
-      font-style: italic; }
-    .math__content--btn {
-      right: 4%;
-      top: .5rem;
-      position: absolute;
-      font-size: 1.5rem;
-      color: white;
-      background-color: #D60B3C;
-      border-radius: 20rem;
-      border: none;
-      padding: 0rem .5rem; }
-      .math__content--btn:focus, .math__content--btn:active {
-        outline: none; }
-    .math__content--box {
-      display: grid;
-      grid-template-columns: repeat(6, 13%) 10%;
-      column-gap: 2rem;
-      margin-bottom: 5rem; }
-      .math__content--box-item {
-        position: relative;
-        width: 20rem; }
-        .math__content--box-item-img {
-          transform: translateY(1rem);
-          width: 16rem;
-          height: 22rem;
-          margin-bottom: 2rem;
-          border-radius: .5rem; }
-        .math__content--box-item-btn {
-          position: absolute;
-          bottom: 3.5rem;
-          left: 50%;
-          transform: translateX(-65%) translateY(1rem);
-          background-color: #D60B3C;
-          color: white;
-          border: none;
-          padding: .2rem 3rem;
-          width: fit-content;
-          font-size: 1.5rem;
-          border-radius: .5rem; }
-          .math__content--box-item-btn:focus, .math__content--box-item-btn:active {
-            outline: none; }
-        .math__content--box-item-title {
-          position: relative;
-          left: 50%;
-          transform: translate(-59%, 0.6rem);
-          font-size: 1.5rem;
-          font-family: 'Roboto',sans-serif;
-          font-weight: 500;
-          color: #1E4190;
-          text-align: center;
-          justify-self: center; }
 
 .meet-heading {
   font-size: 3rem;
@@ -3807,6 +3599,94 @@ nav {
           text-align: center;
           justify-self: center; }
 
+.sub {
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+  .sub-heading1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #1E4190;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 900;
+    word-spacing: 1rem; }
+    .sub-heading1 span {
+      color: #DE0B38; }
+  .sub-heading2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #DE0B38;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 900;
+    word-spacing: 1rem; }
+    .sub-heading2 span {
+      color: #1E4190; }
+  .sub__content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 5% 90% 5%; }
+    .sub__content--nav {
+      font-size: 6rem;
+      font-family: 'Roboto',sans-serif;
+      font-weight: 900;
+      color: #4B4B4B;
+      align-self: center; }
+    .sub__content--btn {
+      right: 4%;
+      top: .5rem;
+      position: absolute;
+      font-size: 1.5rem;
+      color: white;
+      background-color: #D60B3C;
+      border-radius: 20rem;
+      border: none;
+      padding: 0rem .5rem; }
+      .sub__content--btn:focus, .sub__content--btn:active {
+        outline: none; }
+    .sub__content--box {
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: repeat(5, 13%);
+      column-gap: 6rem;
+      position: relative;
+      margin-bottom: 5rem;
+      justify-content: center; }
+      .sub__content--box-item {
+        position: relative;
+        width: 20rem;
+        justify-self: center; }
+        .sub__content--box-item-img {
+          transform: translateY(1rem);
+          width: 16rem;
+          height: 22rem;
+          margin-bottom: 2rem;
+          border-radius: .5rem; }
+        .sub__content--box-item-btn {
+          position: absolute;
+          bottom: 3.5rem;
+          left: 50%;
+          transform: translateX(-65%) translateY(1rem);
+          background-color: #D60B3C;
+          color: white;
+          border: none;
+          padding: .2rem 3rem;
+          width: fit-content;
+          font-size: 1.5rem;
+          border-radius: .5rem; }
+          .sub__content--box-item-btn:focus, .sub__content--box-item-btn:active {
+            outline: none; }
+        .sub__content--box-item-title {
+          position: relative;
+          left: 50%;
+          transform: translate(-59%, 0.6rem);
+          font-size: 1.5rem;
+          font-family: 'Roboto',sans-serif;
+          font-weight: 500;
+          color: #1E4190;
+          text-align: center;
+          justify-self: center; }
+
 .video-heading {
   text-align: center;
   font-family: 'Poppins',sans-serif;
@@ -4068,20 +3948,12 @@ nav {
 
 #section-exercise {
   height: fit-content;
-  margin-top: 6rem; }
-
-#section-maths {
-  height: fit-content;
   margin-top: 6rem;
-  position: relative; }
+  margin-bottom: 12rem; }
 
-#section-science {
+#section-sub {
   height: fit-content;
-  margin-top: 6rem; }
-
-#section-course {
-  height: fit-content;
-  margin-top: 6rem;
+  margin-top: 4rem;
   position: relative; }
 
 #section-question {
