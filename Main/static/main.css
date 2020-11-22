@@ -1211,7 +1211,8 @@ body {
 .find {
   box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.3);
   padding: 2rem;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  background-color: white; }
   .find__heading {
     font-family: 'Poppins',sans-serif;
     font-size: 3rem;
@@ -1298,6 +1299,11 @@ body {
     .find__btn:hover, .find__btn:focus, .find__btn:active {
       outline: none;
       filter: brightness(90%); }
+
+.find-ellipse3 {
+  position: absolute;
+  z-index: -1;
+  bottom: -30rem; }
 
 .footer1-connect {
   margin-bottom: 4rem; }
