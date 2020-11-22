@@ -73,6 +73,113 @@ body {
   overflow-y: hidden;
   box-sizing: border-box; }
 
+.answer {
+  margin-top: 3rem; }
+  .answer__title {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    margin-top: 10rem;
+    margin-bottom: 1.5rem; }
+  .answer__content--title {
+    color: #1E4190;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600; }
+  .answer__content--box {
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    border-radius: 1rem;
+    margin-bottom: 4rem; }
+    .answer__content--box-item-title {
+      font-family: 'Poppins',sans-serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #4B4B4B; }
+    .answer__content--box-item-para {
+      font-family: 'Poppins',sans-serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #4B4B4B; }
+    .answer__content--box-img {
+      width: 100%; }
+  .answer__solved {
+    margin-top: 5rem; }
+    .answer__solved--box {
+      padding: 2rem;
+      padding-bottom: 6rem;
+      box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.1);
+      background-color: white;
+      width: 90%;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 1rem; }
+      .answer__solved--box-heading {
+        text-align: center;
+        font-weight: 700;
+        height: fit-content;
+        font-family: 'Poppins',sans-serif;
+        color: #D60B3C;
+        font-size: 2.7rem; }
+      .answer__solved--box-items {
+        margin-top: 2rem;
+        row-gap: 2rem;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center; }
+        .answer__solved--box-items-btn {
+          background-color: transparent;
+          font-size: 1.5rem;
+          padding: .2rem 1rem;
+          font-family: 'Poppins',sans-serif;
+          border: 0.1rem solid #4B4B4B;
+          border-radius: .5rem; }
+          .answer__solved--box-items-btn:hover, .answer__solved--box-items-btn:focus, .answer__solved--box-items-btn:active {
+            background-color: #D60B3C;
+            color: white;
+            outline: none; }
+          .answer__solved--box-items-btn span {
+            font-size: 1rem; }
+      .answer__solved--box--books {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 7rem;
+        column-gap: 2rem; }
+        .answer__solved--box--books-pic {
+          position: relative; }
+          .answer__solved--box--books-pic-img {
+            border-radius: 1rem;
+            width: 90%;
+            box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.4);
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%); }
+          .answer__solved--box--books-pic-btn {
+            font-size: 1.5rem;
+            border: none;
+            background-color: #D60B3C;
+            color: white;
+            padding: .2rem 2rem;
+            border-radius: .5rem;
+            position: absolute;
+            bottom: -1rem;
+            left: 50%;
+            transform: translateX(-50%); }
+          .answer__solved--box--books-pic-text {
+            position: absolute;
+            bottom: -4rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: fit-content;
+            font-size: 1.5rem;
+            font-family: 'Poppins',sans-serif;
+            font-weight: 700;
+            color: #1E4190; }
+
 .board-heading {
   text-align: center;
   font-size: 3.5rem;
@@ -3283,7 +3390,7 @@ nav {
         font-size: 1rem; }
 
 .result-img1 {
-  width: 45rem;
+  width: 100%;
   align-self: end;
   margin-bottom: -4rem;
   cursor: pointer;
@@ -4482,8 +4589,17 @@ nav {
   position: relative; }
 
 #section-result {
-  width: 90%;
+  width: 95%;
   height: fit-content;
   position: relative;
   display: grid;
-  grid-template-columns: 72% 28%; }
+  grid-template-columns: 68% 32%;
+  margin-left: 7rem; }
+
+#section-answer {
+  width: 95%;
+  height: fit-content;
+  position: relative;
+  display: grid;
+  grid-template-columns: 68% 32%;
+  margin-left: 7rem; }
