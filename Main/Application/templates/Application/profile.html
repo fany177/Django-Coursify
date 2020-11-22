@@ -3,6 +3,62 @@
 
 {% block content %}
     <section id="section-profile" class="container-fluid">
-        
+        <div class="profile">
+            <div class="profile-img">
+                <img class="profile-img__pic" src="{% static 'images/group.jpg' %}" alt="">
+                <h3 class="profile-img__name">Profile</h3>
+            </div>
+            <h1 class="profile__heading">Student's Name</h1>
+            <div class="profile__class">
+                <h3 class="profile__class--title">Class</h3>
+                <div class="profile__class--item">
+                    <button class="profile__class--item-btn">Class 6</button>
+                    <button class="profile__class--item-btn">Class 7</button>
+                    <button class="profile__class--item-btn">Class 8</button>
+                    <button class="profile__class--item-btn">Class 9</button>
+                    <button class="profile__class--item-btn">Class 10</button>
+                    <button class="profile__class--item-btn">Class 11</button>
+                    <button class="profile__class--item-btn">Class 12</button>
+                </div>
+                <select class="profile__class--language" name="language" id="language">
+                    <option value="select">Select Language</option>
+                    <option value="tamil">Tamil</option>
+                    <option value="english">English</option>
+                    <option value="telugu">Telugu</option>
+                </select>
+            </div>
+            <div class="profile__state">
+                <h3 class="profile__state--title">Board</h3>
+                <div class="profile__state--item">
+                    <button class="profile__state--item-btn">Uttar Pradesh</button>
+                    <button class="profile__state--item-btn">Bihar</button>
+                    <button class="profile__state--item-btn">Madhya Pradesh</button>
+                    <button class="profile__state--item-btn">Rajsthan</button>
+                    <button class="profile__state--item-btn">Maharastra</button>
+                    <button class="profile__state--item-btn">Gujarat</button>
+                    <button class="profile__state--item-btn">West Bengal</button>
+                    <button class="profile__state--item-btn">Tamil Nadu</button>
+                    <button class="profile__state--item-btn">Karnataka</button>
+                    <button class="profile__state--item-btn">Andhra Pradesh</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="profile-btns">
+        <button class="profile-btns__item">MY Courses</button>
+        <button class="profile-btns__item">MY Doubts</button>
+        <button class="profile-btns__item">Saved for Revision</button>
+    </div>
+
+    <section id="section-cbse" class="container-fluid">
+        <div class="cbse">
+            <h1 class="cbse__heading">CBSE Class 11th Course</h1>
+            <a class="cbse__link" href="">View Course Page</a>
+            <a class="cbse__link" href="">Tutor's Free Class</a>
+        </div>
+        <div class="cbse__content">
+
+        </div>
     </section>
 {% endblock content %}
