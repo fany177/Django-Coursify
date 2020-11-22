@@ -1,0 +1,28 @@
+{% extends 'Application/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section id="section-result" class="container-fluid">
+        <div>
+            <h2 class="result-heading">Search Result</h2>
+            <h3 class="result-subheading">Search Keyword. Search Keyword</h3>
+            <div class="filter">
+                <h2 class="filter__heading">Filter</h2>
+                <div class="filter__items">
+                    <button class="filter__items--btn">Class 6</button>
+                    <button class="filter__items--btn">Class 7</button>
+                    <button class="filter__items--btn">Class 8</button>
+                    <button class="filter__items--btn">Class 9</button>
+                    <button class="filter__items--btn">Class 10</button>
+                    <button class="filter__items--btn">Class 11</button>
+                    <button class="filter__items--btn">Class 12</button>
+                    <button class="filter__items--btn">NEET</button>
+                    <button class="filter__items--btn">JEE <span>Mains</span></button>
+                    <button class="filter__items--btn">Jee <span>Adv</span></button>
+                </div>
+            </div>
+        </div>
+        <img class="result-img1" src="{% static 'images/Group 69440@2x.png' %}" alt="">
+    </section>
+  
+{% endblock content %}

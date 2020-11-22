@@ -6,6 +6,9 @@ def welcome(request):
 def home(request):
     return render(request,'Application/home.html')
 
+def result(request):
+    return render(request,'Application/result.html')
+
 def live(request):
     return render(request,'Application/live.html')
 
