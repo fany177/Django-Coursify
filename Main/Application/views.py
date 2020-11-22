@@ -1,8 +1,10 @@
 from django.shortcuts import render
 
+def welcome(request):
+    return render(request,'Application/welcome.html')
+
 def home(request):
     return render(request,'Application/home.html')
-
 
 def live(request):
     return render(request,'Application/live.html')
@@ -12,7 +14,6 @@ def boardexams(request):
 
 def schoolexams(request):
     return render(request,'Application/schoolexams.html')
-
 
 def jeemain(request):
     return render(request,'Application/jeemain.html')

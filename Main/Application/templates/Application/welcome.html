@@ -1,0 +1,38 @@
+{% extends 'Application/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <section id="section-welcome" class="container-fluid">
+        <img class="welcome-img" src="{% static 'images/ellipses.png' %}" alt="">
+        <h1 class="welcome-heading">Welcome to <span>Coursify</span></h1>
+        <p class="welcome-para">Join Us in Learning and experience 10X growth</p>
+        <div class="login">
+            <form class="welcome" action="">
+                <div class="welcome__group">
+                    <label class="welcome__group--label" for="phno">Enter your Phone Number</label>
+                    <input class="welcome__group--input" type="text" name="phno">
+                    <button class="welcome__group--btn">login</button>
+                </div>
+                <div class="welcome__or">
+                    <hr class="welcome__or--line1">
+                    <h2 class="welcome__or--text">OR</h2>
+                    <hr class="welcome__or--line2">
+                </div> 
+                <div class="welcome__group">
+                    <label class="welcome__group--label" for="email">Enter your Phone Number</label>
+                    <input class="welcome__group--input" type="text" name="email">
+                    <button class="welcome__group--btn">login</button>
+                </div>
+            </form>
+            <div class="vertical"></div>
+            <div class="social">
+                <h1 class="social__heading">Sign in with Social Accounts</h1>
+                <img class="social__img" src="{% static 'images/Group 69441@2x.png' %}" alt="">
+                <img class="social__img" src="{% static 'images/Group 69442@2x.png' %}" alt="">
+            </div>
+        </div>
+        <img class="welcome-img1" src="{% static 'images/ellipses.png' %}" alt="">
+    </section>
+
+{% endblock content %}
