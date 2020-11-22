@@ -26,4 +26,6 @@ urlpatterns = [
     
     path('board/',views.board,name='board'),
     
+    path('profile/',views.profile,name='profile')
+    
 ]

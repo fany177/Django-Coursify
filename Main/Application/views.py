@@ -55,3 +55,5 @@ def join(request):
 def board(request):
     return render(request,'Application/board.html')
 
+def profile(request):
+    return render(request,'Application/profile.html')
