@@ -3,6 +3,7 @@
 
 {% block content %}
     <section id="section-result" class="container-fluid">
+        <img class="result-ellipse1" src="{% static 'images/ellipses.png' %}" alt="">
         <div>
             <h2 class="result-heading">Search Result</h2>
             <h3 class="result-subheading">Search Keyword. Search Keyword</h3>
@@ -54,16 +55,16 @@
             <div class="answer__content">
                 <h3 class="answer__content--title">Class name > Subject > Book Name > Chapter > Exercise > Question</h3>
             
-                <div class="answer__content--box">
+                <div class="answer__content--box" style="position: relative;">
                     <div class="answer__content--box-item">
                         <h3 class="answer__content--box-item-title">Question</h3>
                         <p class="answer__content--box-item-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores culpa dolore blanditiis fugiat laudantium corporis fugit doloribus quas? Odio incidunt sapiente quos maxime animi voluptatibus vitae. Doloremque saepe nobis animi!</p>
                         <p class="answer__content--box-item-para" style="margin-top: 2.5rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores culpa dolore blanditiis fugiat laudantium corporis fugit doloribus quas? Odio incidunt sapiente quos maxime animi voluptatibus vitae. Doloremque saepe nobis animi!</p>
                     </div>
                     <img class="answer__content--box-img" src="{% static 'images/tablet.png' %}" alt="">
+                    <img class="result-ellipse2" src="{% static 'images/ellipses.png' %}" alt="">
                 </div>
             </div>
-
             <h1 class="answer__title">Related Questions</h1>
 
             <div class="answer__content">
@@ -90,9 +91,8 @@
                     <img class="answer__content--box-img" src="{% static 'images/tablet.png' %}" alt="">
                 </div>
             </div>
-            <div class="answer__content">
+            <div class="answer__content" style="position: relative;">
                 <h3 class="answer__content--title">Class name > Subject > Book Name > Chapter > Exercise > Question</h3>
-            
                 <div class="answer__content--box">
                     <div class="answer__content--box-item">
                         <h3 class="answer__content--box-item-title">Question</h3>
@@ -143,6 +143,36 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="find">
+            <h1 class="find__heading">Didn't find what you were looking for?</h1>
+            <img class="result-ellipse2" src="{% static 'images/ellipses.png' %}" alt="">
+            <h3 class="find__sub">Try searching more keywords of the Question.</h3>
+            <h3 class="find__sub">OR</h3>
+            <h3 class="find__sub">Upload an Image</h3>
+            <div class="find__or">
+                <hr class="find__or--line1">
+                <h2 class="find__or--text">OR</h2>
+                <hr class="find__or--line2">
+            </div>
+            <h3 class="find__visit">Visit our video Library woth 100+ Books.</h3>
+            <div class="find__items">
+                <h2 class="find__items--heading">Choose your goal</h2>
+                <div class="find__items--box">
+                    <button class="find__items--box-btn">Class 12</button>
+                    <button class="find__items--box-btn">Class 11</button>
+                    <button class="find__items--box-btn">Class 10</button>
+                    <button class="find__items--box-btn">Class 9</button>
+                    <button class="find__items--box-btn">Class 8</button>
+                    <button class="find__items--box-btn">Class 7</button>
+                    <button class="find__items--box-btn">Class 6</button>
+                    <button class="find__items--box-btn">JEE <span>Mains</span></button>
+                    <button class="find__items--box-btn">JEE <span>Adv</span></button>
+                    <button class="find__items--box-btn">NEET</button>
+                </div>
+            </div>
+            <button class="find__btn">Check out video Library</button>
         </div>
     </section>
   
