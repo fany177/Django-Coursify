@@ -882,14 +882,10 @@ body {
     margin-top: .5rem;
     border-radius: 1rem;
     height: 78vh; }
-    .drop__content--cross {
-      background-image: url("images/Cross.png");
-      background-size: 80% 100%;
-      background-repeat: no-repeat;
-      background-position: 50%;
-      height: 80%;
-      width: 100%;
-      opacity: .5; }
+    .drop__content--cross-line1 {
+      border-top: 0.2rem solid #4B4B4B; }
+    .drop__content--cross-line2 {
+      border-top: 0.2rem solid #4B4B4B; }
 
 .embark-img {
   position: absolute;
