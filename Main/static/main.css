@@ -3880,8 +3880,17 @@ nav {
 @media only screen and (max-width: 70em) {
   .search__magnify {
     display: none; }
+  .search__camera--text {
+    display: none; }
+  .search__camera--item {
+    display: none; }
   .search__camera--button {
-    display: inline; }
+    display: inline;
+    background-color: #D60B3C;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 900; }
   .search__languages {
     grid-template-columns: repeat(6, 1fr);
     justify-items: center; } }
