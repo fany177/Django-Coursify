@@ -3722,6 +3722,7 @@ nav {
 .search-img1 {
   position: absolute;
   height: 100%;
+  width: 25%;
   top: 0rem;
   left: -8rem;
   z-index: -1; }
@@ -3729,6 +3730,7 @@ nav {
 .search-img2 {
   position: absolute;
   height: 100%;
+  width: 20%;
   top: 0rem;
   right: -4rem;
   z-index: -1; }
@@ -3788,6 +3790,8 @@ nav {
     .search__camera--text {
       color: #D60B3C;
       font-size: 1rem; }
+    .search__camera--button {
+      display: none; }
   .search__box {
     padding: 3rem 6rem;
     padding-right: 9rem;
@@ -3817,24 +3821,22 @@ nav {
   .search__languages {
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min-content, 4rem));
-    width: 50%;
+    grid-template-columns: repeat(11, max-content);
+    width: fit-content;
     column-gap: 2.5rem;
     position: relative;
     left: 50%;
-    transform: translateX(-55%); }
-    .search__languages--item {
-      transform: translateX(1rem); }
-      .search__languages--item-btn {
-        border: none;
-        background-color: transparent;
-        font-size: 1.5rem;
-        color: rgba(75, 75, 75, 0.6);
-        transition: all .2s; }
-        .search__languages--item-btn:focus, .search__languages--item-btn:active {
-          outline: none; }
-        .search__languages--item-btn:hover {
-          transform: scale(1.2) translateY(-0.3rem); }
+    transform: translateX(-50%); }
+    .search__languages--item-btn {
+      border: none;
+      background-color: transparent;
+      font-size: 1.5rem;
+      color: rgba(75, 75, 75, 0.6);
+      transition: all .2s; }
+      .search__languages--item-btn:focus, .search__languages--item-btn:active {
+        outline: none; }
+      .search__languages--item-btn:hover {
+        transform: scale(1.2) translateY(-0.3rem); }
   .search__btn {
     color: white;
     background-color: #D60B3C;
@@ -3874,6 +3876,15 @@ nav {
       font-size: 1.5rem;
       text-align: center;
       transform: translateY(-50%); }
+
+@media only screen and (max-width: 70em) {
+  .search__magnify {
+    display: none; }
+  .search__camera--button {
+    display: inline; }
+  .search__languages {
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center; } }
 
 .sharma-heading {
   text-align: center;
