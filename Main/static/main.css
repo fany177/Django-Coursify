@@ -881,11 +881,75 @@ body {
     grid-column: 1 / -1;
     margin-top: .5rem;
     border-radius: 1rem;
-    height: 78vh; }
-    .drop__content--cross-line1 {
-      border-top: 0.2rem solid #4B4B4B; }
-    .drop__content--cross-line2 {
-      border-top: 0.2rem solid #4B4B4B; }
+    height: 78vh;
+    display: grid;
+    grid-template-rows: 80% 20%; }
+    .drop__content--cross {
+      position: relative; }
+      .drop__content--cross-line1 {
+        border-top: 0.2rem solid #4B4B4B;
+        transform: translate(-50%, -50%) rotate(-165deg);
+        width: 90%;
+        position: absolute;
+        left: 50%;
+        top: 47%;
+        transform-origin: center; }
+      .drop__content--cross-center {
+        position: absolute;
+        left: 50%;
+        top: 49.3%;
+        transform: translate(-50%, -50%);
+        background-color: grey;
+        height: 6rem;
+        width: 20rem;
+        z-index: 1; }
+      .drop__content--cross-line2 {
+        border-top: 0.2rem solid #4B4B4B;
+        transform: translate(-50%, -50%) rotate(165deg);
+        width: 90%;
+        position: absolute;
+        left: 50%;
+        top: 47%;
+        transform-origin: center; }
+    .drop__content--box {
+      height: 100%; }
+      .drop__content--box-form {
+        background-color: #D60B3C;
+        height: 100%;
+        position: relative; }
+        .drop__content--box-form-check {
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+          width: fit-content; }
+          .drop__content--box-form-check-input {
+            height: 2.2rem;
+            width: 2.2rem;
+            transform: translateY(0.5rem);
+            margin-right: 1rem; }
+          .drop__content--box-form-check-label {
+            font-size: 1.7rem;
+            font-family: 'Poppins',sans-serif;
+            color: white;
+            font-weight: 700;
+            margin-top: 1.5rem; }
+        .drop__content--box-form-btn {
+          display: block;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: white;
+          color: #D60B3C;
+          font-size: 3rem;
+          padding: .2rem 2rem;
+          border: none;
+          border-radius: 1rem;
+          font-family: 'Poppins',sans-serif;
+          font-weight: 600;
+          bottom: 1rem; }
+          .drop__content--box-form-btn:focus, .drop__content--box-form-btn:active, .drop__content--box-form-btn:hover {
+            filter: brightness(90%);
+            outline: none; }
 
 .embark-img {
   position: absolute;
@@ -4768,6 +4832,6 @@ nav {
   margin-left: 7rem; }
 
 #section-drop {
-  height: fit-content;
   margin-top: 5rem;
-  position: relative; }
+  position: relative;
+  height: 100vh; }
