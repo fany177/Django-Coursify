@@ -61,3 +61,6 @@ def board(request):
 
 def profile(request):
     return render(request,'Application/profile.html')
+
+def drop(request):
+    return render(request,'Application/drop.html')

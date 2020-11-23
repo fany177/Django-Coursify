@@ -1,0 +1,17 @@
+{% extends 'Application/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <section id="section-drop" class="container-fluid">
+        <div class="drop">
+            <h3 class="drop__upload"><img class="drop__upload--img" src="{% static 'images/refresh.png' %}" alt="">    Upload another question</h3>
+            <h1 class="drop__heading">Crop your Question</h1>
+            <button class="drop__btn"><img src="{% static 'images/close.png' %}" class="drop__btn--exit"></button>
+            <div class="drop__content">
+                <div class="drop__content--cross"></div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

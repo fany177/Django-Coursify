@@ -835,6 +835,62 @@ body {
     outline: none;
     border: none; }
 
+.drop {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.3);
+  align-items: center;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem; }
+  .drop__upload {
+    font-family: 'Poppins',sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4B4B4B;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 2rem; }
+    .drop__upload--img {
+      width: 7%;
+      margin-right: 1rem; }
+  .drop__heading {
+    font-size: 3.5rem;
+    margin-top: 1rem;
+    text-align: center;
+    justify-self: center;
+    font-family: 'Poppins',sans-serif;
+    color: #4B4B4B;
+    font-weight: 700; }
+  .drop__btn {
+    background-color: transparent;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    border: none;
+    height: 55%;
+    justify-self: end;
+    width: fit-content; }
+    .drop__btn--exit {
+      height: 100%;
+      border: none; }
+  .drop__content {
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.4);
+    grid-column: 1 / -1;
+    margin-top: .5rem;
+    border-radius: 1rem;
+    height: 78vh; }
+    .drop__content--cross {
+      background-image: url("images/Cross.png");
+      background-size: 80% 100%;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      height: 80%;
+      width: 100%;
+      opacity: .5; }
+
 .embark-img {
   position: absolute;
   height: 130%;
@@ -4714,3 +4770,8 @@ nav {
   display: grid;
   grid-template-columns: 68% 32%;
   margin-left: 7rem; }
+
+#section-drop {
+  height: fit-content;
+  margin-top: 5rem;
+  position: relative; }

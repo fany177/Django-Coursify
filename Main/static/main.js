@@ -7,6 +7,11 @@ $(document).ready(function() {
 		$('#section-footer1').hide()
 	}
 
+	if(pathname == '/drop/'){
+		$('.navbar').hide()
+		$('#section-footer1').hide()
+	}
+
 })
 
 if($('.navbar-toggler-icon').is(':visible')){
