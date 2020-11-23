@@ -3880,20 +3880,27 @@ nav {
 @media only screen and (max-width: 70em) {
   .search__magnify {
     display: none; }
-  .search__camera--text {
-    display: none; }
-  .search__camera--item {
-    display: none; }
-  .search__camera--button {
-    display: inline;
-    background-color: #D60B3C;
-    font-size: 2rem;
-    color: white;
-    font-family: 'Poppins',sans-serif;
-    font-weight: 900; }
+  .search__camera {
+    right: 21%; }
+    .search__camera--text {
+      display: none; }
+    .search__camera--item {
+      display: none; }
+    .search__camera--button {
+      display: inline;
+      background-color: #D60B3C;
+      color: white;
+      font-family: 'Poppins',sans-serif;
+      font-weight: 900;
+      padding: .4rem;
+      border-radius: .5rem; }
   .search__languages {
     grid-template-columns: repeat(6, 1fr);
-    justify-items: center; } }
+    justify-items: center; }
+  .search__box {
+    border: none;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.2);
+    padding-left: 1rem; } }
 
 .sharma-heading {
   text-align: center;
