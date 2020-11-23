@@ -876,6 +876,8 @@ body {
     .drop__btn--exit {
       height: 100%;
       border: none; }
+      .drop__btn--exit:focus, .drop__btn--exit:active {
+        outline: none; }
   .drop__content {
     box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.4);
     grid-column: 1 / -1;
