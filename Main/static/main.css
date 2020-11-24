@@ -2692,7 +2692,7 @@ nav {
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem; }
 
-@media only screen and (max-width: 51.5em) {
+@media only screen and (max-width: 50em) {
   .ncert__content .chips {
     grid-template-columns: repeat(2, 1fr);
     width: 70%;
@@ -3049,7 +3049,7 @@ nav {
   .prep__content--para {
     width: 70%; } }
 
-@media only screen and (max-width: 51.5em) {
+@media only screen and (max-width: 50em) {
   .prep {
     grid-template-columns: 100%;
     row-gap: 5rem; }
@@ -3878,29 +3878,44 @@ nav {
       transform: translateY(-50%); }
 
 @media only screen and (max-width: 70em) {
-  .search__magnify {
-    display: none; }
-  .search__camera {
-    right: 21%; }
-    .search__camera--text {
+  .search {
+    padding: 4rem 1rem; }
+    .search__magnify {
       display: none; }
-    .search__camera--item {
-      display: none; }
-    .search__camera--button {
-      display: inline;
-      background-color: #D60B3C;
-      color: white;
-      font-family: 'Poppins',sans-serif;
-      font-weight: 900;
-      padding: .4rem;
-      border-radius: .5rem; }
-  .search__languages {
-    grid-template-columns: repeat(6, 1fr);
-    justify-items: center; }
-  .search__box {
-    border: none;
-    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.2);
-    padding-left: 1rem; } }
+    .search__camera {
+      right: 21%;
+      border: none; }
+      .search__camera--text {
+        display: none; }
+      .search__camera--item {
+        display: none; }
+      .search__camera--button {
+        display: inline;
+        background-color: #DE0B38;
+        color: white;
+        font-family: 'Poppins',sans-serif;
+        font-weight: 900;
+        padding: .3rem .4rem;
+        border-radius: .5rem;
+        border: none;
+        outline: none; }
+        .search__camera--button:focus, .search__camera--button:active {
+          outline: none; }
+    .search__languages {
+      grid-template-columns: repeat(6, 1fr);
+      justify-items: center; }
+    .search__box {
+      border: none;
+      box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.2);
+      padding-left: 1rem; }
+    .search__btn {
+      display: none; } }
+
+@media only screen and (max-width: 50em) {
+  .search {
+    padding: 5rem 1rem; }
+    .search__languages {
+      display: none; } }
 
 .sharma-heading {
   text-align: center;
