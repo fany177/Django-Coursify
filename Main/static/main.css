@@ -548,34 +548,39 @@ body {
     filter: brightness(90%); }
 
 @media only screen and (max-width: 50em) {
-  .clear {
-    grid-template-columns: 100%;
-    justify-items: center !important; }
-    .clear__img1 {
-      justify-self: center;
-      width: 40%;
-      height: 45rem; }
-    .clear__img2 {
-      transform: rotate(90deg); }
-    .clear__img3 {
-      justify-self: center;
-      width: 40%;
-      height: 45rem; }
+  .clear__img1 {
+    width: 25rem; }
+  .clear__img2 {
+    width: 25rem; }
+  .clear__img3 {
+    width: 25rem; }
   .clear-para {
     width: 60%;
     font-size: 2rem; } }
 
 @media only screen and (max-width: 37.5em) {
-  .clear__img1 {
-    justify-self: center;
-    width: 60%;
-    height: 45rem; }
-  .clear__img3 {
-    width: 60%;
-    height: 45rem; }
+  .clear {
+    grid-template-columns: 100%;
+    justify-items: center !important; }
+    .clear__img1 {
+      justify-self: center;
+      width: 40%; }
+    .clear__img2 {
+      transform: rotate(90deg) translateY(-2rem); }
+    .clear__img3 {
+      justify-self: center;
+      width: 40%; }
   .clear-para {
-    width: 90%;
+    width: 80%;
     font-size: 2rem; } }
+
+@media only screen and (max-width: 30em) {
+  .clear__img1 {
+    width: 70%; }
+  .clear__img3 {
+    width: 70%; }
+  .clear-para {
+    width: 100%; } }
 
 .course-heading {
   position: relative;
@@ -2413,7 +2418,7 @@ body {
       .live__box--content-img {
         grid-area: img;
         width: 50%;
-        height: 50%; }
+        height: auto; }
       .live__box--content-heading {
         grid-area: head;
         font-family: 'Poppins',sans-serif;
@@ -2456,6 +2461,50 @@ body {
   .live-btn:focus, .live-btn:active {
     outline: none;
     border: none; }
+
+@media only screen and (max-width: 50em) {
+  .live {
+    grid-template-columns: 100%; }
+    .live__img {
+      width: 75%;
+      margin-bottom: 2rem; }
+    .live__box--content-para {
+      width: 100%; }
+    .live__box--content-img {
+      height: auto; } }
+
+@media only screen and (max-width: 37.5em) {
+  .live__img {
+    width: 75%;
+    height: 30rem;
+    margin-bottom: 2rem; }
+  .live__box--content {
+    grid-template-columns: 100%;
+    justify-items: center;
+    grid-template-areas: 'img img' 'head head' 'sub sub'; }
+    .live__box--content-img {
+      width: 6rem;
+      height: 6rem;
+      margin-bottom: .5rem; }
+    .live__box--content-heading {
+      font-size: 2rem; }
+    .live__box--content-para {
+      width: 100%;
+      text-align: center; } }
+
+@media only screen and (max-width: 30em) {
+  .live__box--content {
+    grid-template-columns: 100%;
+    grid-template-areas: 'img img' 'head head' 'sub sub'; }
+    .live__box--content-img {
+      width: 6rem;
+      height: 6rem;
+      margin-bottom: .5rem; }
+    .live__box--content-heading {
+      font-size: 2rem; }
+    .live__box--content-para {
+      width: 100%;
+      text-align: center; } }
 
 .meet-heading {
   font-size: 3rem;
@@ -3075,17 +3124,25 @@ nav {
   .prep-btn:hover {
     filter: brightness(90%); }
 
-@media only screen and (max-width: 56.25em) {
-  .prep__content--para {
-    width: 70%; } }
+@media only screen and (max-width: 70em) {
+  .prep__img {
+    width: 80%;
+    height: 30rem; }
+  .prep__content {
+    transform: translateX(0rem); }
+    .prep__content--para {
+      width: 90%; } }
 
 @media only screen and (max-width: 50em) {
+  .prep__img {
+    width: 90%; } }
+
+@media only screen and (max-width: 37.5em) {
   .prep {
-    grid-template-columns: 100%;
-    row-gap: 5rem; }
+    grid-template-columns: 100%; }
     .prep__img {
       justify-self: center;
-      width: 90%; } }
+      margin-bottom: 2rem; } }
 
 .profile-img {
   width: fit-content;
@@ -4620,26 +4677,6 @@ nav {
   position: absolute;
   transform: translate(-65%, -90%);
   z-index: -1; }
-
-@media only screen and (max-width: 37.5em) {
-  .video {
-    grid-template-columns: 100%;
-    row-gap: 3rem; }
-    .video__img {
-      grid-row: 1 / 2; }
-    .video__box {
-      column-gap: 0rem;
-      justify-self: center; }
-      .video__box--content {
-        grid-template-columns: 17% 83%; }
-        .video__box--content-heading {
-          font-size: 2rem; }
-        .video__box--content-para {
-          width: 80%; } }
-
-@media only screen and (max-width: 37.5em) {
-  .video__box--content-para {
-    width: 100%; } }
 
 .welcome-heading {
   font-size: 4rem;
