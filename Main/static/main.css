@@ -547,6 +547,36 @@ body {
   .clear-btn:hover {
     filter: brightness(90%); }
 
+@media only screen and (max-width: 50em) {
+  .clear {
+    grid-template-columns: 100%;
+    justify-items: center !important; }
+    .clear__img1 {
+      justify-self: center;
+      width: 40%;
+      height: 45rem; }
+    .clear__img2 {
+      transform: rotate(90deg); }
+    .clear__img3 {
+      justify-self: center;
+      width: 40%;
+      height: 45rem; }
+  .clear-para {
+    width: 60%;
+    font-size: 2rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .clear__img1 {
+    justify-self: center;
+    width: 60%;
+    height: 45rem; }
+  .clear__img3 {
+    width: 60%;
+    height: 45rem; }
+  .clear-para {
+    width: 90%;
+    font-size: 2rem; } }
+
 .course-heading {
   position: relative;
   left: 50%;
@@ -3818,6 +3848,8 @@ nav {
   .search ::-ms-input-placeholder {
     opacity: .3;
     font-style: italic; }
+  .search__box1 {
+    display: none; }
   .search__languages {
     list-style-type: none;
     display: grid;
@@ -3863,6 +3895,8 @@ nav {
   transform: translateX(-50%);
   justify-items: center;
   grid-template-columns: repeat(4, 1fr); }
+  .search-chips--img1 {
+    display: none; }
   .search-chips--img {
     position: relative; }
     .search-chips--img-item {
@@ -3897,13 +3931,11 @@ nav {
         font-weight: 900;
         padding: .3rem .4rem;
         border-radius: .5rem;
-        border: none;
-        outline: none; }
-        .search__camera--button:focus, .search__camera--button:active {
-          outline: none; }
+        transform: translateX(1rem); }
     .search__languages {
       grid-template-columns: repeat(6, 1fr);
-      justify-items: center; }
+      justify-items: center;
+      margin-top: -2rem; }
     .search__box {
       border: none;
       box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.2);
@@ -3915,7 +3947,135 @@ nav {
   .search {
     padding: 5rem 1rem; }
     .search__languages {
-      display: none; } }
+      display: none; }
+    .search__camera--button {
+      padding: 0rem !important;
+      transform: translateX(1rem); }
+  .search-chips {
+    width: 100%; }
+    .search-chips--img {
+      display: none; }
+    .search-chips--img1 {
+      position: relative;
+      display: inline;
+      right: -2rem !important;
+      width: fit-content; }
+      .search-chips--img1-item {
+        border-radius: 1rem;
+        height: 14rem;
+        width: 80%;
+        position: relative;
+        left: 40%;
+        transform: translateX(-50%); }
+      .search-chips--img1-text {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        margin-top: 2rem;
+        left: -10%;
+        font-size: 1.5rem;
+        text-align: center;
+        transform: translateY(-50%); } }
+
+@media only screen and (max-width: 37.5em) {
+  .search-img1 {
+    position: absolute;
+    height: 85%;
+    width: 25%;
+    top: 0rem;
+    left: -4rem;
+    z-index: -1; }
+  .search-img2 {
+    position: absolute;
+    height: 85%;
+    width: 20%;
+    top: 0rem;
+    right: -2rem;
+    z-index: -1; }
+  .search-img3 {
+    display: none; }
+  .search-img4 {
+    position: absolute;
+    height: 15%;
+    bottom: 10%;
+    left: 20%;
+    z-index: -1; }
+  .search-img5 {
+    display: none; }
+  .search-img6 {
+    position: absolute;
+    height: 15%;
+    bottom: 10%;
+    right: 17%;
+    z-index: -1;
+    transform: rotate(55deg); }
+  .search__box {
+    display: none; }
+  .search__box1 {
+    display: inline;
+    padding: 1.5rem 1rem;
+    padding-right: 3.5rem;
+    font-size: 2rem;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 100;
+    color: #4B4B4B;
+    width: 60%;
+    height: 4rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 0.1rem solid #DE0B38;
+    box-shadow: 0rem 0rem 1rem rgba(222, 11, 56, 0.6);
+    border-radius: .5rem; }
+    .search__box1:focus, .search__box1:active {
+      outline: none; }
+  .search ::placeholder {
+    opacity: .3;
+    font-style: italic; }
+  .search :-ms-input-placeholder {
+    opacity: .3;
+    font-style: italic; }
+  .search ::-ms-input-placeholder {
+    opacity: .3;
+    font-style: italic; }
+  .search__camera--button {
+    height: 4rem; }
+  .search-chips {
+    column-gap: 4rem; }
+    .search-chips--img1-item {
+      height: 10rem;
+      left: 35%; }
+    .search-chips--img1-text {
+      left: -17%; } }
+
+@media only screen and (max-width: 30em) {
+  .search-heading {
+    font-size: 1.7rem; }
+  .search {
+    padding: 0rem !important; }
+    .search__box1 {
+      font-size: 1.5rem; }
+  .search-img1 {
+    position: absolute;
+    height: 85%;
+    width: 25%;
+    top: 0rem;
+    left: -3rem;
+    z-index: -1; }
+  .search-img2 {
+    position: absolute;
+    height: 85%;
+    width: 20%;
+    top: 0rem;
+    right: -2rem;
+    z-index: -1; }
+  .search-chips {
+    column-gap: 2rem; }
+    .search-chips--img1-item {
+      height: 8rem;
+      left: 30%; }
+    .search-chips--img1-text {
+      font-size: 1.2rem; } }
 
 .sharma-heading {
   text-align: center;
