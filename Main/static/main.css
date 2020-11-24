@@ -4067,6 +4067,9 @@ nav {
   z-index: -1;
   transform: rotate(55deg); }
 
+.search__top {
+  display: none; }
+
 .search {
   padding: 1rem 3rem;
   position: relative; }
@@ -4185,8 +4188,28 @@ nav {
       transform: translateY(-50%); }
 
 @media only screen and (max-width: 70em) {
+  .search__top {
+    display: inline;
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    justify-items: center; }
+    .search__top--item {
+      margin-bottom: 1rem;
+      width: 6rem; }
+    .search__top--text {
+      font-size: 2rem;
+      width: fit-content;
+      font-weight: 700;
+      color: #1E4190;
+      font-family: 'Poppins',sans-serif; }
+  .search-heading {
+    margin-top: 4rem; }
   .search {
-    padding: 4rem 1rem; }
+    padding: 4rem 1rem;
+    padding-top: 0rem; }
     .search__magnify {
       display: none; }
     .search__camera {
@@ -4204,7 +4227,8 @@ nav {
         font-weight: 900;
         padding: .3rem .4rem;
         border-radius: .5rem;
-        transform: translateX(1rem); }
+        transform: translateX(1rem);
+        margin-top: -4rem; }
     .search__languages {
       grid-template-columns: repeat(6, 1fr);
       justify-items: center;
@@ -4218,12 +4242,14 @@ nav {
 
 @media only screen and (max-width: 50em) {
   .search {
-    padding: 5rem 1rem; }
+    padding: 5rem 1rem;
+    padding-top: 0rem; }
     .search__languages {
       display: none; }
     .search__camera--button {
       padding: 0rem !important;
-      transform: translateX(1rem); }
+      transform: translateX(1rem);
+      margin-top: -5.1rem; }
   .search-chips {
     width: 100%; }
     .search-chips--img {
@@ -4282,6 +4308,8 @@ nav {
     right: 17%;
     z-index: -1;
     transform: rotate(55deg); }
+  .search-heading {
+    font-size: 2.5rem; }
   .search__box {
     display: none; }
   .search__box1 {
@@ -4323,7 +4351,7 @@ nav {
 
 @media only screen and (max-width: 30em) {
   .search-heading {
-    font-size: 1.7rem; }
+    font-size: 2rem; }
   .search {
     padding: 0rem !important; }
     .search__box1 {
@@ -4342,6 +4370,22 @@ nav {
     top: 0rem;
     right: -2rem;
     z-index: -1; }
+  .search__top {
+    transform: translateY(5rem) translateX(-50%); }
+    .search__top--item {
+      margin-bottom: 1rem;
+      width: 4rem; }
+    .search__top--text {
+      font-size: 1.5rem; }
+  .search {
+    padding: 5rem 1rem;
+    padding-top: 0rem; }
+    .search__languages {
+      display: none; }
+    .search__camera--button {
+      padding: 0rem !important;
+      transform: translateX(1rem);
+      margin-top: 0rem; }
   .search-chips {
     column-gap: 2rem; }
     .search-chips--img1-item {
