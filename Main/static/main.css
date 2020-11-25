@@ -1610,7 +1610,8 @@ body {
   display: grid;
   grid-template-columns: 70% 30%; }
   .footer1__content {
-    margin-top: -10rem; }
+    margin-top: -10rem;
+    width: 100%; }
     .footer1__content--ncert {
       margin-left: 2rem; }
       .footer1__content--ncert .ncert-heading {
@@ -1620,7 +1621,8 @@ body {
       .footer1__content--ncert .ncert-content {
         display: grid;
         grid-template-columns: 13% 87%;
-        margin-top: 2rem; }
+        margin-top: 2rem;
+        column-gap: 1.5rem; }
         .footer1__content--ncert .ncert-content .ncert-title {
           color: #D60B3C;
           font-family: 'Poppins',sans-serif;
@@ -1628,7 +1630,7 @@ body {
           align-self: center; }
         .footer1__content--ncert .ncert-content .ncert-link {
           display: grid;
-          grid-template-columns: repeat(4, 22rem); }
+          grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); }
           .footer1__content--ncert .ncert-content .ncert-link--items {
             font-size: 1.3rem; }
   .footer1__img--logo {
@@ -1659,6 +1661,76 @@ body {
     font-weight: 600;
     color: #1E4190;
     margin-bottom: .4rem; }
+
+#section-footer {
+  display: none; }
+
+@media only screen and (max-width: 76em) {
+  .footer1__img--logo {
+    height: 8rem; }
+  .footer1__img--text {
+    font-size: 2rem; } }
+
+@media only screen and (max-width: 50em) {
+  #section-footer1 {
+    display: none; }
+  #section-footer {
+    display: block; }
+  .footer-logo {
+    width: 30%;
+    position: relative;
+    left: 48%;
+    transform: translateX(-50%);
+    margin-top: 5rem; }
+  .footer-heading {
+    font-family: 'Poppins',sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 4rem;
+    color: #D60B3C;
+    text-align: center; }
+  .footer-item {
+    width: 95%;
+    display: grid;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    grid-template-columns: 20% repeat(3, 27%);
+    justify-items: center;
+    margin-top: 3rem; }
+    .footer-item .footer-link {
+      font-family: 'Poppins',sans-serif;
+      font-weight: 700;
+      color: #4B4B4B;
+      font-size: 2.3rem; }
+  .footer-item1 {
+    width: 90%;
+    display: grid;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    margin-top: 3rem; }
+    .footer-item1 .footer-link1 {
+      font-family: 'Poppins',sans-serif;
+      font-weight: 700;
+      color: #4B4B4B;
+      font-size: 2.3rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .footer-item1 {
+    width: 95%; }
+  .footer-item {
+    width: 100%; }
+  .footer-logo {
+    width: 40%; } }
+
+@media only screen and (max-width: 30em) {
+  .footer-item1 .footer-link1 {
+    font-size: 1.35rem; }
+  .footer-item .footer-link {
+    font-size: 1.35rem; } }
 
 .free-heading {
   text-align: center;
