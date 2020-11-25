@@ -598,32 +598,31 @@ body {
 @media only screen and (max-width: 37.5em) {
   .clear__img1 {
     width: 20rem;
-    height: 30rem;
-    transform: translateX(3rem); }
+    height: 25rem;
+    transform: translateX(1.5rem); }
   .clear__img2 {
     width: 25rem; }
   .clear__img3 {
     width: 20rem;
-    height: 30rem;
-    transform: translateX(-6rem); }
+    height: 25rem;
+    transform: translateX(-3rem); }
   .clear-para {
-    width: 80%;
-    font-size: 2rem; } }
+    width: 70%;
+    font-size: 1.5rem; } }
 
 @media only screen and (max-width: 30em) {
   .clear {
-    margin-left: 2rem; }
+    margin-left: -.5rem; }
     .clear__img1 {
-      width: 15rem;
+      width: 14rem;
       height: 25rem;
       transform: translateX(3rem); }
     .clear__img2 {
       width: 13rem;
-      height: 7rem; }
+      height: 8rem; }
     .clear__img3 {
       width: 15rem;
-      height: 25rem;
-      transform: translateX(-6rem); } }
+      transform: translateX(-4rem); } }
 
 .course-heading {
   position: relative;
