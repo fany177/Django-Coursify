@@ -13,6 +13,15 @@
             <button onclick="location.href={% url 'neet' %}" class="exams__names--btn" >NEET</button>
             <button onclick="location.href={% url 'previousyear' %}" class="exams__names--btn">Previous Year Q's</button>
         </div>
+        <div class="exams__names1">
+            <h1 class="exams__names1--title">Choose your goal</h1>
+            <button onclick="location.href={% url 'boardexams' %}" class="exams__names1--btn" >Board Exams</button>
+            <button onclick="location.href={% url 'schoolexams' %}" class="exams__names1--btn" style="color: white;background-color:#D60B3C;">School exams</button>
+            <button onclick="location.href={% url 'jeemain' %}" class="exams__names1--btn">JEE - Mains</button>
+            <button onclick="location.href={% url 'jeeadvance' %}" class="exams__names1--btn">JEE - Advanced</button>
+            <button onclick="location.href={% url 'neet' %}" class="exams__names1--btn" >NEET</button>
+            <button onclick="location.href={% url 'previousyear' %}" class="exams__names1--btn">Previous Year Q's</button>
+        </div>
         <div class="examination" style="margin-top: 5rem;">
             <div class="examination__content">
                 <img class="state-img3" src="{% static 'images/ellipses.png' %}" alt="">
