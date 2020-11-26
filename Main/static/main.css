@@ -590,7 +590,8 @@ body {
       grid-template-columns: min-content 90%;
       grid-template-rows: repeat(2, min-content);
       column-gap: 2rem;
-      grid-template-areas: 'img head' 'img sub'; }
+      grid-template-areas: 'img head'
+ 'img sub'; }
       .course__box--content-img {
         grid-area: img;
         width: 7.5rem;
@@ -662,7 +663,8 @@ body {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: 'text comp' 'work work';
+  grid-template-areas: 'text comp'
+ 'work work';
   position: relative; }
   .doubts__img {
     grid-area: comp;
@@ -680,7 +682,8 @@ body {
       margin-left: -10rem;
       grid-template-columns: 15% 85%;
       grid-template-rows: repeat(2, min-content);
-      grid-template-areas: 'img head' 'img sub'; }
+      grid-template-areas: 'img head'
+ 'img sub'; }
       .doubts__box--content-img {
         margin-top: .5rem;
         grid-area: img;
@@ -978,7 +981,8 @@ body {
       grid-template-columns: min-content 90%;
       grid-template-rows: repeat(2, min-content);
       column-gap: 2rem;
-      grid-template-areas: 'img head' 'img sub'; }
+      grid-template-areas: 'img head'
+ 'img sub'; }
       .embark__box--content-img {
         grid-area: img;
         width: 5.5rem;
@@ -1256,7 +1260,8 @@ body {
     column-gap: 1rem;
     grid-template-columns: 20% 80%;
     grid-template-rows: repeat(2, min-content);
-    grid-template-areas: 'img para' 'img text'; }
+    grid-template-areas: 'img para'
+ 'img text'; }
     .expert__content--box-img {
       grid-area: img;
       height: 12rem;
@@ -1810,7 +1815,8 @@ body {
         display: grid;
         grid-template-columns: 10% 90%;
         column-gap: 2rem;
-        grid-template-areas: 'img tit' 'img para'; }
+        grid-template-areas: 'img tit'
+ 'img para'; }
         .jee .reading__content--sub-icon {
           align-self: start;
           grid-area: img;
@@ -2377,7 +2383,8 @@ body {
       display: grid;
       grid-template-columns: repeat(2, max-content);
       grid-template-rows: repeat(2, min-content);
-      grid-template-areas: 'img head' 'img sub'; }
+      grid-template-areas: 'img head'
+ 'img sub'; }
       .live__box--content-img {
         grid-area: img;
         width: 50%;
@@ -4371,7 +4378,8 @@ nav {
       display: grid;
       grid-template-columns: min-content 90%;
       grid-template-rows: repeat(2, min-content);
-      grid-template-areas: 'img head' 'sub sub'; }
+      grid-template-areas: 'img head'
+ 'sub sub'; }
       .video__box--content-img {
         grid-area: img;
         width: 6rem;
@@ -4580,7 +4588,8 @@ nav {
       column-gap: 1.5rem;
       grid-template-rows: repeat(2, min-content);
       align-self: center;
-      grid-template-areas: 'img title' 'img para'; }
+      grid-template-areas: 'img title'
+ 'img para'; }
       .why__content--box-img {
         grid-area: img;
         width: 7rem;
@@ -4835,3 +4844,4 @@ nav {
   margin-top: 5rem;
   position: relative;
   height: 100vh; }
+
