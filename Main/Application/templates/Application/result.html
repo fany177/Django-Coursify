@@ -2,7 +2,11 @@
 {% load static %}
 
 {% block content %}
-    <div class="search" style="margin-top: 7rem;">
+    <div class="search__top" style="margin-top: 15rem;">
+        <img class="search__top--item" src="{% static 'images/camera.png' %}" alt="">
+        <h5 class="search__top--text">Clear your doubts</h5>
+    </div>
+    <div class="search sear" style="margin-top: 5rem;">
         <input class="search__box" type="text" placeholder="Search Questions, Doubts & Images">
         <input class="search__box1" type="text" placeholder="Search">
         <div class="search__camera">
@@ -14,7 +18,7 @@
     </div>
     <section id="section-result" class="container-fluid">
         <img class="result-ellipse1" src="{% static 'images/ellipses.png' %}" alt="">
-        <div>
+        <div class="result">
             <h2 class="result-heading">Search Result</h2>
             <h3 class="result-subheading">Search Keyword. Search Keyword</h3>
             <div class="filter">
@@ -29,7 +33,7 @@
                     <button class="filter__items--btn">Class 12</button>
                     <button class="filter__items--btn">NEET</button>
                     <button class="filter__items--btn">JEE <span>Mains</span></button>
-                    <button class="filter__items--btn">Jee <span>Adv</span></button>
+                    <button class="filter__items--btn">JEE <span>Adv</span></button>
                 </div>
             </div>
         </div>
@@ -121,7 +125,7 @@
                 <div class="answer__solved--box-items">
                     <button class="answer__solved--box-items-btn">NEET</button>
                     <button class="answer__solved--box-items-btn">JEE <span>Mains</span></button>
-                    <button class="answer__solved--box-items-btn">NEET <span>Adv</span></button>
+                    <button class="answer__solved--box-items-btn">JEE <span>Adv</span></button>
                     <button class="answer__solved--box-items-btn">Class 6</button>
                     <button class="answer__solved--box-items-btn">Class 7</button>
                     <button class="answer__solved--box-items-btn">Class 8</button>
