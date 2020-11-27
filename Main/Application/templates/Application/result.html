@@ -28,11 +28,12 @@
 
     <section id="section-answer" class="container-fluid">
         <div class="answer">
+            {% for video in videos %}
             <div class="answer__content">
                 <h3 class="answer__content--title">Class name > Subject > Book Name > Chapter > Exercise > Question</h3>
             
                 <div class="answer__content--box" style="width: 700px;">
-                    {% for video in videos %}
+                    
                     <div class="answer__content--box-item">
                         <h3 class="answer__content--box-item-title" style=" margin-right: 0px;">Question</h3>
                         <p class="answer__content--box-item-para">{{ video.title }}</p>
@@ -48,12 +49,11 @@
                                 </div>
                                 <small class="text-muted" style="padding-right: 5%;">{{ video.duration }} mins</small>
                             </div>
-                          
                         </div>
-                    {% endfor %}
-                </div>
+                    </div>
             </div>
-            <div class="answer__content">
+            {% endfor %}
+            <!-- <div class="answer__content">
                 <h3 class="answer__content--title">Class name > Subject > Book Name > Chapter > Exercise > Question</h3>
             
                 <div class="answer__content--box">
@@ -63,6 +63,7 @@
                         <p class="answer__content--box-item-para" style="margin-top: 2.5rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores culpa dolore blanditiis fugiat laudantium corporis fugit doloribus quas? Odio incidunt sapiente quos maxime animi voluptatibus vitae. Doloremque saepe nobis animi!</p>
                     </div>
                     <img class="answer__content--box-img" src="{% static 'images/tablet.png' %}" alt="">
+                   
                 </div>
             </div>
             <div class="answer__content">
@@ -115,7 +116,7 @@
                     <img class="answer__content--box-img" src="{% static 'images/tablet.png' %}" alt="">
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="answer__solved">
             <div class="answer__solved--box">

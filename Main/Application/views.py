@@ -21,7 +21,7 @@ def home(request):
             'part' : 'snippet',
             'q' : request.POST['search'],
             'key' : settings.YOUTUBE_DATA_API_KEY,
-            'maxResults' : 1,
+            'maxResults' : 10,
             'type' : 'video',
             'channelId': 'UCM2zKwI6dlR46sSnkkWRMnQ'
         }
@@ -41,7 +41,7 @@ def home(request):
             'key' : settings.YOUTUBE_DATA_API_KEY,
             'part' : 'snippet,contentDetails',
             'id' : ','.join(video_ids),
-            'maxResults' : 1
+            'maxResults' : 10
         }
 
         r = requests.get(video_url, params=video_params)

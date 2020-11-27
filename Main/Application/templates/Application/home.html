@@ -16,7 +16,7 @@
             {% csrf_token %}
             <div class="search">
                 <img class="search__magnify" src="{% static 'images/search.png' %}" alt="">
-                <input class="search__box" type="text" name="search" placeholder="Search Questions, Doubts & Images">
+                <input class="search__box" type="text" id="pass" name="search" placeholder="Search Questions, Doubts & Images">
                 <div class="search__camera">
                     <img class="search__camera--item" src="{% static 'images/camera.png' %}" alt="">
                     <h5 class="search__camera--text">upload image</h5>
@@ -35,8 +35,15 @@
                 <li class="search__languages--item"><button class="search__languages--item-btn">Punjabi</button></li>
                 <li class="search__languages--item"><button class="search__languages--item-btn">Odia</button></li>
             </ul>
-            <button class="search__btn" type="submit" name="submit" value="search">Search Doubt</button>
+            <button id="Search_Button" class="search__btn" type="submit" name="submit" value="search">Search Doubt</button>
         </form>
+        <script type="text/javascript">
+            $("#pass").keyup(function(event) { 
+                if (event.keyCode === 13) { 
+                    $("#Search_Button").click(); 
+                } 
+            }); 
+        </script>
         
     </section>
     <div class="search-chips">
