@@ -18,13 +18,13 @@
         <h1 class="search-heading">Ask Your <span>Doubt</span> Now?</h1>
         <form class="search-form" action="" style="position: relative;">
             <div class="search">
-                <img class="search__magnify" src="{% static 'images/search.png' %}" alt="">
                 <input class="search__box" type="text" placeholder="Search Questions, Doubts & Images">
                 <input class="search__box1" type="text" placeholder="Search">
                 <div class="search__camera">
                     <img class="search__camera--item" src="{% static 'images/camera.png' %}" alt="">
                     <h5 class="search__camera--text">upload image</h5>
                     <img class="search__camera--button" src="{% static 'images/arrow.png' %}">
+                    <button class="search__btn"><img class="search__btn-img" src="{% static 'images/arrow.png' %}" alt=""></button>
                 </div>
             </div>
             <ul class="search__languages">
@@ -41,7 +41,6 @@
                 <li class="search__languages--item"><button class="search__languages--item-btn">Odia</button></li>
             </ul>
         </form>
-        <button class="search__btn">Search Doubt</button>
     </section>
     <div class="search-chips">
         <div class="search-chips--img">

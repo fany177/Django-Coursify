@@ -4359,15 +4359,8 @@ nav {
   display: none; }
 
 .search {
-  padding: 1rem 3rem;
+  padding: 4rem 3rem;
   position: relative; }
-  .search__magnify {
-    position: absolute;
-    height: 3rem;
-    left: 22.2%;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1; }
   .search__camera {
     position: absolute;
     z-index: 1;
@@ -4378,17 +4371,25 @@ nav {
     cursor: pointer; }
     .search__camera--item {
       position: relative;
-      left: 50%;
+      left: 45%;
       transform: translateX(-50%);
-      width: 2.5rem; }
+      font-size: 1rem;
+      margin-left: -80%;
+      width: 2.5rem;
+      bottom: -3rem; }
     .search__camera--text {
-      color: #D60B3C;
-      font-size: 1rem; }
+      position: relative;
+      color: #1E4190;
+      font-size: 1rem;
+      margin-left: -90%;
+      bottom: -3.5rem;
+      font-family: 'Poppins',sans-serif;
+      font-weight: 700; }
     .search__camera--button {
       display: none; }
   .search__box {
-    padding: 3rem 6rem;
-    padding-right: 9rem;
+    padding: 3rem 1rem;
+    padding-right: 15rem;
     font-size: 2rem;
     font-family: 'Poppins',sans-serif;
     font-weight: 100;
@@ -4439,17 +4440,20 @@ nav {
     font-size: 1.5rem;
     font-family: 'Poppins',sans-serif;
     font-weight: 300;
-    padding: 1rem 3rem;
+    padding: 1.1rem 1.5rem;
     border: none;
     position: relative;
     transform: translateX(-50%);
-    left: 50%;
-    margin-top: 5rem;
-    border-radius: 1rem; }
+    left: 73%;
+    top: -1.9rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem; }
     .search__btn:focus, .search__btn:active {
       outline: none; }
     .search__btn:hover {
       filter: brightness(90%); }
+    .search__btn-img {
+      width: 4rem; }
 
 .search-chips {
   display: grid;
@@ -4513,8 +4517,9 @@ nav {
         color: white;
         font-family: 'Poppins',sans-serif;
         font-weight: 900;
-        padding: .3rem .4rem;
-        border-radius: .5rem;
+        padding: .4rem .4rem;
+        border-bottom-right-radius: 1rem;
+        border-top-right-radius: 1rem;
         transform: translateX(1rem);
         margin-top: -4rem; }
     .search__languages {
@@ -4528,6 +4533,10 @@ nav {
     .search__btn {
       display: none; } }
 
+@media only screen and (max-width: 56.25em) {
+  .search__camera--button {
+    padding: 0rem .5rem; } }
+
 @media only screen and (max-width: 50em) {
   .search {
     padding: 5rem 1rem;
@@ -4535,9 +4544,8 @@ nav {
     .search__languages {
       display: none; }
     .search__camera--button {
-      padding: 0rem !important;
       transform: translateX(1rem);
-      margin-top: -5.1rem; }
+      margin-top: -5.3rem; }
   .search-chips {
     width: 100%; }
     .search-chips--img {
@@ -4613,8 +4621,8 @@ nav {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    border: 0.1rem solid #DE0B38;
-    box-shadow: 0rem 0rem 1rem rgba(222, 11, 56, 0.6);
+    border: 0.1rem solid transparent;
+    box-shadow: 0rem 0rem 1rem rgba(75, 75, 75, 0.2);
     border-radius: .5rem; }
     .search__box1:focus, .search__box1:active {
       outline: none; }
@@ -4628,7 +4636,10 @@ nav {
     opacity: .3;
     font-style: italic; }
   .search__camera--button {
-    height: 4rem; }
+    padding: .1rem .1rem;
+    height: 4.1rem;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem; }
   .search-chips {
     column-gap: 4rem; }
     .search-chips--img1-item {
