@@ -16,10 +16,9 @@
         <img class="search-img5" src="{% static 'images/cloud.png' %}" alt="">
         <img class="search-img6" src="{% static 'images/question.png' %}" alt="">
         <h1 class="search-heading">Ask Your <span>Doubt</span> Now?</h1>
-        <form class="search-form" action="" style="position: relative;" method="POST">
-            {% csrf_token %}
+        <form class="search-form" action="" style="position: relative;">
             <div class="search">
-                <input class="search__box" id="pass" type="text" name="search" placeholder="Search Questions, Doubts & Images">
+                <input class="search__box" type="text" placeholder="Search Questions, Doubts & Images">
                 <input class="search__box1" type="text" placeholder="Search">
                 <div class="search__camera">
                     <img class="search__camera--item" src="{% static 'images/camera.png' %}" alt="">
@@ -41,16 +40,7 @@
                 <li class="search__languages--item"><button class="search__languages--item-btn">Punjabi</button></li>
                 <li class="search__languages--item"><button class="search__languages--item-btn">Odia</button></li>
             </ul>
-            <button id="Search_Button" class="search__btn" type="submit" name="submit" value="search">Search Doubt</button>
         </form>
-        <script type="text/javascript">
-            $("#pass").keyup(function(event) { 
-                if (event.keyCode === 13) { 
-                    $("#Search_Button").click(); 
-                } 
-            }); 
-        </script>
-        
     </section>
     <div class="search-chips">
         <div class="search-chips--img">

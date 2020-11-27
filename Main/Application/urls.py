@@ -7,7 +7,7 @@ urlpatterns = [
     path('welcome/',views.welcome,name='welcome'),
     
     path('result/',views.result,name='result'),
-    path('video/',views.video,name='video'),
+    
     path('live/',views.live,name='live'),
     
     path('boardexams/',views.boardexams,name='boardexams'),
@@ -22,7 +22,7 @@ urlpatterns = [
     path('ncert/',views.ncert,name='ncert'),
     path('chapter1/',views.chapter1,name='chapter1'),
     path('exercise/',views.exercise,name='exercise'),
-    path('question/<str:video_id>/<str:video_title>/<path:t>',views.question,name='question' ),
+    path('question/',views.question,name='question'),
     
     path('course/',views.course,name='course'),
     path('join/',views.join,name='join'),
