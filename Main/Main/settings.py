@@ -26,7 +26,7 @@ SECRET_KEY = '!**d54txv-f&%lja22*1+si(xqymns0h8e0m@8$8)tdk%oqmf#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['coursify.co.in','127.0.0.1']
+ALLOWED_HOSTS = ['coursify.co.in','127.0.0.1','192.168.1.2']
 
 
 # Application definition
