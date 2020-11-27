@@ -3169,16 +3169,16 @@ body {
   .meet-heading {
     font-size: 3.5rem; }
   .meet {
-    grid-template-columns: 100%;
-    row-gap: 2rem;
-    margin-top: 3em !important; }
-    .meet__content--img {
-      height: 17rem !important;
-      width: 17rem !important; }
-    .meet__content--title {
-      font-size: 2rem; }
-    .meet__content--sub {
-      font-size: 1.5rem; } }
+    width: 100%; }
+    .meet__content {
+      column-gap: 3rem; }
+      .meet__content--img {
+        height: 14rem !important;
+        width: 14rem !important; }
+      .meet__content--title {
+        font-size: 1.7rem; }
+      .meet__content--sub {
+        font-size: 1.5rem; } }
 
 .must {
   height: 100%;
