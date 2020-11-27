@@ -13,11 +13,19 @@
             <button onclick="location.href={% url 'neet' %}" class="exams__names--btn" >NEET</button>
             <button onclick="location.href={% url 'previousyear' %}" class="exams__names--btn">Previous Year Q's</button>
         </div>
+        <div class="exams__names1">
+            <h1 class="exams__names1--title">Choose your goal</h1>
+            <button onclick="location.href={% url 'boardexams' %}" class="exams__names1--btn" >Board Exams</button>
+            <button onclick="location.href={% url 'schoolexams' %}" class="exams__names1--btn" style="color: white;background-color:#D60B3C;">School exams</button>
+            <button onclick="location.href={% url 'jeemain' %}" class="exams__names1--btn">JEE - Mains</button>
+            <button onclick="location.href={% url 'jeeadvance' %}" class="exams__names1--btn">JEE - Advanced</button>
+            <button onclick="location.href={% url 'neet' %}" class="exams__names1--btn" >NEET</button>
+            <button onclick="location.href={% url 'previousyear' %}" class="exams__names1--btn">Previous Year Q's</button>
+        </div>
         <div class="examination" style="margin-top: 5rem;">
             <div class="examination__content">
                 <img class="state-img3" src="{% static 'images/ellipses.png' %}" alt="">
                 <h3 class="examination__content--heading">Class 12</h3>
-                <button class="examination__content--btn">View all</button>
                 <div class="examination__content--box">
                     <div class="examination__content--box-item">
                         <img class="examination__content--box-item-img" src="{% static 'books/12TH/918O3XZAW9L.jpg' %}" alt="">
@@ -40,6 +48,7 @@
                         <h3 class="examination__content--box-item-title">NCERT - XII</h3>
                     </div>
                     <div class="examination__content--box-item">
+                        <button class="examination__content--btn">View all</button>
                         <img class="examination__content--box-item-img" src="{% static 'books/ENGLISH/41M68q7KYAL._SY370_BO1,204,203,200_llll.jpg' %}" alt="">
                         <button class="examination__content--box-item-btn">Solve Now</button>
                         <h3 class="examination__content--box-item-title">NCERT - XII</h3>
@@ -48,7 +57,6 @@
             </div>
             <div class="examination__content">
                 <h3 class="examination__content--heading">Class 11</h3>
-                <button class="examination__content--btn">View all</button>
                 <div class="examination__content--box">
                     <div class="examination__content--box-item">
                         <img class="examination__content--box-item-img" src="{% static 'books/11TH/unnamed.jpg' %}" alt="">
@@ -71,6 +79,7 @@
                         <h3 class="examination__content--box-item-title">NCERT - XII</h3>
                     </div>
                     <div class="examination__content--box-item">
+                        <button class="examination__content--btn">View all</button>
                         <img class="examination__content--box-item-img" src="{% static 'books/ENGLISH/91Fxi2WMbrL.jpg' %}" alt="">
                         <button class="examination__content--box-item-btn">Solve Now</button>
                         <h3 class="examination__content--box-item-title">NCERT - XII</h3>
