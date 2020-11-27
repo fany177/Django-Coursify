@@ -38,19 +38,32 @@
 
     <section id="section-answer" class="container-fluid">
         <div class="answer">
+            {% for video in videos %}
             <div class="answer__content">
                 <h3 class="answer__content--title">Class name > Subject > Book Name > Chapter > Exercise > Question</h3>
             
-                <div class="answer__content--box">
+                <div class="answer__content--box" style="width: 700px;">
+                    
                     <div class="answer__content--box-item">
-                        <h3 class="answer__content--box-item-title">Question</h3>
-                        <p class="answer__content--box-item-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores culpa dolore blanditiis fugiat laudantium corporis fugit doloribus quas? Odio incidunt sapiente quos maxime animi voluptatibus vitae. Doloremque saepe nobis animi!</p>
-                        <p class="answer__content--box-item-para" style="margin-top: 2.5rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores culpa dolore blanditiis fugiat laudantium corporis fugit doloribus quas? Odio incidunt sapiente quos maxime animi voluptatibus vitae. Doloremque saepe nobis animi!</p>
+                        <h3 class="answer__content--box-item-title" style=" margin-right: 0px;">Question</h3>
+                        <p class="answer__content--box-item-para">{{ video.title }}</p>
                     </div>
-                    <img class="answer__content--box-img" src="{% static 'images/tablet.png' %}" alt="">
+                    <br>
+                    <br>
+                    <div class="card mb-4 shadow-sm" style="border-radius: 8%;">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225" style="padding: 5% 6% 0% 6%;" src="{{ video.thumbnail }}" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"></img>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group" style="padding-left: 5%;">
+                                    <a href="{% url 'question' video_id=video.id video_title=video.title t=video.thumbnail %}" class="btn btn-sm btn-outline-secondary filter__items--btn" >View</a>
+                                </div>
+                                <small class="text-muted" style="padding-right: 5%;">{{ video.duration }} mins</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="answer__content">
+            {% endfor %}
+            <!-- <div class="answer__content">
                 <h3 class="answer__content--title">Class name > Subject > Book Name > Chapter > Exercise > Question</h3>
             
                 <div class="answer__content--box">
@@ -60,6 +73,7 @@
                         <p class="answer__content--box-item-para" style="margin-top: 2.5rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores culpa dolore blanditiis fugiat laudantium corporis fugit doloribus quas? Odio incidunt sapiente quos maxime animi voluptatibus vitae. Doloremque saepe nobis animi!</p>
                     </div>
                     <img class="answer__content--box-img" src="{% static 'images/tablet.png' %}" alt="">
+                   
                 </div>
             </div>
             <div class="answer__content">
@@ -112,7 +126,7 @@
                     <img class="answer__content--box-img" src="{% static 'images/tablet.png' %}" alt="">
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="answer__solved">
             <div class="answer__solved--box">
@@ -186,5 +200,5 @@
             <img class="find-ellipse3" src="{% static 'images/ellipses.png' %}" alt="">
         </div>
     </section>
-  
+    
 {% endblock content %}
