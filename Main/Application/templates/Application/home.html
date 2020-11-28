@@ -16,15 +16,16 @@
         <img class="search-img5" src="{% static 'images/cloud.png' %}" alt="">
         <img class="search-img6" src="{% static 'images/question.png' %}" alt="">
         <h1 class="search-heading">Ask Your <span>Doubt</span> Now?</h1>
-        <form class="search-form" action="" style="position: relative;">
+        <form class="search-form" action="" style="position: relative;" method="POST">
+           {% csrf_token %}
             <div class="search">
-                <input class="search__box" type="text" placeholder="Search Questions, Doubts & Images">
+                <input class="search__box" type="text" id="pass" placeholder="Search Questions, Doubts & Images">
                 <input class="search__box1" type="text" placeholder="Search">
                 <div class="search__camera">
                     <img class="search__camera--item" src="{% static 'images/camera.png' %}" alt="">
                     <h5 class="search__camera--text">upload image</h5>
                     <img class="search__camera--button" src="{% static 'images/arrow.png' %}">
-                    <button class="search__btn"><img class="search__btn-img" src="{% static 'images/arrow.png' %}" alt=""></button>
+                    <button id="Search_Button" class="search__btn" type="submit" ><img class="search__btn-img" src="{% static 'images/arrow.png' %}" alt=""></button>
                 </div>
             </div>
             <ul class="search__languages">
