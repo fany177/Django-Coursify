@@ -42,18 +42,27 @@
 
     <section id="section-answer" class="container-fluid">
         <div class="answer">
+            {% for video in videos %}
             <div class="answer__content">
                 <h3 class="answer__content--title">Class name > Subject > Book Name > Chapter > Exercise > Question</h3>
             
                 <div class="answer__content--box">
                     <div class="answer__content--box-item">
                         <h3 class="answer__content--box-item-title">Question</h3>
-                        <p class="answer__content--box-item-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores culpa dolore blanditiis fugiat laudantium corporis fugit doloribus quas? Odio incidunt sapiente quos maxime animi voluptatibus vitae. Doloremque saepe nobis animi!</p>
-                        <p class="answer__content--box-item-para" style="margin-top: 2.5rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores culpa dolore blanditiis fugiat laudantium corporis fugit doloribus quas? Odio incidunt sapiente quos maxime animi voluptatibus vitae. Doloremque saepe nobis animi!</p>
+                        <p class="answer__content--box-item-para">{{ video.title }}</p>
+<!--                         <p class="answer__content--box-item-para" style="margin-top: 2.5rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores culpa dolore blanditiis fugiat laudantium corporis fugit doloribus quas? Odio incidunt sapiente quos maxime animi voluptatibus vitae. Doloremque saepe nobis animi!</p> -->
                     </div>
-                    <img class="answer__content--box-img" src="{% static 'images/tablet.png' %}" alt="">
+<!--                     <img class="answer__content--box-img" src="{% static 'images/tablet.png' %}" alt=""> -->
+                    <div class="card mb-4 shadow-sm" style="border-radius: 8%; margin-left: 40%; width: 95%; margin-right: 50%;">
+                            <div class="container">
+                                <img class="bd-placeholder-img card-img-top" width="100%" height="250" style="padding: 6% 8% 6% 8%;" src="{{ video.thumbnail }}" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                                <a href="{% url 'question' video_id=video.id video_title=video.title t=video.thumbnail %}"><i class="fas fa-play-circle" style="color: #DE0B38; font-size: 1040%"></i></a>
+                              </div>
+                        </div>
+                    
                 </div>
             </div>
+            {% endfor %}
             <div class="answer__content">
                 <h3 class="answer__content--title">Class name > Subject > Book Name > Chapter > Exercise > Question</h3>
             
